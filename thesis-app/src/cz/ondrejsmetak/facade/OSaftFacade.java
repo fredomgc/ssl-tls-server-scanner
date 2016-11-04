@@ -6,6 +6,7 @@
 package cz.ondrejsmetak.facade;
 
 import cz.ondrejsmetak.other.Result;
+import cz.ondrejsmetak.other.Target;
 import cz.ondrejsmetak.tool.Helper;
 import cz.ondrejsmetak.tool.Log;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *
+ * API for O-Saft tool
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public class OSaftFacade extends BaseFacade {
@@ -27,40 +28,21 @@ public class OSaftFacade extends BaseFacade {
 	
 	private OSaftParser parser;
 	
-	public OSaftFacade(String target) {
-		this.target = target;
+	public OSaftFacade(Target target) {
+	this.target = target.getTarget();
 	}
-
-	private void doScan() {
-
-	}
-
+	
 	public void doSomething() {
 		data.clear();
 		data.addAll(getData());
-		parser = new OSaftParser(data);
-		
-		
+		parser = new OSaftParser(data);	
 	}
-
-	/**
-	 * Je zranitelné na heartbleed
-	 *
-	 * @return
-	 */
-	public Result isHeartbleed() {
-
-		
-		
-		return null;
-	}
-
+	
 	private List<String> getData() {
 		if (data.isEmpty()) {
 			//spustime scan
 			data.addAll(doCmd(target, "+check"));
 		}
-
 		return data;
 	}
 
@@ -78,7 +60,7 @@ public class OSaftFacade extends BaseFacade {
 		Log.infoln("Running O-Saft with args: " + Arrays.toString(rawArgs));
 		return Helper.doCmd(rawArgs); //run a command
 	}
-
+	
 	public OSaftParser getParser() {
 		return parser;
 	}
