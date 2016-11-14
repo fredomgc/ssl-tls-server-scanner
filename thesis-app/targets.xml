@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<profiles>
+		<profile name="low">
+			<protocol safe="TLS 1.0" modifier="andHigher" />
+			<vulnerabilities/>
+			<certificate/>
+		</profile>
+		
+		<profile name="strict">
+			<protocol safe="TLS 1.2" />
+			<vulnerabilities/>
+			<certificate/>
+		</profile>
+	</profiles>
+	
+	<targets>
+		<target destination="https://127.0.0.1/"  profile="low"  name="můj localhost" />
+	</targets>
+</configuration>

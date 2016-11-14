@@ -5,8 +5,8 @@
  */
 package cz.ondrejsmetak.facade;
 
-import cz.ondrejsmetak.other.Result;
-import cz.ondrejsmetak.other.Target;
+import cz.ondrejsmetak.entity.Result;
+import cz.ondrejsmetak.entity.Target;
 import cz.ondrejsmetak.tool.Helper;
 import cz.ondrejsmetak.tool.Log;
 import java.util.ArrayList;
@@ -15,6 +15,7 @@ import java.util.List;
 
 /**
  * API for O-Saft tool
+ *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public class OSaftFacade extends BaseFacade {
@@ -24,20 +25,19 @@ public class OSaftFacade extends BaseFacade {
 	private static final String O_SAFT_LOCATION = "/home/fredomgc/thesis/o-saft/"; //TODO - napsat normalne
 
 	private List<String> data = new ArrayList<>();
-	
-	
+
 	private OSaftParser parser;
-	
+
 	public OSaftFacade(Target target) {
-	this.target = target.getTarget();
+		this.target = target.getDestination();
 	}
-	
+
 	public void doSomething() {
 		data.clear();
 		data.addAll(getData());
-		parser = new OSaftParser(data);	
+		parser = new OSaftParser(data);
 	}
-	
+
 	private List<String> getData() {
 		if (data.isEmpty()) {
 			//spustime scan
@@ -56,11 +56,11 @@ public class OSaftFacade extends BaseFacade {
 		for (String arg : args) {
 			rawArgs[i++] = arg; //following args are passed ones
 		}
-		
+
 		Log.infoln("Running O-Saft with args: " + Arrays.toString(rawArgs));
 		return Helper.doCmd(rawArgs); //run a command
 	}
-	
+
 	public OSaftParser getParser() {
 		return parser;
 	}

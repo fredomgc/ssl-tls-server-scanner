@@ -12,6 +12,10 @@ import java.util.List;
  */
 public class Helper {
 
+	public static boolean isInteger(String input){
+		return true; //TODO
+	}
+	
 	/**
 	 * Direct command line access
 	 * @param args arguments for command line

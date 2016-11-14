@@ -1,17 +1,17 @@
-package cz.ondrejsmetak.other;
+package cz.ondrejsmetak.entity;
 
 /**
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
-public class Result {
+public class Result extends BaseEntity{
 
 	private enum Type {
 		SAFE, VULNERABLE, UNKNOWN
 	}
 
 	private Type type;
-	private String unknownReason;
+	private String note;
 
 	public Result() {
 		type = Type.UNKNOWN;
@@ -29,26 +29,25 @@ public class Result {
 		this.type = Type.UNKNOWN;
 	}
 	
-	public void setUnknown(String reason) {
+	public void setUnknown(String note) {
 		this.type = Type.UNKNOWN;
-		setUnknownReason(reason);
+		setNote(note);
 	}
 
-	private void setUnknownReason(String reason){
-		this.unknownReason = reason.matches("\\(.*\\)") ? reason : "(" + reason + ")";
+	private void setNote(String note){
+		this.note = note.matches("\\(.*\\)") ? note : "(" + note + ")";
 	}
 	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(type);
-		if(unknownReason != null && !unknownReason.isEmpty()){
-			sb.append(" ").append(unknownReason);
+		if(note != null && !note.isEmpty()){
+			sb.append(" ").append(note);
 		}
 		
 		return sb.toString();
 	}
-	
 	
 	
 	public static Result getSafe(){
@@ -57,21 +56,37 @@ public class Result {
 		return o;
 	}
 	
+	public static Result getSafe(String note){
+		Result o = new Result();
+		o.setSafe();
+		o.setNote(note);
+		return o;
+	}
+	
+	
 	public static Result getVulnerable(){
 		Result o = new Result();
 		o.setVulnerable();
 		return o;
 	}
 	
+	public static Result getVulnerable(String note){
+		Result o = new Result();
+		o.setVulnerable();
+		o.setNote(note);
+		return o;
+	}
+	
+	
 	public static Result getUnknown(){
 		Result o = new Result();
 		o.setUnknown();
 		return o;
 	}
-	public static Result getUnknown(String reason){
+	
+	public static Result getUnknown(String note){
 		Result o = new Result();
-		o.setUnknown(reason);
+		o.setNote(note);
 		return o;
-	}
-
+	}	
 }
