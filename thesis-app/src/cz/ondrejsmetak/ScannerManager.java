@@ -23,6 +23,7 @@ public class ScannerManager {
 			Log.infoln("Parsing \"targets.xml\" for targets...");
 			TargetParser targetParser = new TargetParser();
 			List<Target> targets = targetParser.parse();
+			
 			if (!targets.isEmpty()) {
 				Log.infoln("Targets found, performing scans...");
 			}
@@ -31,8 +32,8 @@ public class ScannerManager {
 				Log.infoln("***");
 				Log.infoln("Running scan of " + target.getDestination());
 				Scanner scanner = new Scanner(target);
-				scanner.performScan();
-				scanner.printResult(target);
+				scanner.runScan();
+				scanner.printResult();
 
 				Log.infoln("Scan finished");
 			}

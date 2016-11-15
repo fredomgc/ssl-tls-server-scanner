@@ -3,10 +3,13 @@
  */
 package cz.ondrejsmetak;
 
+import cz.ondrejsmetak.entity.CipherSuite;
+import cz.ondrejsmetak.entity.Result;
 import cz.ondrejsmetak.facade.OSaftFacade;
 import cz.ondrejsmetak.facade.OSaftParser;
 import cz.ondrejsmetak.entity.Target;
 import cz.ondrejsmetak.tool.Log;
+import javax.crypto.Cipher;
 
 /**
  *
@@ -22,20 +25,60 @@ public class Scanner {
 		oSaft = new OSaftFacade(target);
 	}
 
-	public void performScan() {
-		oSaft.doSomething();
+	public void runScan() {
+		oSaft.runScan();
 	}
 
-	public void printResult(Target target) {
+	private void printCipherSuites() {
+		if (target.getProfile().isTestSafeCipherSuites()) {
+			for (CipherSuite test : oSaft.getParser().getSupportedCipherSuites()) {
+				if (!this.target.getProfile().getSafeCipherSuites().contains(test)) {
+					Log.errorln("Cipher suite " + test + " isn't considered safe, but is supported!");
+				}
+			}
+		}
+	}
+
+	private void printVulnerabilities() {
+		doPrintVulnerability("Vulnerable to BEAST!", oSaft.getParser().getBeast());
+		doPrintVulnerability("Vulnerable to CRIME!", oSaft.getParser().getCrime());
+		doPrintVulnerability("Vulnerable to DROWN!", oSaft.getParser().getDrown());
+		doPrintVulnerability("Vulnerable to FREAK!", oSaft.getParser().getFreak());
+		doPrintVulnerability("Vulnerable to Heartbleed!", oSaft.getParser().getHeartbleed());
+		doPrintVulnerability("Vulnerable to Logjam!", oSaft.getParser().getLogjam());
+		doPrintVulnerability("Vulnerable to Lucky 13!", oSaft.getParser().getLucky13());
+		doPrintVulnerability("Vulnerable to POODLE!", oSaft.getParser().getPoodle());
+		doPrintVulnerability("RC4 ciphers are supported (but they are assumed to be broken)!", oSaft.getParser().getRc4());
+		doPrintVulnerability("Vulnerable to Sweet32!", oSaft.getParser().getSweet32());
+		doPrintVulnerability("SSLv2 supported!", oSaft.getParser().getSslv2NotSupported());
+		doPrintVulnerability("SSLv3 supported!", oSaft.getParser().getSslv3NotSupported());
+		doPrintVulnerability("PFS (perfect forward secrecy) not supported!", oSaft.getParser().getPfs());
+		doPrintVulnerability("TLS session ticket doesn't contain random value!", oSaft.getParser().getRandomTlsSessionTicket());
+	}
+	
+	private void printCertificateChecks() {
+		doPrintVulnerability("Vulnerable to BEAST!", oSaft.getParser().getH);
+		
+	}
+	
+
+	private void doPrintVulnerability(String vulnerableMessage, Result result) {
+		if (result.isVulnerable()) {
+			Log.errorln(vulnerableMessage);
+		}
+	}
+
+	public void printResult() {
 		if (oSaft == null) {
 			throw new IllegalArgumentException("No data  for print!");
 		}
+
+		printCipherSuites();
 		
-		System.err.println("AAA: " + oSaft.getParser().getCertificatePublicKeySize());
-		
+		printVulnerabilities();
+
 		//TODO - vypisovat jen testy, které neprošli
 		//napsat jednu nějakou univerzálnějí metodu
-		
 //		if (target.isScanBeast()) {
 //			Log.infoln("Beast: " + oSaft.getParser().getBeast());
 //		}
@@ -100,8 +143,6 @@ public class Scanner {
 //			Log.infoln(OSaftParser.HOSTNAME_MATCH_HEADER + ": " + oSaft.getParser().getHostnameMatch());
 //			Log.infoln(OSaftParser.REVERSE_HOSTNAME_MATCH_HEADER + ": " + oSaft.getParser().getHostnameMatch());
 //		}
-		
-		
 	}
 
 }

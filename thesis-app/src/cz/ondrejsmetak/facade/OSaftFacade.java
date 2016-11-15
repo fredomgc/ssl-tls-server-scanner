@@ -32,7 +32,7 @@ public class OSaftFacade extends BaseFacade {
 		this.target = target.getDestination();
 	}
 
-	public void doSomething() {
+	public void runScan() {
 		data.clear();
 		data.addAll(getData());
 		parser = new OSaftParser(data);

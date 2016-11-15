@@ -1,8 +1,10 @@
 package cz.ondrejsmetak.facade;
 
 import cz.ondrejsmetak.ConfigurationRegister;
+import cz.ondrejsmetak.entity.CipherSuite;
 import cz.ondrejsmetak.entity.Result;
 import cz.ondrejsmetak.tool.Helper;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -43,13 +45,18 @@ public class OSaftParser {
 	 */
 	public static final String HOSTNAME_MATCH_HEADER = "Connected hostname matches certificate's subject";
 	public static final String REVERSE_HOSTNAME_MATCH_HEADER = "Given hostname is same as reverse resolved hostname";
-	public static final String CERTIFICATE_NOT_EXPIRED = "Certificate is not expired";
-	public static final String CERTIFICATE_IS_VALID = "Certificate is valid";
-	public static final String CERTIFICATE_FINGERPRINT_NOT_MD5 = "Certificate Fingerprint is not MD5";
-	public static final String CERTIFICATE_PRIVATE_KEY_SHA2 = "Certificate Private Key Signature SHA2";
-	public static final String CERTIFICATE_NOT_SELF_SIGNED = "Certificate is not self-signed";
-	public static final String CERTIFICATE_PUBLIC_KEY_SIZE = "Certificate Public Key size";
-	public static final String CERTIFICATE_SIGNATURE_KEY_SIZE = "Certificate Signature Key size";
+	public static final String CERTIFICATE_NOT_EXPIRED_HEADER = "Certificate is not expired";
+	public static final String CERTIFICATE_IS_VALID_HEADER = "Certificate is valid";
+	public static final String CERTIFICATE_FINGERPRINT_NOT_MD5_HEADER = "Certificate Fingerprint is not MD5";
+	public static final String CERTIFICATE_PRIVATE_KEY_SHA2_HEADER = "Certificate Private Key Signature SHA2";
+	public static final String CERTIFICATE_NOT_SELF_SIGNED_HEADER = "Certificate is not self-signed";
+	public static final String CERTIFICATE_PUBLIC_KEY_SIZE_HEADER = "Certificate Public Key size";
+	public static final String CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER = "Certificate Signature Key size";
+
+	/**
+	 * Cipher suites
+	 */
+	public static final List<String> CIPHER_SUITE_FOOTER = Arrays.asList(new String[]{"weak", "medium", "high"});
 
 	/**
 	 * Vulnerabilities
@@ -73,8 +80,8 @@ public class OSaftParser {
 	/**
 	 * Certificate checks
 	 */
-	private Result hostnameMatch = Result.getUnknown();
-	private Result reverseHostnameMatch = Result.getUnknown();
+	private Result certificateHostnameMatch = Result.getUnknown();
+	private Result certificateReverseHostnameMatch = Result.getUnknown();
 	private Result certificateNotExpired = Result.getUnknown();
 	private Result certificateIsValid = Result.getUnknown();
 	private Result certificateFingerprintNotMd5 = Result.getUnknown();
@@ -82,6 +89,11 @@ public class OSaftParser {
 	private Result certificateNotSelfSigned = Result.getUnknown();
 	private Result certificatePublicKeySize = Result.getUnknown();
 	private Result certificateSignatureKeySize = Result.getUnknown();
+
+	/**
+	 * Cipher suites
+	 */
+ private static final List<CipherSuite> supportedCipherSuites = new ArrayList<>();
 
 	public OSaftParser(List<String> data) {
 		this.data = data;
@@ -92,13 +104,28 @@ public class OSaftParser {
 	private void parseData() {
 		for (String line : data) {
 			//parseVulnerabilities(line);
-			parseCertificate(line);
+			//parseCertificate(line);
+			parseCipherSuites(line);
+		}
+		
+		
+		
+	}
+
+	private void parseCipherSuites(String line) {
+		String[] pieces = line.split("\t");
+		/**
+		 * Cipher has exactly three items in array and last item is strength
+		 */
+		if (pieces.length == 3 && CIPHER_SUITE_FOOTER.contains(pieces[2].toLowerCase())) {
+			String name = pieces[0].trim();
+			supportedCipherSuites.add(new CipherSuite(name));
 		}
 	}
 
 	private void parseCertificate(String line) {
-		this.hostnameMatch = parseResult(line, HOSTNAME_MATCH_HEADER, YES, this.hostnameMatch);
-		this.reverseHostnameMatch = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.reverseHostnameMatch);
+		this.certificateHostnameMatch = parseResult(line, HOSTNAME_MATCH_HEADER, YES, this.certificateHostnameMatch);
+		this.certificateReverseHostnameMatch = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateReverseHostnameMatch);
 		this.certificateNotExpired = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateNotExpired);
 		this.certificateIsValid = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateIsValid);
 		this.certificateFingerprintNotMd5 = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateFingerprintNotMd5);
@@ -113,8 +140,8 @@ public class OSaftParser {
 	}
 
 	private void parseCertificatePublicKeySize(String line) {
-		if (isHeader(line, CERTIFICATE_PUBLIC_KEY_SIZE)) {
-			String value = parseValue(line, CERTIFICATE_PUBLIC_KEY_SIZE);
+		if (isHeader(line, CERTIFICATE_PUBLIC_KEY_SIZE_HEADER)) {
+			String value = parseValue(line, CERTIFICATE_PUBLIC_KEY_SIZE_HEADER);
 			value = value.replace(" bits", "");
 
 			int minimum = ConfigurationRegister.getInstance().getCertificateMinimumKeySize();
@@ -275,39 +302,42 @@ public class OSaftParser {
 	}
 
 	public Result getHostnameMatch() {
-		return hostnameMatch;
+		return certificateHostnameMatch;
 	}
 
 	public Result getReverseHostnameMatch() {
-		return reverseHostnameMatch;
+		return certificateReverseHostnameMatch;
 	}
-	
-	
+
 	public Result getCertificateNotExpired() {
 		return certificateNotExpired;
 	}
-	
+
 	public Result getCertificateIsValid() {
 		return certificateIsValid;
 	}
-	
+
 	public Result getCertificateFingerprintNotMd5() {
 		return certificateFingerprintNotMd5;
 	}
-	
+
 	public Result getCertificatePrivateKeySha2() {
 		return certificatePrivateKeySha2;
 	}
-	
+
 	public Result getCertificateNotSelfSigned() {
 		return certificateNotSelfSigned;
 	}
-	
+
 	public Result getCertificatePublicKeySize() {
 		return certificatePublicKeySize;
 	}
-	
+
 	public Result getCertificateSignatureKeySize() {
 		return certificateSignatureKeySize;
+	}
+	
+	public List<CipherSuite> getSupportedCipherSuites(){
+		return supportedCipherSuites;
 	}
 }

@@ -5,12 +5,21 @@
 			<protocol safe="TLS 1.0" modifier="andHigher" />
 			<vulnerabilities/>
 			<certificate/>
+			
+			<ciphers>
+				<safe name="ECDHE-ECDSA-DES-CBC3-SHA" />
+			</ciphers>
 		</profile>
 		
 		<profile name="strict">
 			<protocol safe="TLS 1.2" />
 			<vulnerabilities/>
 			<certificate/>
+			
+			<ciphers>
+				<safe name="ECDHE-RSA-AES256-GCM-SHA384" />
+				<safe name="ECDHE-ECDSA-AES256-GCM-SHA384" />
+			</ciphers>
 		</profile>
 	</profiles>
 	

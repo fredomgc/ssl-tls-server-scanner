@@ -1,6 +1,7 @@
 package cz.ondrejsmetak.tool;
 
 import cz.ondrejsmetak.ProfileRegister;
+import cz.ondrejsmetak.entity.CipherSuite;
 import cz.ondrejsmetak.entity.Profile;
 import cz.ondrejsmetak.entity.Target;
 import cz.ondrejsmetak.other.XmlParserException;
@@ -24,10 +25,10 @@ import org.xml.sax.SAXException;
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
-public class TargetParser extends BaseParser{
-	
+public class TargetParser extends BaseParser {
+
 	private static final String FILE = "targets.xml";
-	
+
 	public List<Target> parse() throws XmlParserException {
 		try {
 			File fXmlFile = new File(FILE);
@@ -165,8 +166,35 @@ public class TargetParser extends BaseParser{
 		 */
 		Element certificate = getElementByTagName(profile, "certificate");
 
-		return Profile.fromXml(name, safeProtocol, safeProtocolModifier, vulnerabilities != null, certificate != null);
+		/**
+		 * Safe cipher suites
+		 */
+		Element ciphers = getElementByTagName(profile, "ciphers");
+		List<CipherSuite> cipherSuites = parseCipherSuites(ciphers);
+		
+		return Profile.fromXml(name, safeProtocol, safeProtocolModifier, vulnerabilities != null, certificate != null, cipherSuites);
 	}
 
-	
+	private List<CipherSuite> parseCipherSuites(Element ciphers) {
+		List<CipherSuite> done = new ArrayList<>();
+
+		NodeList safe = ciphers.getElementsByTagName("safe");
+		
+		for (int i = 0; i < safe.getLength(); i++) {
+			done.add(parseCipherSuite(safe.item(i)));
+		}
+
+		return done;
+	}
+
+	private CipherSuite parseCipherSuite(Node node) {
+		if (node.getNodeType() != Node.ELEMENT_NODE) {
+			return null;
+		}
+
+		Element cipherSuite = (Element) node;
+		String name = cipherSuite.getAttribute("name");
+		return new CipherSuite(name);
+	}
+
 }
