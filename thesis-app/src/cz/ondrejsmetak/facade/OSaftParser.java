@@ -103,8 +103,8 @@ public class OSaftParser {
 
 	private void parseData() {
 		for (String line : data) {
-			//parseVulnerabilities(line);
-			//parseCertificate(line);
+			parseVulnerabilities(line);
+			parseCertificate(line);
 			parseCipherSuites(line);
 		}
 	}
@@ -132,26 +132,46 @@ public class OSaftParser {
 		/**
 		 * Následující testy jsou složitější
 		 */
-		parseCertificatePublicKeySize(line);
-
+		parseCertificateKeySize(line);
 	}
 
-	private void parseCertificatePublicKeySize(String line) {
-		if (isHeader(line, CERTIFICATE_PUBLIC_KEY_SIZE_HEADER)) {
-			String value = parseValue(line, CERTIFICATE_PUBLIC_KEY_SIZE_HEADER);
+	private void parseCertificateKeySize(String line) {
+		Result result = null;
+		
+		/**
+		 * Public key
+		 */
+		result = doParseCertificateKeySize(line, ConfigurationRegister.getInstance().getCertificateMinimumKeySize(),
+				CERTIFICATE_PUBLIC_KEY_SIZE_HEADER, "Expected certificate public key size was at least %s, but current value is %s");
+		if (result != null) {
+			this.certificatePublicKeySize = result;
+		}
+
+		/**
+		 * Signature key
+		 */
+		result = doParseCertificateKeySize(line, ConfigurationRegister.getInstance().getCertificateMinimumSignatureKeySize(),
+				CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER, "Expected certificate signature key size was at least %s, but current value is %s");
+		if (result != null) {
+			this.certificateSignatureKeySize = result;
+		}
+	}
+
+	private Result doParseCertificateKeySize(String line, int minimumSize, String header, String vulnerableMessage) {
+		if (isHeader(line, header)) {			
+			String value = parseValue(line, header);
 			value = value.replace(" bits", "");
 
-			int minimum = ConfigurationRegister.getInstance().getCertificateMinimumKeySize();
-
 			if (!Helper.isInteger(value)) {
-				this.certificatePublicKeySize = createUnexpectedValue();
-			} else if (Integer.valueOf(value) < minimum) {
-				this.certificatePublicKeySize = Result.getVulnerable(String.format("Expected certificate public key size was at least %s, but current value is %s",
-						String.valueOf(minimum), value));
+				return createUnexpectedValue();
+			} else if (Integer.valueOf(value) < minimumSize) {
+				return Result.getVulnerable(String.format(vulnerableMessage, String.valueOf(minimumSize), value));
 			} else {
-				this.certificatePublicKeySize = Result.getSafe(String.format("%s >= %s", value, minimum));
+				return Result.getSafe(String.format("%s >= %s", value, minimumSize));
 			}
 		}
+
+		return null;
 	}
 
 	private void parseVulnerabilities(String line) {

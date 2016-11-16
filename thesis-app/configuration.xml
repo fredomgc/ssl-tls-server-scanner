@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 	<directive name="certificateMinimumPublicKeySize" value="2048" />
-	<directive name="certificateMinimumSignatureKeySize" value="20" />
-	<directive name="unsupportedTestIsError" value="true" />
+	<directive name="certificateMinimumSignatureKeySize" value="20000" />
+	<directive name="unknownTestResultIsError" value="true" />
 </configuration>

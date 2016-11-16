@@ -55,7 +55,7 @@ public class Scanner {
 		doPrintVulnerability("PFS (perfect forward secrecy) not supported!", oSaft.getParser().getPfs());
 		doPrintVulnerability("TLS session ticket doesn't contain random value!", oSaft.getParser().getRandomTlsSessionTicket());
 	}
-	
+
 	private void printCertificateChecks() {
 		doPrintVulnerability("Mismatch between hostname and certificate subject.", oSaft.getParser().getCertificateHostnameMatch());
 		doPrintVulnerability("Mismatch between given hostname and reverse resolved hostname.", oSaft.getParser().getCertificateReverseHostnameMatch());
@@ -65,13 +65,20 @@ public class Scanner {
 		doPrintVulnerability("Certificate Private Key Signature isn't SHA2.", oSaft.getParser().getCertificatePrivateKeySha2());
 		doPrintVulnerability("Certificate is self-signed.", oSaft.getParser().getCertificateNotSelfSigned());
 		doPrintVulnerability("Wrong size of certificate's public key.", oSaft.getParser().getCertificatePublicKeySize());
-		doPrintVulnerability("Wrong size of certificate's signature key.", oSaft.getParser().getCertificateSignatureKeySize());	
+		doPrintVulnerability("Wrong size of certificate's signature key.", oSaft.getParser().getCertificateSignatureKeySize());
 	}
-	
 
 	private void doPrintVulnerability(String vulnerableMessage, Result result) {
+		StringBuilder out = new StringBuilder();
+		out.append(vulnerableMessage);
+		if (result.hasNote()) {
+			out.append(" (").append(result.getNote()).append(")");
+		}
+
 		if (result.isVulnerable()) {
-			Log.errorln(vulnerableMessage);
+			Log.errorln(out.toString());
+		} else if (result.isUnknown() && ConfigurationRegister.getInstance().getUnknownTestResultIsError()) {
+			Log.errorln(out.toString());
 		}
 	}
 
@@ -81,11 +88,11 @@ public class Scanner {
 		}
 
 		printCipherSuites();
-		
+
 		printVulnerabilities();
-		
+
 		printCertificateChecks();
-		
+
 	}
 
 }

@@ -18,6 +18,8 @@ public class ConfigurationRegister {
 
 	public static final String CERTIFICATE_MINIMUM_KEY_SIZE = "certificateMinimumPublicKeySize";
 	public static final String CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE = "certificateMinimumSignatureKeySize";
+	
+	public static final String UNKNOWN_TEST_RESULT_IS_ERROR = "unknownTestResultIsError";
 
 	//certificateMinimumKeySize
 	protected ConfigurationRegister() {
@@ -48,7 +50,7 @@ public class ConfigurationRegister {
 	}
 	
 	private List<String> getDirectives() {
-		String[] directives = {CERTIFICATE_MINIMUM_KEY_SIZE, CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE};
+		String[] directives = {CERTIFICATE_MINIMUM_KEY_SIZE, CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE, UNKNOWN_TEST_RESULT_IS_ERROR};
 		return new ArrayList<>(Arrays.asList(directives));
 	}
 
@@ -71,5 +73,16 @@ public class ConfigurationRegister {
 	public int getCertificateMinimumSignatureKeySize() {
 		return (Integer) getDirective(CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE);
 	}
+
+
+	
+	public void setUnknownTestResultIsError(boolean value) {
+		setDirective(UNKNOWN_TEST_RESULT_IS_ERROR, value);
+	}
+
+	public boolean getUnknownTestResultIsError() {
+		return (Boolean) getDirective(UNKNOWN_TEST_RESULT_IS_ERROR);
+	}
+
 	
 }

@@ -62,12 +62,13 @@ public class ConfigurationParser extends BaseParser {
 	private void setDirective(String name, String value) throws XmlParserException {
 		setDirectiveCertificateMinimumKeySize(name, value);
 		setDirectiveCertificateMinimumSignatureKeySize(name, value);
+		setDirectiveUnknownTestResultIsError(name, value);
 	}
 	
 	private void setDirectiveCertificateMinimumKeySize(String name, String value) throws XmlParserException {
 		if (name.equalsIgnoreCase(ConfigurationRegister.CERTIFICATE_MINIMUM_KEY_SIZE)) {
 			if (!Helper.isInteger(value) || Integer.valueOf(value) <= 0) {
-				throw new XmlParserException("Value for directive " + ConfigurationRegister.CERTIFICATE_MINIMUM_KEY_SIZE + " must be integer >= 0");
+				throw new XmlParserException("Value for directive " + ConfigurationRegister.CERTIFICATE_MINIMUM_KEY_SIZE + " must be integer >= 0!");
 			}
 			
 			ConfigurationRegister.getInstance().setCertificateMinimumKeySize(Integer.valueOf(value));
@@ -77,12 +78,23 @@ public class ConfigurationParser extends BaseParser {
 	private void setDirectiveCertificateMinimumSignatureKeySize(String name, String value) throws XmlParserException {
 		if (name.equalsIgnoreCase(ConfigurationRegister.CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE)) {
 			if (!Helper.isInteger(value) || Integer.valueOf(value) <= 0) {
-				throw new XmlParserException("Value for directive " + ConfigurationRegister.CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE + " must be integer >= 0");
+				throw new XmlParserException("Value for directive " + ConfigurationRegister.CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE + " must be integer >= 0!");
 			}
 			
 			ConfigurationRegister.getInstance().setCertificateMinimumSignatureKeySize(Integer.valueOf(value));
 		}
 	}
+	
+	private void setDirectiveUnknownTestResultIsError(String name, String value) throws XmlParserException {
+		if (name.equalsIgnoreCase(ConfigurationRegister.UNKNOWN_TEST_RESULT_IS_ERROR)) {
+			if (!Helper.isBooleanStr(value)) {
+				throw new XmlParserException("Value for directive " + ConfigurationRegister.UNKNOWN_TEST_RESULT_IS_ERROR + " must be [true] or [false]!");
+			}
+			
+			ConfigurationRegister.getInstance().setUnknownTestResultIsError(Helper.parseBooleanStr(value));
+		}
+	}
+	
 	
 	
 }

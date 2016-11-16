@@ -12,12 +12,26 @@ import java.util.List;
  */
 public class Helper {
 
-	public static boolean isInteger(String input){
+	public static boolean isInteger(String input) {
 		return true; //TODO
+	}
+
+	/**
+	 * Is input boolean value in its text form?
+	 * @param input
+	 * @return 
+	 */
+	public static boolean isBooleanStr(String input) {
+		return input.equalsIgnoreCase("true") || input.equalsIgnoreCase("false");
+	}
+
+	public static boolean parseBooleanStr(String input){
+		return input.equalsIgnoreCase("true");
 	}
 	
 	/**
 	 * Direct command line access
+	 *
 	 * @param args arguments for command line
 	 * @return output of command
 	 */

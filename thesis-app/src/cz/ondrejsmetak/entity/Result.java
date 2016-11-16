@@ -35,9 +35,12 @@ public class Result extends BaseEntity {
 	}
 
 	private void setNote(String note) {
-		this.note = note.matches("\\(.*\\)") ? note : "(" + note + ")";
+		//TODO, odstranit uvodni a koncovou ( ) pokud to obsahuje
+		this.note = note.matches("\\(.*\\)") ? note : note;
 	}
 
+	
+	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
@@ -61,6 +64,14 @@ public class Result extends BaseEntity {
 		return this.type == Type.UNKNOWN;
 	}
 
+	public String getNote(){
+		return this.note;
+	}
+	
+	public boolean hasNote(){
+		return this.note != null && !this.note.isEmpty();
+	}
+	
 	public static Result getSafe() {
 		Result o = new Result();
 		o.setSafe();
