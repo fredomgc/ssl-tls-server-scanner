@@ -57,8 +57,15 @@ public class Scanner {
 	}
 	
 	private void printCertificateChecks() {
-		doPrintVulnerability("Vulnerable to BEAST!", oSaft.getParser().getH);
-		
+		doPrintVulnerability("Mismatch between hostname and certificate subject.", oSaft.getParser().getCertificateHostnameMatch());
+		doPrintVulnerability("Mismatch between given hostname and reverse resolved hostname.", oSaft.getParser().getCertificateReverseHostnameMatch());
+		doPrintVulnerability("Certificate expired.", oSaft.getParser().getCertificateNotExpired());
+		doPrintVulnerability("Certificate isn't valid.", oSaft.getParser().getCertificateIsValid());
+		doPrintVulnerability("Certificate fingerprint is MD5.", oSaft.getParser().getCertificateFingerprintNotMd5());
+		doPrintVulnerability("Certificate Private Key Signature isn't SHA2.", oSaft.getParser().getCertificatePrivateKeySha2());
+		doPrintVulnerability("Certificate is self-signed.", oSaft.getParser().getCertificateNotSelfSigned());
+		doPrintVulnerability("Wrong size of certificate's public key.", oSaft.getParser().getCertificatePublicKeySize());
+		doPrintVulnerability("Wrong size of certificate's signature key.", oSaft.getParser().getCertificateSignatureKeySize());	
 	}
 	
 
@@ -76,73 +83,9 @@ public class Scanner {
 		printCipherSuites();
 		
 		printVulnerabilities();
-
-		//TODO - vypisovat jen testy, které neprošli
-		//napsat jednu nějakou univerzálnějí metodu
-//		if (target.isScanBeast()) {
-//			Log.infoln("Beast: " + oSaft.getParser().getBeast());
-//		}
-//		
-//		if (target.isScanBreach()) {
-//			Log.infoln("Breach: " + oSaft.getParser().getBreach());
-//		}
-//		
-//		if (target.isScanCrime()) {
-//			Log.infoln("Crime: " + oSaft.getParser().getCrime());
-//		}
-//		
-//		if (target.isScanDrown()) {
-//			Log.infoln("Drown: " + oSaft.getParser().getDrown());
-//		}
-//		
-//		if (target.isScanFreak()) {
-//			Log.infoln("Freak: " + oSaft.getParser().getFreak());
-//		}
-//		
-//		if (target.isScanHeartbleed()) {
-//			Log.infoln("Heartbleed: " + oSaft.getParser().getHeartbleed());
-//		}
-//		
-//		if (target.isScanLogjam()) {
-//			Log.infoln("Logjam: " + oSaft.getParser().getLogjam());
-//		}
-//		
-//		if (target.isScanLucky13()) {
-//			Log.infoln("Lucky13: " + oSaft.getParser().getLucky13());
-//		}
-//		
-//		if (target.isScanPoodle()) {
-//			Log.infoln("Poodle: " + oSaft.getParser().getPoodle());
-//		}
-//		
-//		if (target.isScanRc4()) {
-//			Log.infoln("Rc4: " + oSaft.getParser().getRc4());
-//		}
-//		
-//		if (target.isScanSweet32()) {
-//			Log.infoln("Sweet32: " + oSaft.getParser().getSweet32());
-//		}
-//		
-//		if (target.isScanSSLv2NotSupported()) {
-//			Log.infoln("SSLv2 not supported: " + oSaft.getParser().getSslv2NotSupported());
-//		}
-//		
-//		if (target.isScanSSLv3NotSupported()) {
-//			Log.infoln("SSLv3 not supported: " + oSaft.getParser().getSslv3NotSupported());
-//		}
-//		
-//		if (target.isScanPFS()) {
-//			Log.infoln("PFS: " + oSaft.getParser().getPfs());
-//		}
-//		
-//		if (target.isScanRandomTlsSessionTicket()) {
-//			Log.infoln("Random TLS session ticket: " + oSaft.getParser().getRandomTlsSessionTicket());
-//		}
-//		
-//		if (true || target.isScanCertificate()) {
-//			Log.infoln(OSaftParser.HOSTNAME_MATCH_HEADER + ": " + oSaft.getParser().getHostnameMatch());
-//			Log.infoln(OSaftParser.REVERSE_HOSTNAME_MATCH_HEADER + ": " + oSaft.getParser().getHostnameMatch());
-//		}
+		
+		printCertificateChecks();
+		
 	}
 
 }

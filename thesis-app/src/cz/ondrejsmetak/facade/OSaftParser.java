@@ -93,7 +93,7 @@ public class OSaftParser {
 	/**
 	 * Cipher suites
 	 */
- private static final List<CipherSuite> supportedCipherSuites = new ArrayList<>();
+	private static final List<CipherSuite> supportedCipherSuites = new ArrayList<>();
 
 	public OSaftParser(List<String> data) {
 		this.data = data;
@@ -107,9 +107,6 @@ public class OSaftParser {
 			//parseCertificate(line);
 			parseCipherSuites(line);
 		}
-		
-		
-		
 	}
 
 	private void parseCipherSuites(String line) {
@@ -301,11 +298,11 @@ public class OSaftParser {
 		return randomTlsSessionTicket;
 	}
 
-	public Result getHostnameMatch() {
+	public Result getCertificateHostnameMatch() {
 		return certificateHostnameMatch;
 	}
 
-	public Result getReverseHostnameMatch() {
+	public Result getCertificateReverseHostnameMatch() {
 		return certificateReverseHostnameMatch;
 	}
 
@@ -336,8 +333,8 @@ public class OSaftParser {
 	public Result getCertificateSignatureKeySize() {
 		return certificateSignatureKeySize;
 	}
-	
-	public List<CipherSuite> getSupportedCipherSuites(){
+
+	public List<CipherSuite> getSupportedCipherSuites() {
 		return supportedCipherSuites;
 	}
 }

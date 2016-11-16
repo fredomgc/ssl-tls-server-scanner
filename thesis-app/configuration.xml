@@ -2,4 +2,5 @@
 <configuration>
 	<directive name="certificateMinimumPublicKeySize" value="2048" />
 	<directive name="certificateMinimumSignatureKeySize" value="20" />
+	<directive name="unsupportedTestIsError" value="true" />
 </configuration>
