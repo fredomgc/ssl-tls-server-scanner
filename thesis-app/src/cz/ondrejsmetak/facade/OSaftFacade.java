@@ -21,14 +21,14 @@ import java.util.List;
  */
 public class OSaftFacade extends BaseFacade {
 
-	private String target;
+	private Target target;
 	
 	private List<String> data = new ArrayList<>();
 
 	private OSaftParser parser;
 
 	public OSaftFacade(Target target) {
-		this.target = target.getDestination();
+		this.target = target;
 	}
 
 	public void runScan() {
@@ -40,7 +40,10 @@ public class OSaftFacade extends BaseFacade {
 	private List<String> getData() {
 		if (data.isEmpty()) {
 			//spustime scan
-			data.addAll(doCmd(target, "+check"));
+			data.addAll(doCmd(target.getDestination(), "+check"));
+			if(target.getProfile().isTestSafeProtocols()){
+				data.addAll(doCmd(target.getDestination(), "+protocols"));
+			}
 		}
 		return data;
 	}

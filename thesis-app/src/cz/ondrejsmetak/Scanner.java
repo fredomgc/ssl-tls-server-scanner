@@ -4,6 +4,7 @@
 package cz.ondrejsmetak;
 
 import cz.ondrejsmetak.entity.CipherSuite;
+import cz.ondrejsmetak.entity.Protocol;
 import cz.ondrejsmetak.entity.Result;
 import cz.ondrejsmetak.facade.OSaftFacade;
 import cz.ondrejsmetak.facade.OSaftParser;
@@ -17,8 +18,8 @@ import javax.crypto.Cipher;
  */
 public class Scanner {
 
-	private OSaftFacade oSaft;
-	private Target target;
+	private final OSaftFacade oSaft;
+	private final Target target;
 
 	public Scanner(Target target) {
 		this.target = target;
@@ -82,16 +83,27 @@ public class Scanner {
 		}
 	}
 
+	private void printProtocols() {
+		for (Protocol supported : oSaft.getParser().getSupportedProtocols()) {
+			if(!target.getProfile().getSafeProtocols().contains(supported)){
+				Log.errorln("Protocol " + supported + " isn't considered safe, but is supported!");
+			}
+		}
+	}
+
 	public void printResult() {
 		if (oSaft == null) {
 			throw new IllegalArgumentException("No data  for print!");
 		}
 
-		printCipherSuites();
-
-		printVulnerabilities();
-
-		printCertificateChecks();
+		//printCipherSuites();
+		//printVulnerabilities();
+		//printCertificateChecks();
+		
+		
+		if (target.getProfile().isTestSafeProtocols()) {
+			printProtocols();
+		}
 
 	}
 

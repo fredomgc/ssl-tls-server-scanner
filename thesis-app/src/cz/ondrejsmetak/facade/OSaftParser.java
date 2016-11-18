@@ -2,11 +2,14 @@ package cz.ondrejsmetak.facade;
 
 import cz.ondrejsmetak.ConfigurationRegister;
 import cz.ondrejsmetak.entity.CipherSuite;
+import cz.ondrejsmetak.entity.Protocol;
 import cz.ondrejsmetak.entity.Result;
 import cz.ondrejsmetak.tool.Helper;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  *
@@ -35,8 +38,8 @@ public class OSaftParser {
 	public static final String POODLE_HEADER = "Connection is safe against POODLE attack";
 	public static final String RC4_HEADER = "Connection is safe against RC4 attack";
 	public static final String SWEET_32_HEADER = "Connection is safe against Sweet32 attack";
-	public static final String SSLv2_NOT_SUPPORTED_HEADER = "Target does not support SSLv2";
-	public static final String SSLv3_NOT_SUPPORTED_HEADER = "Target does not support SSLv3";
+	public static final String SSLv2_NOT_SUPPORTED_HEADER = "Target does not support SSLv2"; //is also used in Protocols section
+	public static final String SSLv3_NOT_SUPPORTED_HEADER = "Target does not support SSLv3"; //is also used in Protocols section
 	public static final String PFS_HEADER = "Target supports PFS (selected cipher)";
 	public static final String RANDOM_TLS_SESSION_TICKET_HEADER = "Target TLS Session Ticket is random";
 
@@ -57,6 +60,14 @@ public class OSaftParser {
 	 * Cipher suites
 	 */
 	public static final List<String> CIPHER_SUITE_FOOTER = Arrays.asList(new String[]{"weak", "medium", "high"});
+
+	/**
+	 * Protocols
+	 */
+	public static final String TLS_1_HEADER = "Target supports TLSv1";
+	public static final String TLS_1_1_HEADER = "Target supports TLSv1.1";
+	public static final String TLS_1_2_HEADER = "Target supports TLSv1.2";
+	public static final String TLS_1_3_HEADER = "Target supports TLSv1.3";
 
 	/**
 	 * Vulnerabilities
@@ -95,6 +106,16 @@ public class OSaftParser {
 	 */
 	private static final List<CipherSuite> supportedCipherSuites = new ArrayList<>();
 
+	/**
+	 * Supported protocols
+	 */
+	private static final Set<Protocol> supportedProtocols = new HashSet<>();
+
+	/**
+	 * Konstruktor
+	 *
+	 * @param data
+	 */
 	public OSaftParser(List<String> data) {
 		this.data = data;
 
@@ -106,6 +127,33 @@ public class OSaftParser {
 			parseVulnerabilities(line);
 			parseCertificate(line);
 			parseCipherSuites(line);
+			parseProtocols(line);
+		}
+	}
+
+	private void parseProtocols(String line) {
+		if(parseResult(line, SSLv2_NOT_SUPPORTED_HEADER, YES, new Result()).isVulnerable()){
+			supportedProtocols.add(new Protocol(Protocol.Type.SSLv2));
+		}
+		
+		if(parseResult(line, SSLv3_NOT_SUPPORTED_HEADER, YES, new Result()).isVulnerable()){
+			supportedProtocols.add(new Protocol(Protocol.Type.SSLv3));
+		}
+		
+		if (parseResult(line, TLS_1_HEADER, YES, new Result()).isSafe()) {
+			supportedProtocols.add(new Protocol(Protocol.Type.TLSv10));
+		}
+
+		if (parseResult(line, TLS_1_1_HEADER, YES, new Result()).isSafe()) {
+			supportedProtocols.add(new Protocol(Protocol.Type.TLSv11));
+		}
+		
+		if (parseResult(line, TLS_1_2_HEADER, YES, new Result()).isSafe()) {
+			supportedProtocols.add(new Protocol(Protocol.Type.TLSv12));
+		}
+		
+		if (parseResult(line, TLS_1_2_HEADER, YES, new Result()).isSafe()) {
+			supportedProtocols.add(new Protocol(Protocol.Type.TLSv13));
 		}
 	}
 
@@ -123,11 +171,11 @@ public class OSaftParser {
 	private void parseCertificate(String line) {
 		this.certificateHostnameMatch = parseResult(line, HOSTNAME_MATCH_HEADER, YES, this.certificateHostnameMatch);
 		this.certificateReverseHostnameMatch = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateReverseHostnameMatch);
-		this.certificateNotExpired = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateNotExpired);
-		this.certificateIsValid = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateIsValid);
-		this.certificateFingerprintNotMd5 = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateFingerprintNotMd5);
-		this.certificatePrivateKeySha2 = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificatePrivateKeySha2);
-		this.certificateNotSelfSigned = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateNotSelfSigned);
+		this.certificateNotExpired = parseResult(line, CERTIFICATE_NOT_EXPIRED_HEADER, YES, this.certificateNotExpired);
+		this.certificateIsValid = parseResult(line, CERTIFICATE_IS_VALID_HEADER, YES, this.certificateIsValid);
+		this.certificateFingerprintNotMd5 = parseResult(line, CERTIFICATE_FINGERPRINT_NOT_MD5_HEADER, YES, this.certificateFingerprintNotMd5);
+		this.certificatePrivateKeySha2 = parseResult(line, CERTIFICATE_PRIVATE_KEY_SHA2_HEADER, YES, this.certificatePrivateKeySha2);
+		this.certificateNotSelfSigned = parseResult(line, CERTIFICATE_NOT_SELF_SIGNED_HEADER, YES, this.certificateNotSelfSigned);
 
 		/**
 		 * Následující testy jsou složitější
@@ -137,7 +185,7 @@ public class OSaftParser {
 
 	private void parseCertificateKeySize(String line) {
 		Result result = null;
-		
+
 		/**
 		 * Public key
 		 */
@@ -158,7 +206,7 @@ public class OSaftParser {
 	}
 
 	private Result doParseCertificateKeySize(String line, int minimumSize, String header, String vulnerableMessage) {
-		if (isHeader(line, header)) {			
+		if (isHeader(line, header)) {
 			String value = parseValue(line, header);
 			value = value.replace(" bits", "");
 
@@ -357,4 +405,9 @@ public class OSaftParser {
 	public List<CipherSuite> getSupportedCipherSuites() {
 		return supportedCipherSuites;
 	}
+
+	public Set<Protocol> getSupportedProtocols() {
+		return supportedProtocols;
+	}
+
 }

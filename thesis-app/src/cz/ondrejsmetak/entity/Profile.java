@@ -12,7 +12,7 @@ import java.util.List;
 public class Profile extends BaseEntity {
 	
 	private String name;
-	private final List<Protocol> protocols = new ArrayList<>();
+	private final List<Protocol> safeProtocols = new ArrayList<>();
 	private final List<CipherSuite> safeCipherSuites = new ArrayList<>();
 	
 	private boolean testCertificate = false;
@@ -26,8 +26,8 @@ public class Profile extends BaseEntity {
 		return name;
 	}
 	
-	public List<Protocol> getProtocols() {
-		return protocols;
+	public List<Protocol> getSafeProtocols() {
+		return safeProtocols;
 	}
 	
 	public List<CipherSuite> getSafeCipherSuites() {
@@ -45,6 +45,11 @@ public class Profile extends BaseEntity {
 	public boolean isTestSafeCipherSuites() {
 		return testSafeCipherSuites;
 	}
+	
+	public boolean isTestSafeProtocols() {
+		return !safeProtocols.isEmpty();
+	}
+	
 	
 	public static Profile fromXml(String name, String safeProtocol, String safeProfileModifier, boolean certificate, boolean vulnerabilities, List<CipherSuite> safeCipherSuites) {
 		Profile profile = new Profile();
@@ -81,13 +86,13 @@ public class Profile extends BaseEntity {
 		this.testVulnerabilities = testVulnerabilities;
 	}
 	
-	public void setTestSafeCipherSuites(boolean safeCipherSuites) {
-		this.testSafeCipherSuites = safeCipherSuites;
+	public void setTestSafeCipherSuites(boolean testSafeCipherSuites) {
+		this.testSafeCipherSuites = testSafeCipherSuites;
 	}
 	
 	public void addToProtocols(Protocol protocol) {
-		if (!protocols.contains(protocol)) {
-			protocols.add(protocol);
+		if (!safeProtocols.contains(protocol)) {
+			safeProtocols.add(protocol);
 		}
 	}
 	
@@ -119,7 +124,7 @@ public class Profile extends BaseEntity {
 		sb.append(name);
 		sb.append("(");
 		
-		for (Protocol p : protocols) {
+		for (Protocol p : safeProtocols) {
 			sb.append(p.getType());
 			sb.append(", ");
 		}
@@ -128,6 +133,6 @@ public class Profile extends BaseEntity {
 		sb.append("vulns: ").append(this.testVulnerabilities);
 		
 		sb.append(")");
-		return super.toString();
+		return sb.toString();
 	}
 }

@@ -2,7 +2,7 @@
 <configuration>
 	<profiles>
 		<profile name="low">
-			<protocol safe="TLS 1.2" modifier="andHigher" />
+			<protocol safe="TLS 1.0" modifier="andHigher" />
 			<vulnerabilities/>
 			<certificate/>
 			

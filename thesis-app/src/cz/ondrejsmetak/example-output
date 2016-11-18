@@ -472,4 +472,12 @@ Certificate PEM (binary) size	707 bytes
 Certificate Public Key size	2048 bits
 Certificate Signature Key size	2048 bits
 Certificate Subject size	10 bytes
-Certificate Serial Number size	8 bytes
+Certificate Serial Number size	8 
+
+Target does not support SSLv2	yes
+Target does not support SSLv3	yes
+Target supports TLSv1	yes
+Target supports TLSv1.1	yes
+Target supports TLSv1.2	yes
+Target supports TLSv1.3	no ( )
+

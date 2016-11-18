@@ -1,13 +1,12 @@
 package cz.ondrejsmetak.tool;
 
 import cz.ondrejsmetak.ConfigurationRegister;
-import cz.ondrejsmetak.ProfileRegister;
-import cz.ondrejsmetak.entity.Profile;
-import cz.ondrejsmetak.entity.Target;
+import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.other.XmlParserException;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -24,7 +23,19 @@ import org.xml.sax.SAXException;
  */
 public class ConfigurationParser extends BaseParser {
 
-	private static final String FILE = "configuration.xml";
+	public static final String FILE = "configuration.xml";
+
+	@Override
+	public void createDefault() throws IOException {
+		Path source = ResourceManager.getDefaultConfigurationXml().toPath();
+		Path destination = new File(FILE).toPath();
+		Files.copy(source, destination);
+	}
+
+	@Override
+	public boolean hasFile() {
+		return Files.exists(new File(FILE).toPath());
+	}
 
 	public void parse() throws XmlParserException {
 		try {
@@ -69,7 +80,7 @@ public class ConfigurationParser extends BaseParser {
 	}
 
 	private void setDebug(String name, String value) throws XmlParserException {
-	if (name.equalsIgnoreCase(ConfigurationRegister.DEBUG)) {
+		if (name.equalsIgnoreCase(ConfigurationRegister.DEBUG)) {
 			if (!Helper.isBooleanStr(value)) {
 				throw new XmlParserException("Value for directive " + ConfigurationRegister.DEBUG + " must be [true] or [false]!");
 			}
@@ -77,7 +88,7 @@ public class ConfigurationParser extends BaseParser {
 			ConfigurationRegister.getInstance().setDebug(Helper.parseBooleanStr(value));
 		}
 	}
-	
+
 	private void setDirectiveCertificateMinimumKeySize(String name, String value) throws XmlParserException {
 		if (name.equalsIgnoreCase(ConfigurationRegister.CERTIFICATE_MINIMUM_KEY_SIZE)) {
 			if (!Helper.isInteger(value) || Integer.valueOf(value) <= 0) {
@@ -117,7 +128,7 @@ public class ConfigurationParser extends BaseParser {
 			String[] args = new String[]{value + "o-saft.pl", "+version"};
 			List<String> output = Helper.doCmd(args);
 			String lastLine = output.size() >= 1 ? output.get(output.size() - 1) : "";
-			
+
 			if (!lastLine.contains("osaft")) {
 				throw new XmlParserException("Can't find or use O-Saft in directory [" + value + "] !");
 			}

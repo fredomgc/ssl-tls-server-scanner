@@ -1,12 +1,15 @@
 package cz.ondrejsmetak.tool;
 
 import cz.ondrejsmetak.ProfileRegister;
+import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.entity.CipherSuite;
 import cz.ondrejsmetak.entity.Profile;
 import cz.ondrejsmetak.entity.Target;
 import cz.ondrejsmetak.other.XmlParserException;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -27,8 +30,21 @@ import org.xml.sax.SAXException;
  */
 public class TargetParser extends BaseParser {
 
-	private static final String FILE = "targets.xml";
+	public static final String FILE = "targets.xml";
 
+	
+	@Override
+	public void createDefault() throws IOException {
+		Path source = ResourceManager.getDefaultConfigurationXml().toPath();
+		Path destination = new File(FILE).toPath();
+		Files.copy(source, destination);
+	}
+
+	@Override
+	public boolean hasFile() {
+		return Files.exists(new File(FILE).toPath());
+	}
+	
 	public List<Target> parse() throws XmlParserException {
 		try {
 			File fXmlFile = new File(FILE);

@@ -3,6 +3,7 @@ package cz.ondrejsmetak.tool;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,6 +14,12 @@ import java.util.Scanner;
  */
 public class Helper {
 
+	
+	public static String getWorkingDirectory(){
+		return System.getProperty("user.dir");
+	}
+	
+	
 	/**
 	 * Removes from string leading and trailing part, that matches given regex
 	 *

@@ -29,6 +29,7 @@ public class ConfigurationRegister {
 	public static ConfigurationRegister getInstance() {
 		if (instance == null) {
 			instance = new ConfigurationRegister();
+			instance.setDirective(DEBUG, true); //by default, debug is enabled
 		}
 		return instance;
 	}
@@ -61,6 +62,17 @@ public class ConfigurationRegister {
 		}
 
 		return true;
+	}
+	
+	public List<String> getMissingDirectives(){
+		List<String> missing = new ArrayList<>();
+		for (String directive : getDirectives()) {
+			if (!hasDirective(directive)) {
+				missing.add(directive);
+			}
+		}
+		
+		return missing;
 	}
 
 	private List<String> getDirectives() {
