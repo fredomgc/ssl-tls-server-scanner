@@ -77,7 +77,7 @@ public class Scanner {
 
 		if (result.isVulnerable()) {
 			Log.errorln(out.toString());
-		} else if (result.isUnknown() && ConfigurationRegister.getInstance().getUnknownTestResultIsError()) {
+		} else if (result.isUnknown() && ConfigurationRegister.getInstance().isUnknownTestResultIsError()) {
 			Log.errorln(out.toString());
 		}
 	}

@@ -1,5 +1,7 @@
 package cz.ondrejsmetak.entity;
 
+import cz.ondrejsmetak.tool.Helper;
+
 /**
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
@@ -35,8 +37,7 @@ public class Result extends BaseEntity {
 	}
 
 	private void setNote(String note) {
-		//TODO, odstranit uvodni a koncovou ( ) pokud to obsahuje
-		this.note = note.matches("\\(.*\\)") ? note : note;
+		this.note = note.matches("\\(.*\\)") ?  Helper.trim(Helper.trim(note, "\\("), "\\)") : note;
 	}
 
 	

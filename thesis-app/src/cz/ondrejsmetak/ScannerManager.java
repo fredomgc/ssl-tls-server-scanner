@@ -15,15 +15,20 @@ import java.util.logging.Logger;
  */
 public class ScannerManager {
 
-	public void perform() {
+	public boolean perform() {
 		try {
 			Log.infoln("Parsing \"configuration.xml\" for application configuration...");
 			ConfigurationParser configurationParser = new ConfigurationParser();
 			configurationParser.parse();
+			if (!ConfigurationRegister.getInstance().hasAllDirectives()) {
+				Log.errorln("Some configuration directives are missing, can't continue without them!");
+				return false;
+			}
+
 			Log.infoln("Parsing \"targets.xml\" for targets...");
 			TargetParser targetParser = new TargetParser();
 			List<Target> targets = targetParser.parse();
-			
+
 			if (!targets.isEmpty()) {
 				Log.infoln("Targets found, performing scans...");
 			}
@@ -37,11 +42,13 @@ public class ScannerManager {
 
 				Log.infoln("Scan finished");
 			}
-			
+
+			return true;
 		} catch (XmlParserException ex) {
-			Logger.getLogger(ScannerManager.class.getName()).log(Level.SEVERE, null, ex);
+			Log.errorln(ex);
 		}
 
+		return false;
 	}
 
 }

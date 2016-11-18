@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  *
@@ -12,23 +13,47 @@ import java.util.List;
  */
 public class Helper {
 
+	/**
+	 * Removes from string leading and trailing part, that matches given regex
+	 *
+	 * @param string
+	 * @param regex
+	 * @return
+	 */
+	public static String trim(String string, String regex) {
+		String s = string;
+		s = s.replaceAll("^" + regex + "+", "");
+		s = s.replaceAll(regex + "+$", "");
+		return s;
+	}
+
+	private static boolean isInteger(String s, int radix) {
+		Scanner sc = new Scanner(s.trim());
+		if (!sc.hasNextInt(radix)) {
+			return false;
+		}
+		sc.nextInt(radix);
+		return !sc.hasNext();
+	}
+
 	public static boolean isInteger(String input) {
-		return true; //TODO
+		return isInteger(input, 10);
 	}
 
 	/**
 	 * Is input boolean value in its text form?
+	 *
 	 * @param input
-	 * @return 
+	 * @return
 	 */
 	public static boolean isBooleanStr(String input) {
 		return input.equalsIgnoreCase("true") || input.equalsIgnoreCase("false");
 	}
 
-	public static boolean parseBooleanStr(String input){
+	public static boolean parseBooleanStr(String input) {
 		return input.equalsIgnoreCase("true");
 	}
-	
+
 	/**
 	 * Direct command line access
 	 *
@@ -58,7 +83,7 @@ public class Helper {
 
 			return output;
 		} catch (InterruptedException | IOException ex) {
-			ex.printStackTrace(); //todo, pridat nejakou command line arg typu debug true/false
+			Log.debugException(ex);
 			return new ArrayList<>();
 		}
 	}

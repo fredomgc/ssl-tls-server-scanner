@@ -16,12 +16,12 @@ public class ConfigurationRegister {
 	private static ConfigurationRegister instance = null;
 	private final HashMap<String, Object> register = new HashMap<>();
 
+	public static final String DEBUG = "debug";
+	public static final String O_SAFT_FOLDER_ABSOLUTE_PATH = "oSaftFolderAbsolutePath";
 	public static final String CERTIFICATE_MINIMUM_KEY_SIZE = "certificateMinimumPublicKeySize";
 	public static final String CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE = "certificateMinimumSignatureKeySize";
-	
 	public static final String UNKNOWN_TEST_RESULT_IS_ERROR = "unknownTestResultIsError";
 
-	//certificateMinimumKeySize
 	protected ConfigurationRegister() {
 		//no direct instantiation.
 	}
@@ -32,7 +32,7 @@ public class ConfigurationRegister {
 		}
 		return instance;
 	}
-	
+
 	private void setDirective(String name, Object value) {
 		if (!isSupportedDirective(name)) {
 			throw new IllegalArgumentException("Unknown configuration directive [" + name + "] !");
@@ -41,21 +41,52 @@ public class ConfigurationRegister {
 		register.put(name, value);
 	}
 
-	private Object getDirective(String name){
-		if(!register.containsKey(name)){
+	private Object getDirective(String name) {
+		if (!register.containsKey(name)) {
 			throw new IllegalArgumentException("Configuration directive [" + name + "] not found!");
 		}
-		
-		return  register.get(name);
+
+		return register.get(name);
 	}
-	
+
+	private boolean hasDirective(String name) {
+		return register.containsKey(name);
+	}
+
+	public boolean hasAllDirectives() {
+		for (String directive : getDirectives()) {
+			if (!hasDirective(directive)) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
 	private List<String> getDirectives() {
-		String[] directives = {CERTIFICATE_MINIMUM_KEY_SIZE, CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE, UNKNOWN_TEST_RESULT_IS_ERROR};
+		String[] directives = {DEBUG, O_SAFT_FOLDER_ABSOLUTE_PATH, CERTIFICATE_MINIMUM_KEY_SIZE,
+			CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE, UNKNOWN_TEST_RESULT_IS_ERROR};
 		return new ArrayList<>(Arrays.asList(directives));
 	}
 
 	private boolean isSupportedDirective(String name) {
 		return getDirectives().contains(name);
+	}
+
+	public void setOSaftFolderAbsolutePath(String value) {
+		setDirective(O_SAFT_FOLDER_ABSOLUTE_PATH, value);
+	}
+
+	public String getOSaftFolderAbsolutePath() {
+		return (String) getDirective(O_SAFT_FOLDER_ABSOLUTE_PATH);
+	}
+
+	public void setDebug(Boolean value) {
+		setDirective(DEBUG, value);
+	}
+
+	public Boolean isDebug() {
+		return (Boolean) getDirective(DEBUG);
 	}
 
 	public void setCertificateMinimumKeySize(Integer value) {
@@ -65,7 +96,7 @@ public class ConfigurationRegister {
 	public int getCertificateMinimumKeySize() {
 		return (Integer) getDirective(CERTIFICATE_MINIMUM_KEY_SIZE);
 	}
-	
+
 	public void setCertificateMinimumSignatureKeySize(Integer value) {
 		setDirective(CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE, value);
 	}
@@ -74,15 +105,12 @@ public class ConfigurationRegister {
 		return (Integer) getDirective(CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE);
 	}
 
-
-	
 	public void setUnknownTestResultIsError(boolean value) {
 		setDirective(UNKNOWN_TEST_RESULT_IS_ERROR, value);
 	}
 
-	public boolean getUnknownTestResultIsError() {
+	public boolean isUnknownTestResultIsError() {
 		return (Boolean) getDirective(UNKNOWN_TEST_RESULT_IS_ERROR);
 	}
 
-	
 }

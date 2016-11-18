@@ -1,5 +1,7 @@
 package cz.ondrejsmetak.tool;
 
+import cz.ondrejsmetak.ConfigurationRegister;
+
 /**
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
@@ -28,5 +30,11 @@ public class Log {
 
 	public static void warningln(Object message) {
 		System.out.println("WARNING: " + message);
+	}
+	
+	public static void debugException(Throwable exception){
+		if(ConfigurationRegister.getInstance().isDebug()){
+			System.out.println("DEBUG: " + exception.toString());
+		}
 	}
 }

@@ -5,6 +5,7 @@
  */
 package cz.ondrejsmetak.facade;
 
+import cz.ondrejsmetak.ConfigurationRegister;
 import cz.ondrejsmetak.entity.Result;
 import cz.ondrejsmetak.entity.Target;
 import cz.ondrejsmetak.tool.Helper;
@@ -21,9 +22,7 @@ import java.util.List;
 public class OSaftFacade extends BaseFacade {
 
 	private String target;
-
-	private static final String O_SAFT_LOCATION = "/home/fredomgc/thesis/o-saft/"; //TODO - napsat normalne
-
+	
 	private List<String> data = new ArrayList<>();
 
 	private OSaftParser parser;
@@ -48,7 +47,7 @@ public class OSaftFacade extends BaseFacade {
 
 	private List<String> doCmd(String... args) {
 		String[] rawArgs = new String[args.length + 3];
-		rawArgs[0] = O_SAFT_LOCATION + "o-saft.pl"; //first arg is path to tool
+		rawArgs[0] =  ConfigurationRegister.getInstance().getOSaftFolderAbsolutePath()  + "o-saft.pl"; //first arg is path to tool
 		rawArgs[1] = "--legacy=quick"; //second arg for easier parsing
 		rawArgs[2] = "--no-header"; //third arg for easier parsing
 
