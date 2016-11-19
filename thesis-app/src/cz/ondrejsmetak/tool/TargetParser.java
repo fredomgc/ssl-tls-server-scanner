@@ -32,7 +32,6 @@ public class TargetParser extends BaseParser {
 
 	public static final String FILE = "targets.xml";
 
-	
 	@Override
 	public void createDefault() throws IOException {
 		Path source = ResourceManager.getDefaultConfigurationXml().toPath();
@@ -44,7 +43,7 @@ public class TargetParser extends BaseParser {
 	public boolean hasFile() {
 		return Files.exists(new File(FILE).toPath());
 	}
-	
+
 	public List<Target> parse() throws XmlParserException {
 		try {
 			File fXmlFile = new File(FILE);
@@ -103,7 +102,7 @@ public class TargetParser extends BaseParser {
 	 * @param doc
 	 * @return
 	 */
-	private List<Profile> parseProfiles(Document doc) {
+	private List<Profile> parseProfiles(Document doc) throws XmlParserException {
 		List<Profile> done = new ArrayList<>();
 
 		NodeList roots = doc.getElementsByTagName("profiles");
@@ -154,7 +153,7 @@ public class TargetParser extends BaseParser {
 	 * @param node
 	 * @return
 	 */
-	private Profile parseProfile(Node node) {
+	private Profile parseProfile(Node node) throws XmlParserException {
 		if (node.getNodeType() != Node.ELEMENT_NODE) {
 			return null;
 		}
@@ -172,6 +171,14 @@ public class TargetParser extends BaseParser {
 		String safeProtocol = (protocol == null ? "" : protocol.getAttribute("safe"));
 		String safeProtocolModifier = (protocol == null ? "" : protocol.getAttribute("modifier"));
 
+		if (!safeProtocolModifier.isEmpty() && !safeProtocolModifier.equals(Profile.MODIFIER_AND_HIGHER)) {
+			throw new XmlParserException("Unknown protocol modifier [" + safeProtocolModifier + "] in profile [" + name + "]!");
+		}
+
+		if (!safeProtocolModifier.isEmpty() && safeProtocol.isEmpty()) {
+			throw new XmlParserException("Protocol modifier is used, but safe atribute is empty in profile [" + name + "]!");
+		}
+
 		/**
 		 * Vulnerabilities
 		 */
@@ -186,16 +193,16 @@ public class TargetParser extends BaseParser {
 		 * Safe cipher suites
 		 */
 		Element ciphers = getElementByTagName(profile, "ciphers");
-		List<CipherSuite> cipherSuites = parseCipherSuites(ciphers);
-		
-		return Profile.fromXml(name, safeProtocol, safeProtocolModifier, vulnerabilities != null, certificate != null, cipherSuites);
+		List<CipherSuite> cipherSuites = ciphers == null ? new ArrayList<>() : parseCipherSuites(ciphers);
+
+		return Profile.fromXml(name, safeProtocol, safeProtocolModifier, certificate != null, vulnerabilities != null, cipherSuites);
 	}
 
 	private List<CipherSuite> parseCipherSuites(Element ciphers) {
 		List<CipherSuite> done = new ArrayList<>();
 
 		NodeList safe = ciphers.getElementsByTagName("safe");
-		
+
 		for (int i = 0; i < safe.getLength(); i++) {
 			done.add(parseCipherSuite(safe.item(i)));
 		}

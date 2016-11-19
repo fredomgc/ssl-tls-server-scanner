@@ -2,13 +2,17 @@
 <configuration>
 	<profiles>
 		<profile name="low">
-			<protocol safe="TLS 1.2" modifier="andHigher" />
+			
+			<protocol safe="TLS 1.0" modifier="andHigher" />
+			<!--
 			<vulnerabilities/>
 			<certificate/>
-			
+			-->
+			<!--
 			<ciphers>
 				<safe name="ECDHE-ECDSA-DES-CBC3-SHA" />
 			</ciphers>
+			-->
 		</profile>
 		
 		<profile name="strict">

@@ -15,6 +15,10 @@ import java.util.Scanner;
 public class Helper {
 
 	
+	public static int booleanToInteger(Boolean value){
+		return value ? 1 : 0;
+	}
+	
 	public static String getWorkingDirectory(){
 		return System.getProperty("user.dir");
 	}

@@ -22,7 +22,7 @@ import java.util.List;
 public class OSaftFacade extends BaseFacade {
 
 	private Target target;
-	
+
 	private List<String> data = new ArrayList<>();
 
 	private OSaftParser parser;
@@ -39,9 +39,11 @@ public class OSaftFacade extends BaseFacade {
 
 	private List<String> getData() {
 		if (data.isEmpty()) {
-			//spustime scan
-			data.addAll(doCmd(target.getDestination(), "+check"));
-			if(target.getProfile().isTestSafeProtocols()){
+			if (target.getProfile().isTestCertificate() || target.getProfile().isTestSafeCipherSuites() || target.getProfile().isTestVulnerabilities()) {
+				data.addAll(doCmd(target.getDestination(), "+check"));
+			}
+
+			if (target.getProfile().isTestSafeProtocols()) {
 				data.addAll(doCmd(target.getDestination(), "+protocols"));
 			}
 		}
@@ -50,7 +52,7 @@ public class OSaftFacade extends BaseFacade {
 
 	private List<String> doCmd(String... args) {
 		String[] rawArgs = new String[args.length + 3];
-		rawArgs[0] =  ConfigurationRegister.getInstance().getOSaftFolderAbsolutePath()  + "o-saft.pl"; //first arg is path to tool
+		rawArgs[0] = ConfigurationRegister.getInstance().getOSaftFolderAbsolutePath() + "o-saft.pl"; //first arg is path to tool
 		rawArgs[1] = "--legacy=quick"; //second arg for easier parsing
 		rawArgs[2] = "--no-header"; //third arg for easier parsing
 

@@ -261,7 +261,7 @@ public class OSaftParser {
 	 * @param previousResult
 	 * @return
 	 */
-	private Result parseResult(String line, String header, String safeResult, Result previousResult) {
+	private Result parseResult(String line, String header, String safeResult, Result previousResult) {		
 		if (isHeader(line, header)) {
 			String[] pieces = line.split("\t");
 			if (pieces.length >= 2) {

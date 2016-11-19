@@ -37,7 +37,7 @@ public class Result extends BaseEntity {
 	}
 
 	private void setNote(String note) {
-		this.note = note.matches("\\(.*\\)") ?  Helper.trim(Helper.trim(note, "\\("), "\\)") : note;
+		this.note = note;
 	}
 
 	
@@ -47,7 +47,7 @@ public class Result extends BaseEntity {
 		StringBuilder sb = new StringBuilder();
 		sb.append(type);
 		if (note != null && !note.isEmpty()) {
-			sb.append(" ").append(note);
+			sb.append(" [").append(note).append("]");
 		}
 
 		return sb.toString();
