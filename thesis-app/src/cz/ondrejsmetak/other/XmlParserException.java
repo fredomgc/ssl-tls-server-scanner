@@ -10,6 +10,10 @@ public class XmlParserException extends Exception {
 		super(message);
 	}
 
+	public XmlParserException(String format, Object... args) {
+		super(String.format(format, args));
+	}
+	
 	public XmlParserException(String message, Throwable cause) {
 		super(message, cause);
 	}
