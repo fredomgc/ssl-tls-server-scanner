@@ -57,13 +57,10 @@ public class OSaftParser {
 	public static final String CERTIFICATE_FINGERPRINT_NOT_MD5_HEADER = "Certificate Fingerprint is not MD5";
 	public static final String CERTIFICATE_PRIVATE_KEY_SHA2_HEADER = "Certificate Private Key Signature SHA2";
 	public static final String CERTIFICATE_NOT_SELF_SIGNED_HEADER = "Certificate is not self-signed";
-	public static final String CERTIFICATE_PUBLIC_KEY_SIZE_HEADER = "Certificate Public Key size";
-	public static final String CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER = "Certificate Signature Key size";
-	
-	//Certificate Signature Algorithm:    	sha256WithRSAEncryption
-	//Certificate Public Key Algorithm:   	rsaEncryption
-	//todo
-	
+	public static final String CERTIFICATE_PUBLIC_KEY_SIZE_HEADER = "Certificate Public Key Length";
+	public static final String CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER = "Certificate Signature Key Length";
+	public static final String CERTIFICATE_SIGNATURE_ALGORITHM_HEADER = "Certificate Signature Algorithm";
+	public static final String CERTIFICATE_PUBLIC_KEY_ALGORITHM_HEADER = "Certificate Public Key Algorithm";
 
 	/**
 	 * Cipher suites
@@ -114,6 +111,7 @@ public class OSaftParser {
 	private int certificatePublicKeySize = 0;
 	private int certificateSignatureKeySize = 0;
 	private Algorithm certificateSignatureAlgorithm = Algorithm.OTHER;
+	private Algorithm certificatePublicKeyAlgorithm = Algorithm.OTHER;
 
 	/**
 	 * Cipher suites
@@ -199,24 +197,36 @@ public class OSaftParser {
 	}
 
 	private void parseCertificateKeySize(String line) {
-		int result = -1;
-
 		/**
 		 * Public key
 		 */
-		certificatePublicKeySize = doParseCertificateKeySize(line, CERTIFICATE_PUBLIC_KEY_SIZE_HEADER);
+		certificatePublicKeySize = doParseCertificateKeySize(line, CERTIFICATE_PUBLIC_KEY_SIZE_HEADER, certificatePublicKeySize);
+		certificatePublicKeyAlgorithm = doParseAlgorithm(line, CERTIFICATE_PUBLIC_KEY_ALGORITHM_HEADER, certificatePublicKeyAlgorithm);
 
 		/**
 		 * Signature key
 		 */
-		certificateSignatureKeySize = doParseCertificateKeySize(line, CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER);
-		
-		/**
-		 * Algorithm
-		 */
+		certificateSignatureKeySize = doParseCertificateKeySize(line, CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER, certificateSignatureKeySize);
+		certificateSignatureAlgorithm = doParseAlgorithm(line, CERTIFICATE_SIGNATURE_ALGORITHM_HEADER, certificateSignatureAlgorithm);
 	}
 
-	private int doParseCertificateKeySize(String line, String header) {
+	private Algorithm doParseAlgorithm(String line, String header, Algorithm previousAlgorithm) {
+		if (isHeader(line, header)) {
+			String value = parseValue(line, header);
+
+			if (value.toLowerCase().contains("rsa")) {
+				return Algorithm.RSA;
+			}
+
+			if (value.toLowerCase().contains("ecdsa")) {
+				return Algorithm.ECDSA;
+			}
+		}
+
+		return previousAlgorithm;
+	}
+
+	private int doParseCertificateKeySize(String line, String header, int previousSize) {
 		if (isHeader(line, header)) {
 			String value = parseValue(line, header);
 			value = value.replace(" bits", "");
@@ -228,7 +238,7 @@ public class OSaftParser {
 			}
 		}
 
-		return -1;
+		return previousSize;
 	}
 
 	private void parseVulnerabilities(String line) {
@@ -403,12 +413,20 @@ public class OSaftParser {
 		return certificateNotSelfSigned;
 	}
 
-	public Result getCertificatePublicKeySize() {
+	public int getCertificatePublicKeySize() {
 		return certificatePublicKeySize;
 	}
 
-	public Result getCertificateSignatureKeySize() {
+	public int getCertificateSignatureKeySize() {
 		return certificateSignatureKeySize;
+	}
+
+	public Algorithm getCertificatePublicKeyAlgorithm() {
+		return certificatePublicKeyAlgorithm;
+	}
+
+	public Algorithm getCertificateSignatureAlgorithm() {
+		return certificateSignatureAlgorithm;
 	}
 
 	public List<CipherSuite> getSupportedCipherSuites() {

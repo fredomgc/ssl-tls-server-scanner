@@ -4,6 +4,8 @@
 package cz.ondrejsmetak;
 
 import cz.ondrejsmetak.entity.CipherSuite;
+import cz.ondrejsmetak.entity.Directive;
+import cz.ondrejsmetak.entity.Profile;
 import cz.ondrejsmetak.entity.Protocol;
 import cz.ondrejsmetak.entity.Result;
 import cz.ondrejsmetak.facade.OSaftFacade;
@@ -80,8 +82,55 @@ public class Scanner {
 		vulns += Helper.booleanToInteger(doPrintVulnerability("Certificate fingerprint is MD5.", oSaft.getParser().getCertificateFingerprintNotMd5()));
 		vulns += Helper.booleanToInteger(doPrintVulnerability("Certificate Private Key Signature isn't SHA2.", oSaft.getParser().getCertificatePrivateKeySha2()));
 		vulns += Helper.booleanToInteger(doPrintVulnerability("Certificate is self-signed.", oSaft.getParser().getCertificateNotSelfSigned()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Wrong size of certificate's public key.", oSaft.getParser().getCertificatePublicKeySize()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Wrong size of certificate's signature key.", oSaft.getParser().getCertificateSignatureKeySize()));
+		vulns += printCertificateKeysCheck();
+		return vulns;
+	}
+
+	private int printCertificateKeysCheck() {
+		int vulns = 0;
+		Directive rsaDirective;
+		Directive ecdsaDirective;
+		boolean rsaVulnerable;
+		boolean ecdsaVulnerable;
+
+		/**
+		 * Public key
+		 */
+		rsaDirective = target.getProfile().getCertificateDirective(Profile.RSA_MINIMUM_PUBLIC_KEY_SIZE);
+		ecdsaDirective = target.getProfile().getCertificateDirective(Profile.ECDSA_MINIMUM_PUBLIC_KEY_SIZE);
+		
+		rsaVulnerable = oSaft.getParser().getCertificatePublicKeyAlgorithm().equals(OSaftParser.Algorithm.RSA)
+				&& rsaDirective.getMode().isMustBe()
+				&& rsaDirective.getValueInt() > oSaft.getParser().getCertificatePublicKeySize();
+		ecdsaVulnerable = oSaft.getParser().getCertificatePublicKeyAlgorithm().equals(OSaftParser.Algorithm.ECDSA)
+				&& ecdsaDirective.getMode().isMustBe()
+				&& ecdsaDirective.getValueInt() > oSaft.getParser().getCertificateSignatureKeySize();
+
+		if (rsaVulnerable || ecdsaVulnerable) {
+			String note = String.format("actual size [%s] is lesser then expected minimum size [%s]", oSaft.getParser().getCertificatePublicKeySize(), rsaVulnerable ? rsaDirective.getValueInt() : ecdsaDirective.getValueInt());
+			doPrintVulnerability("Wrong size of certificate's public key", Result.getVulnerable(note));
+			vulns++;
+		}
+
+		/**
+		 * Signature key
+		 */
+		rsaDirective = target.getProfile().getCertificateDirective(Profile.RSA_MINIMUM_SIGNATURE_KEY_SIZE);
+		ecdsaDirective = target.getProfile().getCertificateDirective(Profile.ECDSA_MINIMUM_SIGNATURE_SIZE);
+
+		rsaVulnerable = oSaft.getParser().getCertificateSignatureAlgorithm().equals(OSaftParser.Algorithm.RSA)
+				&& rsaDirective.getMode().isMustBe()
+				&& rsaDirective.getValueInt() > oSaft.getParser().getCertificatePublicKeySize();
+		ecdsaVulnerable = oSaft.getParser().getCertificateSignatureAlgorithm().equals(OSaftParser.Algorithm.ECDSA)
+				&& ecdsaDirective.getMode().isMustBe()
+				&& ecdsaDirective.getValueInt() > oSaft.getParser().getCertificateSignatureKeySize();
+
+		if (rsaVulnerable || ecdsaVulnerable) {
+			String note = String.format("actual size [%s] is lesser then expected minimum size [%s]", oSaft.getParser().getCertificateSignatureKeySize(), rsaVulnerable ? rsaDirective.getValueInt() : ecdsaDirective.getValueInt());
+			doPrintVulnerability("Wrong size of certificate's signature key", Result.getVulnerable(note));
+			vulns++;
+		}
+		
 		return vulns;
 	}
 

@@ -1,5 +1,6 @@
 package cz.ondrejsmetak.entity;
 
+import cz.ondrejsmetak.tool.Helper;
 import java.util.Objects;
 
 /**
@@ -7,6 +8,7 @@ import java.util.Objects;
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public class Directive {
+
 	private String name;
 	private Object value;
 	private Mode mode;
@@ -25,10 +27,29 @@ public class Directive {
 		return value;
 	}
 
+	public Integer getValueInt() {
+		if (!Helper.isInteger(String.valueOf(value))) {
+			throw new IllegalArgumentException(String.format("Directive [%s] doesn't contains a integer value!", name));
+		}
+
+		return Integer.parseInt(String.valueOf(value));
+	}
+
 	public Mode getMode() {
 		return mode;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("(");
+		sb.append(name);
+		sb.append(":");
+		sb.append(value.toString());
+		sb.append(")");
+		return sb.toString();
+	}
+	
 	@Override
 	public int hashCode() {
 		int hash = 7;
@@ -53,8 +74,5 @@ public class Directive {
 		}
 		return true;
 	}
-	
-	
-	
-	
+
 }

@@ -10,10 +10,10 @@
 				<protocol name="TLS 1.2"  mode="mustNotBe" />
 			</protocols>
 			
-			<vulnerabilitiesFree mode="mayBe" />
-			<certificateValid  mode="mayBe">
-				<directive name="rsaMinimumPublicKeySize" value="20"  mode="mustBe" />
-				<directive name="rsaMinimumSignatureKeySize" value="20"  mode="mustBe" />
+			<vulnerabilitiesFree mode="mustBe" />
+			<certificateValid  mode="mustBe">
+				<directive name="rsaMinimumPublicKeySize" value="12345"  mode="mustBe" />
+				<directive name="rsaMinimumSignatureKeySize" value="512345"  mode="mustBe" />
 				<directive name="ecdsaMinimumPublicKeySize" value="20"  mode="mustBe"  />
 				<directive name="ecdsaMinimumSignatureKeySize" value="20"  mode="mustBe"  />
 			</certificateValid>

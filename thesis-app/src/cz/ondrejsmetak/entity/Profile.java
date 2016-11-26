@@ -4,8 +4,10 @@ import cz.ondrejsmetak.other.InstantiableFromXml;
 import cz.ondrejsmetak.tool.Pair;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -16,7 +18,7 @@ public class Profile extends BaseEntity {
 	private String name;
 	private final List<Protocol> protocols = new ArrayList<>();
 	private final List<CipherSuite> cipherSuites = new ArrayList<>();
-	private final List<Directive> certificateDirectives = new ArrayList<>();
+	private final Map<String, Directive> certificateDirectives = new HashMap<>();
 
 	private Mode certificate;
 	private Mode vulnerabilities;
@@ -41,23 +43,6 @@ public class Profile extends BaseEntity {
 		return protocols;
 	}
 
-//	public List<Protocol> getMustBeProtocols() {
-//		return getProtocols(Mode.Type.MUST_BE);
-//	}
-//
-//	public List<Protocol> getMustNotBeProtocols() {
-//		return getProtocols(Mode.Type.MUST_NOT_BE);
-//	}
-//
-//	private List<Protocol> getProtocols(Mode.Type mode) {
-//		List<Protocol> done = new ArrayList<>();
-//		for (Protocol protocol : protocols) {
-//			if (protocol.getMode().getType().equals(mode)) {
-//				done.add(protocol);
-//			}
-//		}
-//		return done;
-//	}
 	public List<CipherSuite> getCipherSuites() {
 		return cipherSuites;
 	}
@@ -131,8 +116,8 @@ public class Profile extends BaseEntity {
 	}
 
 	public void addToCertificateDirectives(Directive certificateDirective) {
-		if (!this.certificateDirectives.contains(certificateDirective)) {
-			certificateDirectives.add(certificateDirective);
+		if (!this.certificateDirectives.containsKey(certificateDirective.getName())) {
+			certificateDirectives.put(certificateDirective.getName(), certificateDirective);
 		}
 	}
 
@@ -140,6 +125,14 @@ public class Profile extends BaseEntity {
 		for (Directive directive : certificateDirectives) {
 			addToCertificateDirectives(directive);
 		}
+	}
+
+	public Directive getCertificateDirective(String key) {
+		if (!getAllCertificateDirectives().contains(key)) {
+			throw new IllegalArgumentException(String.format("Unsupported directive [%s]", key));
+		}
+
+		return certificateDirectives.get(key);
 	}
 
 	@Override
