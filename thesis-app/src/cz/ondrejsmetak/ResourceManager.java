@@ -16,6 +16,15 @@ public class ResourceManager {
 	public static File getDefaultConfigurationXml() {
 		return new File(getResource("configuration.xml").getFile());
 	}
+	
+	
+	public static File getDefaultTargetsXml() {
+		return new File(getResource("targets.xml").getFile());
+	}
+	
+	public static File getHtmlTemplate() {
+		return new File(getResource("template.html").getFile());
+	}
 
 	/**
 	 * Finds resource in "resources" folder and returns it

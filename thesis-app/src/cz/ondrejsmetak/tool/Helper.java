@@ -1,10 +1,15 @@
 package cz.ondrejsmetak.tool;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,16 +19,25 @@ import java.util.Scanner;
  */
 public class Helper {
 
-	
-	public static int booleanToInteger(Boolean value){
+	public static String getCurrentDateTime() {
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+		Date date = new Date();
+		return dateFormat.format(date);
+	}
+
+	public static int booleanToInteger(Boolean value) {
 		return value ? 1 : 0;
 	}
-	
-	public static String getWorkingDirectory(){
+
+	public static String getWorkingDirectory() {
 		return System.getProperty("user.dir");
 	}
 	
-	
+	public static String getContentoOfFile(File file) throws FileNotFoundException{
+		//http://stackoverflow.com/a/3403112
+		return new Scanner(file).useDelimiter("\\Z").next();
+	}
+
 	/**
 	 * Removes from string leading and trailing part, that matches given regex
 	 *

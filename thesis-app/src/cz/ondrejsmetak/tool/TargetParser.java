@@ -62,7 +62,7 @@ public class TargetParser extends BaseParser {
 
 	@Override
 	public void createDefault() throws IOException {
-		Path source = ResourceManager.getDefaultConfigurationXml().toPath();
+		Path source = ResourceManager.getDefaultConfigurationXml().toPath(); //TODO, too ma vytvaret jine XML
 		Path destination = new File(FILE).toPath();
 		Files.copy(source, destination);
 	}

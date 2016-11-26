@@ -1,6 +1,7 @@
 package cz.ondrejsmetak;
 
 import cz.ondrejsmetak.other.XmlParserException;
+import cz.ondrejsmetak.tool.HtmlExport;
 import cz.ondrejsmetak.tool.TargetParser;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,7 +17,11 @@ public class Applicaton {
 	 */
 	public static void main(String[] args) {
 		ScannerManager manager = new ScannerManager();
-		manager.perform();
+		//manager.perform();
+		
+		HtmlExport export = new HtmlExport();
+		export.export();
+		
 	}
 
 }
