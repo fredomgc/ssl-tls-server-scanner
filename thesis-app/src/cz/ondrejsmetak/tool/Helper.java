@@ -9,6 +9,7 @@ import java.nio.file.Path;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -19,9 +20,15 @@ import java.util.Scanner;
  */
 public class Helper {
 
-	public static String getCurrentDateTime() {
-		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-		Date date = new Date();
+	
+	public static void addIfNotNull(Collection collection, Object item){
+		if(item != null){
+			collection.add(item);
+		}
+	}
+	
+	public static String getFormattedDateTime(Date date, boolean dash) {
+		DateFormat dateFormat = new SimpleDateFormat( dash ? "yyyy-MM-dd-HH-mm-ss" : "yyyy-MM-dd HH:mm:ss" );
 		return dateFormat.format(date);
 	}
 

@@ -17,11 +17,9 @@ public class Applicaton {
 	 */
 	public static void main(String[] args) {
 		ScannerManager manager = new ScannerManager();
-		//manager.perform();
+		boolean safe = manager.perform();
 		
-		HtmlExport export = new HtmlExport();
-		export.export();
-		
+		System.exit(safe ? 0 : -1);
 	}
 
 }

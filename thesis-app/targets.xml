@@ -3,11 +3,11 @@
 	<profiles>
 		<profile name="low">			
 			<protocols>
-				<protocol name="SSLv2"  mode="mustBe"  />
+				<protocol name="SSLv2"  mode="mustNotBe"  />
 				<protocol name="SSLv3"  mode="mustNotBe"  />
 				<protocol name="TLS 1.0"  mode="mustBe"  />
-				<protocol name="TLS 1.1"  mode="mayBe"  />
-				<protocol name="TLS 1.2"  mode="mustNotBe" />
+				<protocol name="TLS 1.1"  mode="mustBe"  />
+				<protocol name="TLS 1.2"  mode="mustBe" />
 			</protocols>
 			
 			<vulnerabilitiesFree mode="mustBe" />

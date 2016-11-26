@@ -3,16 +3,20 @@
  */
 package cz.ondrejsmetak;
 
+import com.sun.javafx.scene.control.skin.VirtualFlow;
 import cz.ondrejsmetak.entity.CipherSuite;
 import cz.ondrejsmetak.entity.Directive;
 import cz.ondrejsmetak.entity.Profile;
 import cz.ondrejsmetak.entity.Protocol;
+import cz.ondrejsmetak.entity.ReportMessage;
 import cz.ondrejsmetak.entity.Result;
 import cz.ondrejsmetak.facade.OSaftFacade;
 import cz.ondrejsmetak.facade.OSaftParser;
 import cz.ondrejsmetak.entity.Target;
 import cz.ondrejsmetak.tool.Helper;
 import cz.ondrejsmetak.tool.Log;
+import java.util.ArrayList;
+import java.util.List;
 import javax.crypto.Cipher;
 
 /**
@@ -24,6 +28,9 @@ public class Scanner {
 	private final OSaftFacade oSaft;
 	private final Target target;
 
+	private List<ReportMessage> vulnerableMessages;
+	private List<ReportMessage> safeMessages;
+
 	public Scanner(Target target) {
 		this.target = target;
 		oSaft = new OSaftFacade(target);
@@ -31,19 +38,18 @@ public class Scanner {
 
 	public void runScan() {
 		oSaft.runScan();
+		doReportMessages();
 	}
 
-	private int printCipherSuites() {
-		int vulns = 0;
+	private List<ReportMessage> getCipherSuites() {
+		List<ReportMessage> vulns = new ArrayList<>();
 
 		if (target.getProfile().isTestCipherSuites()) {
 			for (CipherSuite cipherSuite : target.getProfile().getCipherSuites()) {
 				if (cipherSuite.getMode().isMustBe() && !oSaft.getParser().getSupportedCipherSuites().contains(cipherSuite)) {
-					Log.errorln("Cipher suite " + cipherSuite + " MUST BE supported!");
-					vulns++;
+					vulns.add(new ReportMessage("Cipher suite " + cipherSuite + " MUST BE supported!", ReportMessage.Category.CIPHER));
 				} else if (cipherSuite.getMode().isMustNotBe() && oSaft.getParser().getSupportedCipherSuites().contains(cipherSuite)) {
-					Log.errorln("Cipher suite " + cipherSuite + " MUST NOT BE supported!");
-					vulns++;
+					vulns.add(new ReportMessage("Cipher suite " + cipherSuite + " MUST NOT BE supported!", ReportMessage.Category.CIPHER));
 				}
 			}
 		}
@@ -51,43 +57,44 @@ public class Scanner {
 		return vulns;
 	}
 
-	private int printVulnerabilities() {
-		int vulns = 0;
+	private List<ReportMessage> getVulnerabilities() {
+		List<ReportMessage> vulns = new ArrayList<>();
 
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to BEAST!", oSaft.getParser().getBeast()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to CRIME!", oSaft.getParser().getCrime()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to DROWN!", oSaft.getParser().getDrown()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to FREAK!", oSaft.getParser().getFreak()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to Heartbleed!", oSaft.getParser().getHeartbleed()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to Logjam!", oSaft.getParser().getLogjam()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to Lucky 13!", oSaft.getParser().getLucky13()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to POODLE!", oSaft.getParser().getPoodle()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("RC4 ciphers are supported (but they are assumed to be broken)!", oSaft.getParser().getRc4()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Vulnerable to Sweet32!", oSaft.getParser().getSweet32()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("SSLv2 supported!", oSaft.getParser().getSslv2NotSupported()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("SSLv3 supported!", oSaft.getParser().getSslv3NotSupported()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("PFS (perfect forward secrecy) not supported!", oSaft.getParser().getPfs()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("TLS session ticket doesn't contain random value!", oSaft.getParser().getRandomTlsSessionTicket()));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to BEAST!", oSaft.getParser().getBeast(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to CRIME!", oSaft.getParser().getCrime(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to DROWN!", oSaft.getParser().getDrown(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to FREAK!", oSaft.getParser().getFreak(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Heartbleed!", oSaft.getParser().getHeartbleed(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Logjam!", oSaft.getParser().getLogjam(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Lucky 13!", oSaft.getParser().getLucky13(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to POODLE!", oSaft.getParser().getPoodle(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("RC4 ciphers are supported (but they are assumed to be broken)!", oSaft.getParser().getRc4(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Sweet32!", oSaft.getParser().getSweet32(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("SSLv2 supported!", oSaft.getParser().getSslv2NotSupported(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("SSLv3 supported!", oSaft.getParser().getSslv3NotSupported(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("PFS (perfect forward secrecy) not supported!", oSaft.getParser().getPfs(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("TLS session ticket doesn't contain random value!", oSaft.getParser().getRandomTlsSessionTicket(), ReportMessage.Category.VULNERABILITY));
 
 		return vulns;
 	}
 
-	private int printCertificateChecks() {
-		int vulns = 0;
+	private List<ReportMessage> getCertificateChecks() {
+		List<ReportMessage> vulns = new ArrayList<>();
 
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Mismatch between hostname and certificate subject.", oSaft.getParser().getCertificateHostnameMatch()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Mismatch between given hostname and reverse resolved hostname.", oSaft.getParser().getCertificateReverseHostnameMatch()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Certificate expired.", oSaft.getParser().getCertificateNotExpired()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Certificate isn't valid.", oSaft.getParser().getCertificateIsValid()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Certificate fingerprint is MD5.", oSaft.getParser().getCertificateFingerprintNotMd5()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Certificate Private Key Signature isn't SHA2.", oSaft.getParser().getCertificatePrivateKeySha2()));
-		vulns += Helper.booleanToInteger(doPrintVulnerability("Certificate is self-signed.", oSaft.getParser().getCertificateNotSelfSigned()));
-		vulns += printCertificateKeysCheck();
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Mismatch between hostname and certificate subject.", oSaft.getParser().getCertificateHostnameMatch(), ReportMessage.Category.CERTIFICATE));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Mismatch between given hostname and reverse resolved hostname.", oSaft.getParser().getCertificateReverseHostnameMatch(), ReportMessage.Category.CERTIFICATE));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate expired.", oSaft.getParser().getCertificateNotExpired(), ReportMessage.Category.CERTIFICATE));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate isn't valid.", oSaft.getParser().getCertificateIsValid(), ReportMessage.Category.CERTIFICATE));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate fingerprint is MD5.", oSaft.getParser().getCertificateFingerprintNotMd5(), ReportMessage.Category.CERTIFICATE));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate Private Key Signature isn't SHA2.", oSaft.getParser().getCertificatePrivateKeySha2(), ReportMessage.Category.CERTIFICATE));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate is self-signed.", oSaft.getParser().getCertificateNotSelfSigned(), ReportMessage.Category.CERTIFICATE));
+
+		vulns.addAll(getCertificateKeysCheck());
 		return vulns;
 	}
 
-	private int printCertificateKeysCheck() {
-		int vulns = 0;
+	private List<ReportMessage> getCertificateKeysCheck() {
+		List<ReportMessage> vulns = new ArrayList<>();
 		Directive rsaDirective;
 		Directive ecdsaDirective;
 		boolean rsaVulnerable;
@@ -98,7 +105,7 @@ public class Scanner {
 		 */
 		rsaDirective = target.getProfile().getCertificateDirective(Profile.RSA_MINIMUM_PUBLIC_KEY_SIZE);
 		ecdsaDirective = target.getProfile().getCertificateDirective(Profile.ECDSA_MINIMUM_PUBLIC_KEY_SIZE);
-		
+
 		rsaVulnerable = oSaft.getParser().getCertificatePublicKeyAlgorithm().equals(OSaftParser.Algorithm.RSA)
 				&& rsaDirective.getMode().isMustBe()
 				&& rsaDirective.getValueInt() > oSaft.getParser().getCertificatePublicKeySize();
@@ -108,8 +115,7 @@ public class Scanner {
 
 		if (rsaVulnerable || ecdsaVulnerable) {
 			String note = String.format("actual size [%s] is lesser then expected minimum size [%s]", oSaft.getParser().getCertificatePublicKeySize(), rsaVulnerable ? rsaDirective.getValueInt() : ecdsaDirective.getValueInt());
-			doPrintVulnerability("Wrong size of certificate's public key", Result.getVulnerable(note));
-			vulns++;
+			vulns.add(doPrintVulnerability("Wrong size of certificate's public key", Result.getVulnerable(note), ReportMessage.Category.CERTIFICATE));
 		}
 
 		/**
@@ -127,15 +133,14 @@ public class Scanner {
 
 		if (rsaVulnerable || ecdsaVulnerable) {
 			String note = String.format("actual size [%s] is lesser then expected minimum size [%s]", oSaft.getParser().getCertificateSignatureKeySize(), rsaVulnerable ? rsaDirective.getValueInt() : ecdsaDirective.getValueInt());
-			doPrintVulnerability("Wrong size of certificate's signature key", Result.getVulnerable(note));
-			vulns++;
+			vulns.add(doPrintVulnerability("Wrong size of certificate's signature key", Result.getVulnerable(note), ReportMessage.Category.CERTIFICATE));
 		}
-		
+
 		return vulns;
 	}
 
-	private boolean doPrintVulnerability(String vulnerableMessage, Result result) {
-		boolean safe = true;
+	private ReportMessage doPrintVulnerability(String vulnerableMessage, Result result, ReportMessage.Category category) {
+		ReportMessage vulnerable = null;
 
 		StringBuilder out = new StringBuilder();
 		out.append(vulnerableMessage);
@@ -144,58 +149,62 @@ public class Scanner {
 		}
 
 		if (result.isVulnerable()) {
-			Log.errorln(out.toString());
-			safe = false;
+			vulnerable = new ReportMessage(out.toString(), category);
 		} else if (result.isUnknown() && ConfigurationRegister.getInstance().isUnknownTestResultIsError()) {
-			Log.errorln(out.toString());
-			safe = false;
+			vulnerable = new ReportMessage(out.toString(), category);
 		}
 
-		return safe;
+		return vulnerable;
 	}
 
-	private int printProtocols() {
-		int vulns = 0;
+	private List<ReportMessage> getProtocols() {
+		List<ReportMessage> vulns = new ArrayList<>();
 
 		for (Protocol protocol : target.getProfile().getProtocols()) {
 			if (protocol.getMode().isMustBe() && !oSaft.getParser().getSupportedProtocols().contains(protocol)) {
-				Log.errorln("Protocol " + protocol + " MUST BE supported!");
-				vulns++;
+				vulns.add(new ReportMessage("Protocol " + protocol + " MUST BE supported!", ReportMessage.Category.PROTOCOL));
 			} else if (protocol.getMode().isMustNotBe() && oSaft.getParser().getSupportedProtocols().contains(protocol)) {
-				Log.errorln("Protocol " + protocol + " MUST NOT BE supported!");
-				vulns++;
+				vulns.add(new ReportMessage("Protocol " + protocol + " MUST NOT BE supported!", ReportMessage.Category.PROTOCOL));
 			}
 		}
 
 		return vulns;
 	}
 
-	public void printResult() {
-		if (oSaft == null) {
-			throw new IllegalArgumentException("No data  for print!");
+	private void doSplitSafeAndVulnerable(List<ReportMessage> vulnerabilities, ReportMessage.Category category) {
+		if (vulnerabilities.isEmpty()) {
+			safeMessages.add(new ReportMessage("OK", category, ReportMessage.Type.SUCCESS));
+		} else {
+			vulnerableMessages.addAll(vulnerabilities);
 		}
+	}
 
-		int vulns = 0;
+	private void doReportMessages() {
+		vulnerableMessages = new ArrayList<>();
+		safeMessages = new ArrayList<>();
+
 		if (target.getProfile().isTestCipherSuites()) {
-			vulns += printCipherSuites();
+			doSplitSafeAndVulnerable(getCipherSuites(), ReportMessage.Category.CIPHER);
 		}
 
 		if (target.getProfile().isTestVulnerabilities()) {
-			vulns += printVulnerabilities();
+			doSplitSafeAndVulnerable(getVulnerabilities(), ReportMessage.Category.VULNERABILITY);
 		}
 
 		if (target.getProfile().isTestCertificate()) {
-			vulns += printCertificateChecks();
+			doSplitSafeAndVulnerable(getCertificateChecks(), ReportMessage.Category.CERTIFICATE);
 		}
 
 		if (target.getProfile().isTestSafeProtocols()) {
-			vulns += printProtocols();
+			doSplitSafeAndVulnerable(getProtocols(), ReportMessage.Category.PROTOCOL);
 		}
-
-		if (vulns <= 0) {
-			Log.infoln("Target " + target.getDestination() + " is SAFE.");
-		}
-
 	}
 
+	public List<ReportMessage> getVulnerableMessages() {
+		return vulnerableMessages;
+	}
+
+	public List<ReportMessage> getSafeMessages() {
+		return safeMessages;
+	}
 }
