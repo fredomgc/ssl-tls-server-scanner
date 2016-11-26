@@ -17,6 +17,10 @@ import java.util.Set;
  */
 public class OSaftParser {
 
+	public enum Algorithm {
+		RSA, ECDSA, OTHER
+	}
+
 	private List<String> data;
 
 	private static final String YES = "yes";
@@ -55,6 +59,11 @@ public class OSaftParser {
 	public static final String CERTIFICATE_NOT_SELF_SIGNED_HEADER = "Certificate is not self-signed";
 	public static final String CERTIFICATE_PUBLIC_KEY_SIZE_HEADER = "Certificate Public Key size";
 	public static final String CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER = "Certificate Signature Key size";
+	
+	//Certificate Signature Algorithm:    	sha256WithRSAEncryption
+	//Certificate Public Key Algorithm:   	rsaEncryption
+	//todo
+	
 
 	/**
 	 * Cipher suites
@@ -98,8 +107,13 @@ public class OSaftParser {
 	private Result certificateFingerprintNotMd5 = Result.getUnknown();
 	private Result certificatePrivateKeySha2 = Result.getUnknown();
 	private Result certificateNotSelfSigned = Result.getUnknown();
-	private Result certificatePublicKeySize = Result.getUnknown();
-	private Result certificateSignatureKeySize = Result.getUnknown();
+
+	/**
+	 * Certificate signature checks
+	 */
+	private int certificatePublicKeySize = 0;
+	private int certificateSignatureKeySize = 0;
+	private Algorithm certificateSignatureAlgorithm = Algorithm.OTHER;
 
 	/**
 	 * Cipher suites
@@ -132,14 +146,14 @@ public class OSaftParser {
 	}
 
 	private void parseProtocols(String line) {
-		if(parseResult(line, SSLv2_NOT_SUPPORTED_HEADER, YES, new Result()).isVulnerable()){
+		if (parseResult(line, SSLv2_NOT_SUPPORTED_HEADER, YES, new Result()).isVulnerable()) {
 			supportedProtocols.add(new Protocol(Protocol.Type.SSLv2));
 		}
-		
-		if(parseResult(line, SSLv3_NOT_SUPPORTED_HEADER, YES, new Result()).isVulnerable()){
+
+		if (parseResult(line, SSLv3_NOT_SUPPORTED_HEADER, YES, new Result()).isVulnerable()) {
 			supportedProtocols.add(new Protocol(Protocol.Type.SSLv3));
 		}
-		
+
 		if (parseResult(line, TLS_1_HEADER, YES, new Result()).isSafe()) {
 			supportedProtocols.add(new Protocol(Protocol.Type.TLSv10));
 		}
@@ -147,14 +161,15 @@ public class OSaftParser {
 		if (parseResult(line, TLS_1_1_HEADER, YES, new Result()).isSafe()) {
 			supportedProtocols.add(new Protocol(Protocol.Type.TLSv11));
 		}
-		
+
 		if (parseResult(line, TLS_1_2_HEADER, YES, new Result()).isSafe()) {
 			supportedProtocols.add(new Protocol(Protocol.Type.TLSv12));
 		}
-		
-		if (parseResult(line, TLS_1_2_HEADER, YES, new Result()).isSafe()) {
-			supportedProtocols.add(new Protocol(Protocol.Type.TLSv13));
-		}
+
+		//TLS 1.3 is draft
+		//if (parseResult(line, TLS_1_3_HEADER, YES, new Result()).isSafe()) {
+		//	supportedProtocols.add(new Protocol(Protocol.Type.TLSv13));
+		//}
 	}
 
 	private void parseCipherSuites(String line) {
@@ -184,42 +199,36 @@ public class OSaftParser {
 	}
 
 	private void parseCertificateKeySize(String line) {
-		Result result = null;
+		int result = -1;
 
 		/**
 		 * Public key
 		 */
-		result = doParseCertificateKeySize(line, ConfigurationRegister.getInstance().getCertificateMinimumKeySize(),
-				CERTIFICATE_PUBLIC_KEY_SIZE_HEADER, "Expected certificate public key size was at least %s, but current value is %s");
-		if (result != null) {
-			this.certificatePublicKeySize = result;
-		}
+		certificatePublicKeySize = doParseCertificateKeySize(line, CERTIFICATE_PUBLIC_KEY_SIZE_HEADER);
 
 		/**
 		 * Signature key
 		 */
-		result = doParseCertificateKeySize(line, ConfigurationRegister.getInstance().getCertificateMinimumSignatureKeySize(),
-				CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER, "Expected certificate signature key size was at least %s, but current value is %s");
-		if (result != null) {
-			this.certificateSignatureKeySize = result;
-		}
+		certificateSignatureKeySize = doParseCertificateKeySize(line, CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER);
+		
+		/**
+		 * Algorithm
+		 */
 	}
 
-	private Result doParseCertificateKeySize(String line, int minimumSize, String header, String vulnerableMessage) {
+	private int doParseCertificateKeySize(String line, String header) {
 		if (isHeader(line, header)) {
 			String value = parseValue(line, header);
 			value = value.replace(" bits", "");
 
 			if (!Helper.isInteger(value)) {
-				return createUnexpectedValue();
-			} else if (Integer.valueOf(value) < minimumSize) {
-				return Result.getVulnerable(String.format(vulnerableMessage, String.valueOf(minimumSize), value));
+				return -1;
 			} else {
-				return Result.getSafe(String.format("%s >= %s", value, minimumSize));
+				return Integer.parseInt(value);
 			}
 		}
 
-		return null;
+		return -1;
 	}
 
 	private void parseVulnerabilities(String line) {
@@ -261,7 +270,7 @@ public class OSaftParser {
 	 * @param previousResult
 	 * @return
 	 */
-	private Result parseResult(String line, String header, String safeResult, Result previousResult) {		
+	private Result parseResult(String line, String header, String safeResult, Result previousResult) {
 		if (isHeader(line, header)) {
 			String[] pieces = line.split("\t");
 			if (pieces.length >= 2) {

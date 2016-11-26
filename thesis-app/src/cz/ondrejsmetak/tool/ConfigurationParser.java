@@ -66,7 +66,7 @@ public class ConfigurationParser extends BaseParser {
 		 * Tag "directive" must have "name" and "value" atribute
 		 */
 		if (node.getNodeName().equals(TAG_DIRECTIVE)) {
-			NamedNodeMap attributes = node.getAttributes();
+			NamedNodeMap attributes = node.getAttributes(); //TODO použit metodu v předkovi
 			for (int i = 0; i < attributes.getLength(); i++) {
 				Node attribute = attributes.item(i);
 				if (!supportedAttributes.contains(attribute.getNodeName())) {

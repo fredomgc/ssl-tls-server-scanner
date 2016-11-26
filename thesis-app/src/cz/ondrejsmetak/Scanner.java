@@ -34,10 +34,13 @@ public class Scanner {
 	private int printCipherSuites() {
 		int vulns = 0;
 
-		if (target.getProfile().isTestSafeCipherSuites()) {
-			for (CipherSuite test : oSaft.getParser().getSupportedCipherSuites()) {
-				if (!this.target.getProfile().getSafeCipherSuites().contains(test)) {
-					Log.errorln("Cipher suite " + test + " isn't considered safe, but is supported!");
+		if (target.getProfile().isTestCipherSuites()) {
+			for (CipherSuite cipherSuite : target.getProfile().getCipherSuites()) {
+				if (cipherSuite.getMode().isMustBe() && !oSaft.getParser().getSupportedCipherSuites().contains(cipherSuite)) {
+					Log.errorln("Cipher suite " + cipherSuite + " MUST BE supported!");
+					vulns++;
+				} else if (cipherSuite.getMode().isMustNotBe() && oSaft.getParser().getSupportedCipherSuites().contains(cipherSuite)) {
+					Log.errorln("Cipher suite " + cipherSuite + " MUST NOT BE supported!");
 					vulns++;
 				}
 			}
@@ -105,9 +108,12 @@ public class Scanner {
 	private int printProtocols() {
 		int vulns = 0;
 
-		for (Protocol supported : oSaft.getParser().getSupportedProtocols()) {
-			if (!target.getProfile().getSafeProtocols().contains(supported)) {
-				Log.errorln("Protocol " + supported + " isn't considered safe, but is supported!");
+		for (Protocol protocol : target.getProfile().getProtocols()) {
+			if (protocol.getMode().isMustBe() && !oSaft.getParser().getSupportedProtocols().contains(protocol)) {
+				Log.errorln("Protocol " + protocol + " MUST BE supported!");
+				vulns++;
+			} else if (protocol.getMode().isMustNotBe() && oSaft.getParser().getSupportedProtocols().contains(protocol)) {
+				Log.errorln("Protocol " + protocol + " MUST NOT BE supported!");
 				vulns++;
 			}
 		}
@@ -121,7 +127,7 @@ public class Scanner {
 		}
 
 		int vulns = 0;
-		if (target.getProfile().isTestSafeCipherSuites()) {
+		if (target.getProfile().isTestCipherSuites()) {
 			vulns += printCipherSuites();
 		}
 

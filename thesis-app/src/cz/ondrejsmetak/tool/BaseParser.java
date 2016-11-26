@@ -1,11 +1,15 @@
 package cz.ondrejsmetak.tool;
 
 import cz.ondrejsmetak.ResourceManager;
+import cz.ondrejsmetak.other.XmlParserException;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -33,5 +37,17 @@ public abstract class BaseParser {
 		}
 
 		return (Element) node;
+	}
+
+	protected List<String> getAttributesByTag(Node tag) {
+		List<String> done = new ArrayList<>();
+
+		NamedNodeMap attributes = tag.getAttributes();
+		for (int i = 0; i < attributes.getLength(); i++) {
+			Node attribute = attributes.item(i);
+			done.add(attribute.getNodeName());
+		}
+
+		return done;
 	}
 }

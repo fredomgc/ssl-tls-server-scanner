@@ -39,7 +39,7 @@ public class OSaftFacade extends BaseFacade {
 
 	private List<String> getData() {
 		if (data.isEmpty()) {
-			if (target.getProfile().isTestCertificate() || target.getProfile().isTestSafeCipherSuites() || target.getProfile().isTestVulnerabilities()) {
+			if (target.getProfile().isTestCertificate() || target.getProfile().isTestCipherSuites() || target.getProfile().isTestVulnerabilities()) {
 				data.addAll(doCmd(target.getDestination(), "+check"));
 			}
 

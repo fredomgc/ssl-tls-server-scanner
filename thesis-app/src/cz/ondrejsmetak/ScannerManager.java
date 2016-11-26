@@ -57,7 +57,7 @@ public class ScannerManager {
 			if (!targets.isEmpty()) {
 				Log.infoln("Targets found, performing scans...");
 			}
-
+			
 			for (Target target : targets) {
 				Log.infoln("***");
 				Log.infoln("Running scan of " + target.getDestination());

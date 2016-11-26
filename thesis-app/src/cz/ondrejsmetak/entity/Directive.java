@@ -6,27 +6,23 @@ import java.util.Objects;
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
-public class CipherSuite extends BaseEntity {
-
+public class Directive {
 	private String name;
+	private Object value;
 	private Mode mode;
 
-	public CipherSuite(String name) {
-		this(name, null);
-	}
-	
-	public CipherSuite(String name, Mode mode) {
+	public Directive(String name, Object value, Mode mode) {
 		this.name = name;
+		this.value = value;
 		this.mode = mode;
-	}
-
-	@Override
-	public String toString() {
-		return this.name;
 	}
 
 	public String getName() {
 		return name;
+	}
+
+	public Object getValue() {
+		return value;
 	}
 
 	public Mode getMode() {
@@ -36,7 +32,7 @@ public class CipherSuite extends BaseEntity {
 	@Override
 	public int hashCode() {
 		int hash = 7;
-		hash = 71 * hash + Objects.hashCode(this.name);
+		hash = 41 * hash + Objects.hashCode(this.name);
 		return hash;
 	}
 
@@ -51,10 +47,14 @@ public class CipherSuite extends BaseEntity {
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		final CipherSuite other = (CipherSuite) obj;
+		final Directive other = (Directive) obj;
 		if (!Objects.equals(this.name, other.name)) {
 			return false;
 		}
 		return true;
 	}
+	
+	
+	
+	
 }

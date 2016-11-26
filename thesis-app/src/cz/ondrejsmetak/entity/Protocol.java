@@ -1,6 +1,7 @@
 package cz.ondrejsmetak.entity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -16,6 +17,8 @@ public class Protocol extends BaseEntity {
 
 	private Type type = null;
 
+	private Mode mode;
+	
 	private static final String[] sslv2Aliases = {"SSLv2", "SSL 2.0", "SSL 2", "SSL2"};
 	private static final String[] sslv3Aliases = {"SSLv3", "SSL 3.0", "SSL 3", "SSL3"};
 	private static final String[] tlsv10Aliases = {"TLSv1.0", "TLS 1.0", "TLSv10", "TLS 10", "TLSv1"};
@@ -23,13 +26,29 @@ public class Protocol extends BaseEntity {
 	private static final String[] tlsv12Aliases = {"TLSv1.2", "TLS 1.2", "TLSv12", "TLS 12"};
 	private static final String[] tlsv13Aliases = {"TLSv1.3", "TLS 1.3", "TLSv13", "TLS 13"};
 
+	public static List<Protocol.Type> getAllTypes() {
+		return new ArrayList<>(Arrays.asList(new Protocol.Type[]{
+			Type.SSLv2, Type.SSLv3, Type.TLSv10, Type.TLSv11, Type.TLSv12, Type.TLSv13
+		}));
+	}
+
 	public Protocol(String protocolCodeName) {
+		this(protocolCodeName, null);
+	}
+	
+
+	public Protocol(Type type) {
+		this(type, null);
+	}
+	
+	
+	public Protocol(String protocolCodeName, Mode mode) {
 		if (hasCodeName(protocolCodeName, sslv2Aliases)) {
 			type = Type.SSLv2;
 		}
 
 		if (hasCodeName(protocolCodeName, sslv3Aliases)) {
-			type = Type.SSLv2;
+			type = Type.SSLv3;
 		}
 
 		if (hasCodeName(protocolCodeName, tlsv10Aliases)) {
@@ -51,10 +70,13 @@ public class Protocol extends BaseEntity {
 		if (type == null) {
 			throw new IllegalArgumentException("Unknown protocol codename (" + protocolCodeName + ")");
 		}
+
+		this.mode = mode;
 	}
 
-	public Protocol(Type type) {
+	public Protocol(Type type, Mode mode) {
 		this.type = type;
+		this.mode = mode;
 	}
 
 	@Override
@@ -101,19 +123,10 @@ public class Protocol extends BaseEntity {
 		return type;
 	}
 
-	public static List<Protocol> getHigherProtocolsFrom(Type start, boolean includeStart) {
-		List<Protocol> done = new ArrayList<>();
-		if (includeStart) {
-			done.add(new Protocol(start));
-		}
-
-		for (int i = start.ordinal(); i < Type.values().length; i++) {
-			done.add(new Protocol(Type.values()[i]));
-		}
-
-		return done;
+	public Mode getMode() {
+		return mode;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		int hash = 5;

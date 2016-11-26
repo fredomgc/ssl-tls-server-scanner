@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 	<profiles>
-		<profile name="low">
+		<profile name="low">			
+			<protocols>
+				<protocol name="SSLv2"  mode="mustBe"  />
+				<protocol name="SSLv3"  mode="mustNotBe"  />
+				<protocol name="TLS 1.0"  mode="mustBe"  />
+				<protocol name="TLS 1.1"  mode="mayBe"  />
+				<protocol name="TLS 1.2"  mode="mustNotBe" />
+			</protocols>
 			
-			<protocol safe="TLS 1.0" modifier="andHigher" />
-			<!--
-			<vulnerabilities/>
-			<certificate/>
-			-->
-			<!--
-			<ciphers>
-				<safe name="ECDHE-ECDSA-DES-CBC3-SHA" />
-			</ciphers>
-			-->
-		</profile>
-		
-		<profile name="strict">
-			<protocol safe="TLS 1.2" />
-			<vulnerabilities/>
-			<certificate/>
+			<vulnerabilitiesFree mode="mayBe" />
+			<certificateValid  mode="mayBe">
+				<directive name="rsaMinimumPublicKeySize" value="20"  mode="mustBe" />
+				<directive name="rsaMinimumSignatureKeySize" value="20"  mode="mustBe" />
+				<directive name="ecdsaMinimumPublicKeySize" value="20"  mode="mustBe"  />
+				<directive name="ecdsaMinimumSignatureKeySize" value="20"  mode="mustBe"  />
+			</certificateValid>
 			
 			<ciphers>
-				<safe name="ECDHE-RSA-AES256-GCM-SHA384" />
-				<safe name="ECDHE-ECDSA-AES256-GCM-SHA384" />
+				<cipher name="ECDHE-ECDSA-DES-CBC3-SHA"  mode="mustNotBe"  />
 			</ciphers>
 		</profile>
 	</profiles>
