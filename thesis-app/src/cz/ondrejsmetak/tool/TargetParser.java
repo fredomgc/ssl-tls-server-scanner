@@ -91,11 +91,20 @@ public class TargetParser extends BaseParser {
 
 	private void checkAttributesOfNode(Node node, String... expectedAttributes) throws XmlParserException {
 		List<String> expectedAttributesList = new ArrayList<>(Arrays.asList(expectedAttributes));
+		List<String> actualAttributes = getAttributesByTag(node);
 
-		for (String actualAttribute : getAttributesByTag(node)) {
+		if (expectedAttributesList.isEmpty()) {
+			//in this case, we don't expect any attribute
+			if (!actualAttributes.isEmpty()) {
+				throw new XmlParserException("Following attribute(s) %s is/are not recognized for tag [%s]!", actualAttributes, node.getNodeName());
+			}
+		} else {
+			//in this case, we expect only specified attribute(s)
+			for (String actualAttribute : getAttributesByTag(node)) {
 
-			if (!expectedAttributesList.contains(actualAttribute)) {
-				throw new XmlParserException("Unknown attribute [%s]. You must use only supported attributes!", actualAttribute);
+				if (!expectedAttributesList.contains(actualAttribute)) {
+					throw new XmlParserException("Unknown attribute [%s]. You must use only supported attributes!", actualAttribute);
+				}
 			}
 		}
 	}
@@ -105,12 +114,18 @@ public class TargetParser extends BaseParser {
 			throw new XmlParserException("Unknown tag [%s]. You must use only supported tags!", node.getNodeName());
 		}
 
-		//System.err.println("AA: " + node.getParentNode()); //TODO
 		/**
 		 * Tag "profile" must have attribute "name"
 		 */
 		if (node.getNodeName().equals(TAG_PROFILE)) {
 			checkAttributesOfNode(node, ATTRIBUTE_NAME);
+		}
+
+		/**
+		 * Tag "protocols" must be without any attribute
+		 */
+		if (node.getNodeName().equals(TAG_PROTOCOLS)) {
+			checkAttributesOfNode(node, new String[]{});
 		}
 
 		/**
@@ -132,6 +147,13 @@ public class TargetParser extends BaseParser {
 		 */
 		if (node.getNodeName().equals(TAG_CERTIFICATE_VALID)) {
 			checkAttributesOfNode(node, ATTRIBUTE_MODE);
+		}
+
+		/**
+		 * Tag "ciphers" must be without any attribute
+		 */
+		if (node.getNodeName().equals(TAG_CIPHERS)) {
+			checkAttributesOfNode(node, new String[]{});
 		}
 
 		/**

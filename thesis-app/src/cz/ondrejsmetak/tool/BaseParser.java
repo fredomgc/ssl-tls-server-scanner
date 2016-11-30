@@ -23,11 +23,15 @@ public abstract class BaseParser {
 
 	public abstract boolean hasFile();
 
-	protected Element getElementByTagName(Element source, String tagName) {
+	protected Element getElementByTagName(Element source, String tagName) throws XmlParserException {
 		NodeList candidates = source.getElementsByTagName(tagName);
 
+		if (candidates.getLength() == 0) {
+			throw new XmlParserException("Tag [%s] not found in XML file!", tagName);
+		}
+		
 		if (candidates.getLength() != 1) {
-			return null;
+			return null; //logic error
 		}
 
 		Node node = candidates.item(0);

@@ -179,24 +179,36 @@ public class Scanner {
 		}
 	}
 
+	private void doAddNotTested(ReportMessage.Category category) {
+		safeMessages.add(new ReportMessage("OK (by default, not tested due to profile configuration)", category, ReportMessage.Type.SUCCESS));
+	}
+
 	private void doReportMessages() {
 		vulnerableMessages = new ArrayList<>();
 		safeMessages = new ArrayList<>();
 
 		if (target.getProfile().isTestCipherSuites()) {
 			doSplitSafeAndVulnerable(getCipherSuites(), ReportMessage.Category.CIPHER);
+		} else {
+			doAddNotTested(ReportMessage.Category.CIPHER);
 		}
 
 		if (target.getProfile().isTestVulnerabilities()) {
 			doSplitSafeAndVulnerable(getVulnerabilities(), ReportMessage.Category.VULNERABILITY);
+		} else {
+			doAddNotTested(ReportMessage.Category.VULNERABILITY);
 		}
 
 		if (target.getProfile().isTestCertificate()) {
 			doSplitSafeAndVulnerable(getCertificateChecks(), ReportMessage.Category.CERTIFICATE);
+		} else {
+			doAddNotTested(ReportMessage.Category.CERTIFICATE);
 		}
 
 		if (target.getProfile().isTestSafeProtocols()) {
 			doSplitSafeAndVulnerable(getProtocols(), ReportMessage.Category.PROTOCOL);
+		} else {
+			doAddNotTested(ReportMessage.Category.PROTOCOL);
 		}
 	}
 

@@ -39,6 +39,10 @@ public class ScannerManager {
 		return created;
 	}
 
+	/**
+	 * Performs all required scans and creates report (as HTML file)
+	 * @return true, if all targets are safe, false otherwise (at least one vulnerable)
+	 */
 	public boolean perform() {
 		try {
 			if (createDefault()) {
@@ -79,13 +83,12 @@ public class ScannerManager {
 			}
 
 			HtmlExport export = new HtmlExport();
-			export.export(reports);
-
+			String report = export.export(reports);
+			Log.infoln(String.format("Scan report saved in [%s]", report));
+			
 			return vulns == 0;
-		} catch (XmlParserException ex) {
+		} catch (XmlParserException | IOException ex) {
 			Log.errorln(ex);
-		} catch (IOException ex) {
-			Logger.getLogger(ScannerManager.class.getName()).log(Level.SEVERE, null, ex);
 		}
 
 		return false;

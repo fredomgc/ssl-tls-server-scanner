@@ -115,12 +115,13 @@ public class HtmlExport {
 		return "";
 	}
 
-	public void export(List<Report> reports) {
+	public String export(List<Report> reports) {
 		Date timestamp = new Date();
 		File target = new File(Helper.getWorkingDirectory() + File.separator + "report_" + Helper.getFormattedDateTime(timestamp, true) + ".htm");
 
 		Writer writer = null;
 
+		//todo, try with resources
 		try {
 
 			writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(target.getAbsolutePath()), "utf-8"));
@@ -137,6 +138,7 @@ public class HtmlExport {
 			}
 		}
 
+		return target.getAbsolutePath();
 	}
 
 }
