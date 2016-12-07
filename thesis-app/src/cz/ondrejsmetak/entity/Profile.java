@@ -62,6 +62,15 @@ public class Profile extends BaseEntity {
 	public boolean isTestSafeProtocols() {
 		return !protocols.isEmpty();
 	}
+	
+	public Mode getModeVulnerabilities(){
+		return vulnerabilities;
+	}
+	
+	public Mode getModeCertificate(){
+		return certificate;
+	}
+	
 
 	public static Profile fromXml(String name, List<Protocol> protocols, Mode certificate, List<Directive> certificateDirectives, Mode vulnerabilities, List<CipherSuite> cipherSuites) {
 		Profile profile = new Profile();

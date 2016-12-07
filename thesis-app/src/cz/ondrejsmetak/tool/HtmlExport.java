@@ -1,5 +1,6 @@
 package cz.ondrejsmetak.tool;
 
+import com.sun.corba.se.impl.protocol.giopmsgheaders.Message;
 import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.entity.Report;
 import cz.ondrejsmetak.entity.ReportMessage;
@@ -71,7 +72,7 @@ public class HtmlExport {
 		StringBuilder sb = new StringBuilder();
 		sb.append(String.format("<h2>Target: %s (%s)</h2>", report.getTarget().getDestination(), report.getTarget().getName()));
 		sb.append("<table class=\"table table-striped table-hover\">");
-		sb.append("<thead><tr><th>Category</th><th>Status</th></tr></thead>");
+		sb.append("<thead><tr><th>Category</th><th>Mode</th><th>Status</th></tr></thead>");
 		sb.append("<tbody>");
 		sb.append(doCreateTableSegment("Protocols", protocol));
 		sb.append(doCreateTableSegment("Certificate", certificate));
@@ -95,7 +96,9 @@ public class HtmlExport {
 			if (!first) {
 				sb.append("<tr>");
 			}
-			sb.append(String.format("<td class=\"%s\">%s</td> </tr>", typeToCssClass(message.getType()), message.getMessage()));
+			sb.append(String.format("<td>%s</td>", message.getRequiredModeHuman()));
+			sb.append(String.format("<td class=\"%s\">%s</td>", typeToCssClass(message), message.getMessage()));
+			sb.append("</tr>");
 
 			first = false;
 		}
@@ -103,12 +106,16 @@ public class HtmlExport {
 		return sb.toString();
 	}
 
-	private String typeToCssClass(ReportMessage.Type type) {
-		if (type.equals(ReportMessage.Type.ERROR)) {
+	private String typeToCssClass(ReportMessage message) {
+		if(message.getRequiredMode().isCanBe()){
+			return "";
+		}
+		
+		if (message.getType().equals(ReportMessage.Type.ERROR)) {
 			return "danger";
 		}
 
-		if (type.equals(ReportMessage.Type.SUCCESS)) {
+		if (message.getType().equals(ReportMessage.Type.SUCCESS)) {
 			return "success";
 		}
 

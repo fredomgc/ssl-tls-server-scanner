@@ -6,6 +6,7 @@ package cz.ondrejsmetak;
 import com.sun.javafx.scene.control.skin.VirtualFlow;
 import cz.ondrejsmetak.entity.CipherSuite;
 import cz.ondrejsmetak.entity.Directive;
+import cz.ondrejsmetak.entity.Mode;
 import cz.ondrejsmetak.entity.Profile;
 import cz.ondrejsmetak.entity.Protocol;
 import cz.ondrejsmetak.entity.ReportMessage;
@@ -47,9 +48,9 @@ public class Scanner {
 		if (target.getProfile().isTestCipherSuites()) {
 			for (CipherSuite cipherSuite : target.getProfile().getCipherSuites()) {
 				if (cipherSuite.getMode().isMustBe() && !oSaft.getParser().getSupportedCipherSuites().contains(cipherSuite)) {
-					vulns.add(new ReportMessage("Cipher suite " + cipherSuite + " MUST BE supported!", ReportMessage.Category.CIPHER));
+					vulns.add(new ReportMessage("Cipher suite " + cipherSuite + " MUST BE supported!", ReportMessage.Category.CIPHER, cipherSuite.getMode()));
 				} else if (cipherSuite.getMode().isMustNotBe() && oSaft.getParser().getSupportedCipherSuites().contains(cipherSuite)) {
-					vulns.add(new ReportMessage("Cipher suite " + cipherSuite + " MUST NOT BE supported!", ReportMessage.Category.CIPHER));
+					vulns.add(new ReportMessage("Cipher suite " + cipherSuite + " MUST NOT BE supported!", ReportMessage.Category.CIPHER, cipherSuite.getMode()));
 				}
 			}
 		}
@@ -149,9 +150,9 @@ public class Scanner {
 		}
 
 		if (result.isVulnerable()) {
-			vulnerable = new ReportMessage(out.toString(), category);
+			vulnerable = new ReportMessage(out.toString(), category, this.target.getProfile().getModeVulnerabilities());
 		} else if (result.isUnknown() && ConfigurationRegister.getInstance().isUnknownTestResultIsError()) {
-			vulnerable = new ReportMessage(out.toString(), category);
+			vulnerable = new ReportMessage(out.toString(), category, this.target.getProfile().getModeVulnerabilities());
 		}
 
 		return vulnerable;
@@ -162,25 +163,25 @@ public class Scanner {
 
 		for (Protocol protocol : target.getProfile().getProtocols()) {
 			if (protocol.getMode().isMustBe() && !oSaft.getParser().getSupportedProtocols().contains(protocol)) {
-				vulns.add(new ReportMessage("Protocol " + protocol + " MUST BE supported!", ReportMessage.Category.PROTOCOL));
+				vulns.add(new ReportMessage("Protocol " + protocol + " MUST BE supported!", ReportMessage.Category.PROTOCOL, protocol.getMode()));
 			} else if (protocol.getMode().isMustNotBe() && oSaft.getParser().getSupportedProtocols().contains(protocol)) {
-				vulns.add(new ReportMessage("Protocol " + protocol + " MUST NOT BE supported!", ReportMessage.Category.PROTOCOL));
+				vulns.add(new ReportMessage("Protocol " + protocol + " MUST NOT BE supported!", ReportMessage.Category.PROTOCOL, protocol.getMode()));
 			}
 		}
 
 		return vulns;
 	}
 
-	private void doSplitSafeAndVulnerable(List<ReportMessage> vulnerabilities, ReportMessage.Category category) {
+	private void doSplitSafeAndVulnerable(List<ReportMessage> vulnerabilities, ReportMessage.Category category, Mode requiredMode) {
 		if (vulnerabilities.isEmpty()) {
-			safeMessages.add(new ReportMessage("OK", category, ReportMessage.Type.SUCCESS));
+			safeMessages.add(new ReportMessage("OK", category, requiredMode, ReportMessage.Type.SUCCESS));
 		} else {
 			vulnerableMessages.addAll(vulnerabilities);
 		}
 	}
 
-	private void doAddNotTested(ReportMessage.Category category) {
-		safeMessages.add(new ReportMessage("OK (by default, not tested due to profile configuration)", category, ReportMessage.Type.SUCCESS));
+	private void doAddNotTested(ReportMessage.Category category, Mode requiredMode) {
+		safeMessages.add(new ReportMessage("OK (by default, not tested due to profile configuration)", category, requiredMode, ReportMessage.Type.SUCCESS));
 	}
 
 	private void doReportMessages() {
@@ -188,27 +189,27 @@ public class Scanner {
 		safeMessages = new ArrayList<>();
 
 		if (target.getProfile().isTestCipherSuites()) {
-			doSplitSafeAndVulnerable(getCipherSuites(), ReportMessage.Category.CIPHER);
+			doSplitSafeAndVulnerable(getCipherSuites(), ReportMessage.Category.CIPHER, null);
 		} else {
-			doAddNotTested(ReportMessage.Category.CIPHER);
+			doAddNotTested(ReportMessage.Category.CIPHER, null);
 		}
 
 		if (target.getProfile().isTestVulnerabilities()) {
-			doSplitSafeAndVulnerable(getVulnerabilities(), ReportMessage.Category.VULNERABILITY);
+			doSplitSafeAndVulnerable(getVulnerabilities(), ReportMessage.Category.VULNERABILITY, target.getProfile().getModeVulnerabilities());
 		} else {
-			doAddNotTested(ReportMessage.Category.VULNERABILITY);
+			doAddNotTested(ReportMessage.Category.VULNERABILITY, target.getProfile().getModeVulnerabilities());
 		}
 
 		if (target.getProfile().isTestCertificate()) {
-			doSplitSafeAndVulnerable(getCertificateChecks(), ReportMessage.Category.CERTIFICATE);
+			doSplitSafeAndVulnerable(getCertificateChecks(), ReportMessage.Category.CERTIFICATE, target.getProfile().getModeCertificate());
 		} else {
-			doAddNotTested(ReportMessage.Category.CERTIFICATE);
+			doAddNotTested(ReportMessage.Category.CERTIFICATE, target.getProfile().getModeCertificate());
 		}
 
 		if (target.getProfile().isTestSafeProtocols()) {
-			doSplitSafeAndVulnerable(getProtocols(), ReportMessage.Category.PROTOCOL);
+			doSplitSafeAndVulnerable(getProtocols(), ReportMessage.Category.PROTOCOL, null);
 		} else {
-			doAddNotTested(ReportMessage.Category.PROTOCOL);
+			doAddNotTested(ReportMessage.Category.PROTOCOL, null);
 		}
 	}
 

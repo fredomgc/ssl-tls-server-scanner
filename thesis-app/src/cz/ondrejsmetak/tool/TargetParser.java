@@ -332,7 +332,7 @@ public class TargetParser extends BaseParser {
 			throw new XmlParserException("For certificateValid, following directive(s) is/are missing: %s", expectedDirectives.toString());
 		}
 		
-		if (certificateValidMode.isMayBe() && !mustBeDirectives.isEmpty()) {
+		if (certificateValidMode.isCanBe() && !mustBeDirectives.isEmpty()) {
 			throw new XmlParserException("Mode \"CAN BE\" is used for parent tag certificateValid. It this case, all following directive(s) must use \"CAN BE\" mode: %s", mustBeDirectives.toString());
 		}
 

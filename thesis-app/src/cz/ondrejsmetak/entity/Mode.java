@@ -61,7 +61,7 @@ public class Mode {
 		return type == Type.MUST_NOT_BE;
 	}
 	
-	public boolean isMayBe(){
+	public boolean isCanBe(){
 		return type == Type.CAN_BE;
 	}
 	

@@ -78,6 +78,8 @@ public class ScannerManager {
 				List<ReportMessage> vulnerableMessages = scanner.getVulnerableMessages();
 				vulns += vulnerableMessages.size();
 
+				
+				target.getProfile().isTestCertificate();
 				reports.add(new Report(target, vulnerableMessages, scanner.getSafeMessages()));
 				Log.infoln("Scan finished");
 			}
