@@ -304,12 +304,13 @@ public class TargetParser extends BaseParser {
 		return new Directive(name, Integer.valueOf(valueStr), mode);
 	}
 
-	private List<Directive> parseCertificateDirectives(Element certificateValidTag) throws XmlParserException {
+	private List<Directive> parseCertificateDirectives(Element certificateValidTag, Mode certificateValidMode) throws XmlParserException {
 		if (!(certificateValidTag instanceof Element)) {
 			throw new XmlParserException("Tag certificateValid is missing!");
 		}
 
 		List<Directive> done = new ArrayList<>();
+		List<String> mustBeDirectives = new ArrayList<>();
 		checkAttributesOfNode(certificateValidTag, ATTRIBUTE_MODE);
 		NodeList directives = certificateValidTag.getElementsByTagName(TAG_DIRECTIVE);
 		List<String> expectedDirectives = Profile.getAllCertificateDirectives();
@@ -321,10 +322,18 @@ public class TargetParser extends BaseParser {
 			}
 			expectedDirectives.remove(directive.getName());
 			done.add(directive);
+
+			if (directive.getMode().isMustBe()) {
+				mustBeDirectives.add(directive.getName());
+			}
 		}
 
 		if (!expectedDirectives.isEmpty()) {
 			throw new XmlParserException("For certificateValid, following directive(s) is/are missing: %s", expectedDirectives.toString());
+		}
+		
+		if (certificateValidMode.isMayBe() && !mustBeDirectives.isEmpty()) {
+			throw new XmlParserException("Mode \"CAN BE\" is used for parent tag certificateValid. It this case, all following directive(s) must use \"CAN BE\" mode: %s", mustBeDirectives.toString());
 		}
 
 		return done;
@@ -407,7 +416,7 @@ public class TargetParser extends BaseParser {
 		 */
 		Element certificateTag = getElementByTagName(profile, TAG_CERTIFICATE_VALID);
 		Mode certificate = parseMode(certificateTag.getAttribute(ATTRIBUTE_MODE), TAG_CERTIFICATE_VALID, Type.MUST_NOT_BE);
-		List<Directive> certificateDirectives = parseCertificateDirectives(certificateTag);
+		List<Directive> certificateDirectives = parseCertificateDirectives(certificateTag, certificate);
 
 		/**
 		 * Safe cipher suites

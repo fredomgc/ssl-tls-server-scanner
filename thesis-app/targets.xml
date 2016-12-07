@@ -14,10 +14,10 @@
 			<vulnerabilitiesFree mode="canBe"/>
 			
 			<certificateValid  mode="canBe">
-				<directive name="rsaMinimumPublicKeySize" value="2048"  mode="mustBe" />
-				<directive name="rsaMinimumSignatureKeySize" value="2048"  mode="mustBe" />
-				<directive name="ecdsaMinimumPublicKeySize" value="128"  mode="mustBe"  />
-				<directive name="ecdsaMinimumSignatureKeySize" value="128"  mode="mustBe"  />
+				<directive name="rsaMinimumPublicKeySize" value="2048"  mode="canBe" />
+				<directive name="rsaMinimumSignatureKeySize" value="2048"  mode="canBe" />
+				<directive name="ecdsaMinimumPublicKeySize" value="128"  mode="canBe"  />
+				<directive name="ecdsaMinimumSignatureKeySize" value="128"  mode="canBe"  />
 			</certificateValid>
 			
 			<ciphers>

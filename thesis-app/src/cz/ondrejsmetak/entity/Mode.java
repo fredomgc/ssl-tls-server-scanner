@@ -9,14 +9,14 @@ import java.util.Objects;
 public class Mode {
 
 	public enum Type {
-		MUST_BE, MUST_NOT_BE, MAY_BE
+		MUST_BE, MUST_NOT_BE, CAN_BE
 	}
 
 	private Type type = null;
 
 	private static final String MUST_BE_STR = "mustBe";
 	private static final String MUST_NOT_BE_STR = "mustNotBe";
-	private static final String MAY_BE_STR = "mayBe";
+	private static final String CAN_BE_STR = "canBe";
 
 	public Mode(Type type) {
 		this.type = type;
@@ -31,11 +31,11 @@ public class Mode {
 			this.type = Type.MUST_NOT_BE;
 		}
 
-		if (type.equals(MAY_BE_STR)) {
-			this.type = Type.MAY_BE;
+		if (type.equals(CAN_BE_STR)) {
+			this.type = Type.CAN_BE;
 		}
 
-		if (type == null) {
+		if (this.type == null) {
 			throw new IllegalArgumentException(String.format("Unknown type of mode [%s]!", type));
 		}
 	}
@@ -59,6 +59,10 @@ public class Mode {
 	
 	public boolean isMustNotBe(){
 		return type == Type.MUST_NOT_BE;
+	}
+	
+	public boolean isMayBe(){
+		return type == Type.CAN_BE;
 	}
 	
 	
