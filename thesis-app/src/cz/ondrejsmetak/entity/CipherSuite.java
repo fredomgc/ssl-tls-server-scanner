@@ -3,18 +3,37 @@ package cz.ondrejsmetak.entity;
 import java.util.Objects;
 
 /**
+ * Represents cipher suite Cipher suite is being in SSL/TLS (for example in
+ * Client Hello message) with behaviour affected by settings in scan profile
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public class CipherSuite extends BaseEntity {
 
+	/**
+	 * Human representation of cipher suites
+	 */
 	private String name;
+
+	/**
+	 * Decides, how should be this cipher suite treated
+	 */
 	private Mode mode;
 
+	/**
+	 * Creates new cipher suite with given name and unknown mode
+	 * @param name name of cipher suite
+	 */
 	public CipherSuite(String name) {
 		this(name, null);
 	}
+
 	
+	/**
+	 * Creates new cipher suite with given name and mode
+	 * @param name name of cipher suite
+	 * @param mode mode of cipher suite
+	 */
 	public CipherSuite(String name, Mode mode) {
 		this.name = name;
 		this.mode = mode;
