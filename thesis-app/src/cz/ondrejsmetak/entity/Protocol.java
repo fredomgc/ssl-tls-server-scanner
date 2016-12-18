@@ -6,19 +6,32 @@ import java.util.List;
 import java.util.Objects;
 
 /**
+ * SSL/TLS protocol
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public class Protocol extends BaseEntity {
 
+	/**
+	 * Type of protocol
+	 */
 	public enum Type {
 		SSLv2, SSLv3, TLSv10, TLSv11, TLSv12, TLSv13
 	}
 
+	/**
+	 * Type of this protocol
+	 */
 	private Type type = null;
 
+	/**
+	 * Mode, that affects behaviour during scanning this protocol
+	 */
 	private Mode mode;
-	
+
+	/**
+	 * Supported text representation of each protocol type
+	 */
 	private static final String[] sslv2Aliases = {"SSLv2", "SSL 2.0", "SSL 2", "SSL2"};
 	private static final String[] sslv3Aliases = {"SSLv3", "SSL 3.0", "SSL 3", "SSL3"};
 	private static final String[] tlsv10Aliases = {"TLSv1.0", "TLS 1.0", "TLSv10", "TLS 10", "TLSv1"};
@@ -26,22 +39,41 @@ public class Protocol extends BaseEntity {
 	private static final String[] tlsv12Aliases = {"TLSv1.2", "TLS 1.2", "TLSv12", "TLS 12"};
 	private static final String[] tlsv13Aliases = {"TLSv1.3", "TLS 1.3", "TLSv13", "TLS 13"};
 
+	/**
+	 * Returns all supported protocol types
+	 *
+	 * @return collection containing all supported protocol types
+	 */
 	public static List<Protocol.Type> getAllTypes() {
 		return new ArrayList<>(Arrays.asList(new Protocol.Type[]{
 			Type.SSLv2, Type.SSLv3, Type.TLSv10, Type.TLSv11, Type.TLSv12, Type.TLSv13
 		}));
 	}
 
+	/**
+	 * Creates new protocol with given text representation and unknown mode
+	 *
+	 * @param protocolCodeName text representation of type's name
+	 */
 	public Protocol(String protocolCodeName) {
 		this(protocolCodeName, null);
 	}
-	
 
+	/**
+	 * Creates new protocol with precisely given type and unknown mode
+	 *
+	 * @param type type of protocol
+	 */
 	public Protocol(Type type) {
 		this(type, null);
 	}
-	
-	
+
+	/**
+	 * Creates new protocol with given text representation and mode
+	 *
+	 * @param protocolCodeName text representation of type's name
+	 * @param mode mode of this protocol
+	 */
 	public Protocol(String protocolCodeName, Mode mode) {
 		if (hasCodeName(protocolCodeName, sslv2Aliases)) {
 			type = Type.SSLv2;
@@ -74,6 +106,12 @@ public class Protocol extends BaseEntity {
 		this.mode = mode;
 	}
 
+	/**
+	 * Creates new protocol with precisely given type and mode
+	 *
+	 * @param type type of protocol
+	 * @param mode of this protocol
+	 */
 	public Protocol(Type type, Mode mode) {
 		this.type = type;
 		this.mode = mode;
@@ -109,13 +147,19 @@ public class Protocol extends BaseEntity {
 		return "";
 	}
 
+	/**
+	 * Checks, if given codename is supported
+	 *
+	 * @param codeName codename candidate
+	 * @param candidates array of supported codenames
+	 * @return true, if given codename is supported, false otherwise
+	 */
 	private boolean hasCodeName(String codeName, String[] candidates) {
 		for (int i = 0; i < candidates.length; i++) {
 			if (codeName.equalsIgnoreCase(candidates[i])) {
 				return true;
 			}
 		}
-
 		return false;
 	}
 
@@ -126,7 +170,7 @@ public class Protocol extends BaseEntity {
 	public Mode getMode() {
 		return mode;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		int hash = 5;

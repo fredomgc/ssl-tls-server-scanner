@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cz.ondrejsmetak.facade;
 
 import cz.ondrejsmetak.ConfigurationRegister;
@@ -21,22 +16,45 @@ import java.util.List;
  */
 public class OSaftFacade extends BaseFacade {
 
+	/**
+	 * Target, that will be scanned
+	 */
 	private Target target;
 
+	/**
+	 * Raw data returned by O-Saft tool
+	 */
 	private List<String> data = new ArrayList<>();
 
+	/**
+	 * Parser for (raw) data returned by O-Saft tool
+	 */
 	private OSaftParser parser;
 
+	/**
+	 * Creates new O-Saft API for given target
+	 *
+	 * @param target
+	 */
 	public OSaftFacade(Target target) {
 		this.target = target;
 	}
 
+	/**
+	 * Run O-Saft tool and parse results
+	 */
 	public void runScan() {
 		data.clear();
 		data.addAll(getData());
 		parser = new OSaftParser(data);
 	}
 
+	/**
+	 * Data returned by O-Saft tool
+	 *
+	 * @return collection of lines. Each line represents same line returned by
+	 * O-Saft tool
+	 */
 	private List<String> getData() {
 		if (data.isEmpty()) {
 			if (target.getProfile().isTestCipherSuites() || target.getProfile().isTestVulnerabilities()) {
@@ -47,13 +65,19 @@ public class OSaftFacade extends BaseFacade {
 				data.addAll(doCmd(target.getDestination(), "+info"));
 			}
 
-			if (target.getProfile().isTestSafeProtocols()) {
+			if (target.getProfile().isTestProtocols()) {
 				data.addAll(doCmd(target.getDestination(), "+protocols"));
 			}
 		}
 		return data;
 	}
 
+	/**
+	 * Runs O-Saft tool with given parameters
+	 *
+	 * @param args collection of arguments, that will be passed to O-Saft tool
+	 * @return data returned by O-Saft tool
+	 */
 	private List<String> doCmd(String... args) {
 		String[] rawArgs = new String[args.length + 3];
 		rawArgs[0] = ConfigurationRegister.getInstance().getOSaftFolderAbsolutePath() + "o-saft.pl"; //first arg is path to tool
@@ -69,6 +93,11 @@ public class OSaftFacade extends BaseFacade {
 		return Helper.doCmd(rawArgs); //run a command
 	}
 
+	/**
+	 * Returns O-Saft parser
+	 *
+	 * @return O-Saft parser
+	 */
 	public OSaftParser getParser() {
 		return parser;
 	}

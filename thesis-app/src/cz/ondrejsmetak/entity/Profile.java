@@ -1,36 +1,68 @@
 package cz.ondrejsmetak.entity;
 
-import cz.ondrejsmetak.other.InstantiableFromXml;
-import cz.ondrejsmetak.tool.Pair;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
 /**
+ * Profile, that defines scan settings. Profile is then assigned to target(s)
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public class Profile extends BaseEntity {
 
+	/**
+	 * Name of profile
+	 */
 	private String name;
+
+	/**
+	 * Collection of protocols, that will be checked during scanning
+	 */
 	private final List<Protocol> protocols = new ArrayList<>();
+
+	/**
+	 * Collection of cipher suites, that will be checked during scanning
+	 */
 	private final List<CipherSuite> cipherSuites = new ArrayList<>();
+
+	/**
+	 * Collection of certificate's settings directives, that will be checked
+	 * during scanning
+	 */
 	private final Map<String, Directive> certificateDirectives = new HashMap<>();
 
+	/**
+	 * Mode that affects behavirour of checking certificate during scanning
+	 */
 	private Mode certificate;
+
+	/**
+	 * Mode that affects behavirour of checking vulnerabilities during scanning
+	 */
 	private Mode vulnerabilities;
 
+	/**
+	 * Names of certificate directives
+	 */
 	public static final String RSA_MINIMUM_PUBLIC_KEY_SIZE = "rsaMinimumPublicKeySize";
 	public static final String RSA_MINIMUM_SIGNATURE_KEY_SIZE = "rsaMinimumSignatureKeySize";
 	public static final String ECDSA_MINIMUM_PUBLIC_KEY_SIZE = "ecdsaMinimumPublicKeySize";
 	public static final String ECDSA_MINIMUM_SIGNATURE_SIZE = "ecdsaMinimumSignatureKeySize";
 
+	/**
+	 * Creates new empty profile
+	 */
 	public Profile() {
 	}
 
+	/**
+	 * Returns all supported certificate directives
+	 *
+	 * @return collection of all supported certificate directives
+	 */
 	public static List<String> getAllCertificateDirectives() {
 		return new ArrayList<>(Arrays.asList(new String[]{RSA_MINIMUM_PUBLIC_KEY_SIZE, RSA_MINIMUM_SIGNATURE_KEY_SIZE, ECDSA_MINIMUM_PUBLIC_KEY_SIZE, ECDSA_MINIMUM_SIGNATURE_SIZE}));
 	}
@@ -47,31 +79,77 @@ public class Profile extends BaseEntity {
 		return cipherSuites;
 	}
 
+	/**
+	 * Is required to perform test of certificate?
+	 *
+	 * @return true, if test of certificate must be performed, false otherwise
+	 */
 	public boolean isTestCertificate() {
 		return certificate.isMustBe();
 	}
 
+	/**
+	 * Is required to perform test of vulnerabilities?
+	 *
+	 * @return true, if test of vulnerabilities must be performed, false
+	 * otherwise
+	 */
 	public boolean isTestVulnerabilities() {
 		return vulnerabilities.isMustBe();
 	}
 
+	/**
+	 * Is required to perform test of vulnerabilities?
+	 *
+	 * @return true, if test of vulnerabilities must be performed, false
+	 * otherwise
+	 */
 	public boolean isTestCipherSuites() {
 		return !cipherSuites.isEmpty();
 	}
 
-	public boolean isTestSafeProtocols() {
+	/**
+	 * Is required to perform test of protocols?
+	 *
+	 * @return true, if test of protocols must be performed, false otherwise
+	 */
+	public boolean isTestProtocols() {
 		return !protocols.isEmpty();
 	}
-	
-	public Mode getModeVulnerabilities(){
+
+	/**
+	 * Returns mode that indicates behaviour during scanning of vulnerabilities
+	 *
+	 * @return mode indicating behaviour during scanning of vulnerabilities
+	 */
+	public Mode getModeVulnerabilities() {
 		return vulnerabilities;
 	}
-	
-	public Mode getModeCertificate(){
+
+	/**
+	 * Returns mode that indicates behaviour during scanning of certificate
+	 *
+	 * @return mode indicating behaviour during scanning of certificate
+	 */
+	public Mode getModeCertificate() {
 		return certificate;
 	}
-	
 
+	/**
+	 * Creates new profile with given attributes. Usefull shortcut
+	 *
+	 * @param name name of profile
+	 * @param protocols protocols, that will be checked during scan
+	 * @param certificate mode, that affects behaviour during scan of
+	 * certificate
+	 * @param certificateDirectives collection of directives, that alters
+	 * behaviour during scan of certificate
+	 * @param vulnerabilities mode, that affects behaviour during scan of
+	 * vulnerabilities
+	 * @param cipherSuites collection of cipher suites, that will be checked
+	 * during scan
+	 * @return created profile
+	 */
 	public static Profile fromXml(String name, List<Protocol> protocols, Mode certificate, List<Directive> certificateDirectives, Mode vulnerabilities, List<CipherSuite> cipherSuites) {
 		Profile profile = new Profile();
 		profile.setName(name);

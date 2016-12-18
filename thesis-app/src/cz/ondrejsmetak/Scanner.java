@@ -206,7 +206,7 @@ public class Scanner {
 			doAddNotTested(ReportMessage.Category.CERTIFICATE, target.getProfile().getModeCertificate());
 		}
 
-		if (target.getProfile().isTestSafeProtocols()) {
+		if (target.getProfile().isTestProtocols()) {
 			doSplitSafeAndVulnerable(getProtocols(), ReportMessage.Category.PROTOCOL, null);
 		} else {
 			doAddNotTested(ReportMessage.Category.PROTOCOL, null);
