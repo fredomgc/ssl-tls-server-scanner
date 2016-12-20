@@ -1,9 +1,5 @@
-/*
- * Spusteni scannovani, vraceni vysledku testu
- */
 package cz.ondrejsmetak;
 
-import com.sun.javafx.scene.control.skin.VirtualFlow;
 import cz.ondrejsmetak.entity.CipherSuite;
 import cz.ondrejsmetak.entity.Directive;
 import cz.ondrejsmetak.entity.Mode;
@@ -15,10 +11,8 @@ import cz.ondrejsmetak.facade.OSaftFacade;
 import cz.ondrejsmetak.facade.OSaftParser;
 import cz.ondrejsmetak.entity.Target;
 import cz.ondrejsmetak.tool.Helper;
-import cz.ondrejsmetak.tool.Log;
 import java.util.ArrayList;
 import java.util.List;
-import javax.crypto.Cipher;
 
 /**
  *
@@ -26,22 +20,49 @@ import javax.crypto.Cipher;
  */
 public class Scanner {
 
+	/**
+	 * Facade over O-Saft tool
+	 */
 	private final OSaftFacade oSaft;
+
+	/**
+	 * Target, that will be scanned
+	 */
 	private final Target target;
 
+	/**
+	 * Messages with found vulneragilities
+	 */
 	private List<ReportMessage> vulnerableMessages;
+
+	/**
+	 * Messages with confirmed secure states
+	 */
 	private List<ReportMessage> safeMessages;
 
+	/**
+	 * Creates a new intance of scanner for the given target
+	 *
+	 * @param target target, that will be scanned
+	 */
 	public Scanner(Target target) {
 		this.target = target;
 		oSaft = new OSaftFacade(target);
 	}
 
+	/**
+	 * Performs all required scan(s) for this target
+	 */
 	public void runScan() {
 		oSaft.runScan();
 		doReportMessages();
 	}
 
+	/**
+	 * Return a collection of the report messages regarding cipher suites
+	 *
+	 * @return collection of the report messages
+	 */
 	private List<ReportMessage> getCipherSuites() {
 		List<ReportMessage> vulns = new ArrayList<>();
 
@@ -58,6 +79,11 @@ public class Scanner {
 		return vulns;
 	}
 
+	/**
+	 * Return a collection of the report messages regarding vulnerabilities
+	 *
+	 * @return collection of the report messages
+	 */
 	private List<ReportMessage> getVulnerabilities() {
 		List<ReportMessage> vulns = new ArrayList<>();
 
@@ -79,6 +105,12 @@ public class Scanner {
 		return vulns;
 	}
 
+	/**
+	 * Return a collection of the report messages regarding tests of the
+	 * certificate
+	 *
+	 * @return collection of the report messages
+	 */
 	private List<ReportMessage> getCertificateChecks() {
 		List<ReportMessage> vulns = new ArrayList<>();
 
@@ -94,6 +126,12 @@ public class Scanner {
 		return vulns;
 	}
 
+	/**
+	 * Return a collection of the report messages regarding test of the
+	 * certificate's keys
+	 *
+	 * @return collection of the report messages
+	 */
 	private List<ReportMessage> getCertificateKeysCheck() {
 		List<ReportMessage> vulns = new ArrayList<>();
 		Directive rsaDirective;
@@ -140,6 +178,14 @@ public class Scanner {
 		return vulns;
 	}
 
+	/**
+	 * Creates a new report message with the given body, result and category
+	 *
+	 * @param vulnerableMessage message in text form
+	 * @param result result of the test
+	 * @param category category of the test
+	 * @return a newly created report message
+	 */
 	private ReportMessage doPrintVulnerability(String vulnerableMessage, Result result, ReportMessage.Category category) {
 		ReportMessage vulnerable = null;
 
@@ -158,6 +204,11 @@ public class Scanner {
 		return vulnerable;
 	}
 
+	/**
+	 * Return a collection of the report messages regarding protocols
+	 *
+	 * @return collection of the report messages
+	 */
 	private List<ReportMessage> getProtocols() {
 		List<ReportMessage> vulns = new ArrayList<>();
 
@@ -172,6 +223,14 @@ public class Scanner {
 		return vulns;
 	}
 
+	/**
+	 * Creates a safe messages for the categories with zero found
+	 * vulnerabilities
+	 *
+	 * @param vulnerabilities collection of the found vulnerabilities
+	 * @param category category of found vulnerabilities
+	 * @param requiredMode mode used during testing
+	 */
 	private void doSplitSafeAndVulnerable(List<ReportMessage> vulnerabilities, ReportMessage.Category category, Mode requiredMode) {
 		if (vulnerabilities.isEmpty()) {
 			safeMessages.add(new ReportMessage("OK", category, requiredMode, ReportMessage.Type.SUCCESS));

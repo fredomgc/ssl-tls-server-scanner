@@ -11,18 +11,32 @@ import cz.ondrejsmetak.tool.TargetParser;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
+ * Parses configuration files and runs required scans
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public class ScannerManager {
 
+	/**
+	 * Parser for file "configuration.xml"
+	 */
 	ConfigurationParser configurationParser = new ConfigurationParser();
+
+	/**
+	 * Parses for file "targets.xml"
+	 */
 	TargetParser targetParser = new TargetParser();
 
+	/**
+	 * Checks, if configuration files are present. If not, default one are
+	 * created
+	 *
+	 * @return true, if at least one configuration file was created, false
+	 * otherwise
+	 * @throws IOException
+	 */
 	private boolean createDefault() throws IOException {
 		boolean created = false;
 
@@ -41,7 +55,9 @@ public class ScannerManager {
 
 	/**
 	 * Performs all required scans and creates report (as HTML file)
-	 * @return true, if all targets are safe, false otherwise (at least one vulnerable)
+	 *
+	 * @return true, if all targets are safe, false otherwise (at least one
+	 * vulnerable)
 	 */
 	public boolean perform() {
 		try {
@@ -78,7 +94,6 @@ public class ScannerManager {
 				List<ReportMessage> vulnerableMessages = scanner.getVulnerableMessages();
 				vulns += vulnerableMessages.size();
 
-				
 				target.getProfile().isTestCertificate();
 				reports.add(new Report(target, vulnerableMessages, scanner.getSafeMessages()));
 				Log.infoln("Scan finished");
@@ -87,7 +102,7 @@ public class ScannerManager {
 			HtmlExport export = new HtmlExport();
 			String report = export.export(reports);
 			Log.infoln(String.format("Scan report saved in [%s]", report));
-			
+
 			return vulns == 0;
 		} catch (XmlParserException | IOException ex) {
 			Log.errorln(ex);

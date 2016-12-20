@@ -62,7 +62,7 @@ public class TargetParser extends BaseParser {
 
 	@Override
 	public void createDefault() throws IOException {
-		Path source = ResourceManager.getDefaultConfigurationXml().toPath(); //TODO, too ma vytvaret jine XML
+		Path source = ResourceManager.getDefaultTargetsXml().toPath();
 		Path destination = new File(FILE).toPath();
 		Files.copy(source, destination);
 	}
@@ -72,6 +72,15 @@ public class TargetParser extends BaseParser {
 		return Files.exists(new File(FILE).toPath());
 	}
 
+	/**
+	 * Parses mode of given tag
+	 *
+	 * @param codename mode value in text form
+	 * @param tagName name of the tag, that contains the mode being parsed
+	 * @param forbidden collection of forbidden mode values (for parsed tag)
+	 * @return a newly created mode
+	 * @throws XmlParserException in case of any error
+	 */
 	private Mode parseMode(String codename, String tagName, Mode.Type... forbidden) throws XmlParserException {
 		Mode mode = null;
 		try {
@@ -82,13 +91,20 @@ public class TargetParser extends BaseParser {
 
 		for (Type type : forbidden) {
 			if (type.equals(mode.getType())) {
-				throw new XmlParserException("Mode value [%s] is forbidden in tag [%s]", type, forbidden);
+				throw new XmlParserException("Mode value [%s] is forbidden in tag [%s]", type, tagName);
 			}
 		}
 
 		return mode;
 	}
 
+	/**
+	 * Checks, if a node contains precisely only the expected attributes
+	 *
+	 * @param node node, that will be checked
+	 * @param expectedAttributes collection of expected attributes
+	 * @throws XmlParserException if any attributes are missing or unnecessary
+	 */
 	private void checkAttributesOfNode(Node node, String... expectedAttributes) throws XmlParserException {
 		List<String> expectedAttributesList = new ArrayList<>(Arrays.asList(expectedAttributes));
 		List<String> actualAttributes = getAttributesByTag(node);
@@ -331,7 +347,7 @@ public class TargetParser extends BaseParser {
 		if (!expectedDirectives.isEmpty()) {
 			throw new XmlParserException("For certificateValid, following directive(s) is/are missing: %s", expectedDirectives.toString());
 		}
-		
+
 		if (certificateValidMode.isCanBe() && !mustBeDirectives.isEmpty()) {
 			throw new XmlParserException("Mode \"CAN BE\" is used for parent tag certificateValid. It this case, all following directive(s) must use \"CAN BE\" mode: %s", mustBeDirectives.toString());
 		}

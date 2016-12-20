@@ -14,22 +14,42 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
+ * Base abstract class for all XML parsers in the application
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public abstract class BaseParser {
 
+	/**
+	 * Creates default configuration file, that is being used during parsing
+	 *
+	 * @throws IOException in case of any error
+	 */
 	public abstract void createDefault() throws IOException;
 
+	/**
+	 * Checks, if XML file, that should be parsed, even exists
+	 *
+	 * @return true, if XML file exists, false otherwise
+	 */
 	public abstract boolean hasFile();
 
+	/**
+	 * Returns a child element with given name of the given parent source or
+	 * null, if such child element doesn't exists
+	 *
+	 * @param source parent element
+	 * @param tagName name of child element
+	 * @return child element
+	 * @throws XmlParserException if source element hasn't any child element
+	 */
 	protected Element getElementByTagName(Element source, String tagName) throws XmlParserException {
 		NodeList candidates = source.getElementsByTagName(tagName);
 
 		if (candidates.getLength() == 0) {
 			throw new XmlParserException("Tag [%s] not found in XML file!", tagName);
 		}
-		
+
 		if (candidates.getLength() != 1) {
 			return null; //logic error
 		}
@@ -43,6 +63,12 @@ public abstract class BaseParser {
 		return (Element) node;
 	}
 
+	/**
+	 * Returns a collection of all attributes of the given tag
+	 *
+	 * @param tag tag
+	 * @return collection of all attributes
+	 */
 	protected List<String> getAttributesByTag(Node tag) {
 		List<String> done = new ArrayList<>();
 
