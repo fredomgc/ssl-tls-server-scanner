@@ -71,7 +71,7 @@ public class Helper {
 	 * @return content of file
 	 * @throws FileNotFoundException if case of error
 	 */
-	public static String getContentoOfFile(File file) throws FileNotFoundException {
+	public static String getContentOfFile(File file) throws FileNotFoundException {
 		//http://stackoverflow.com/a/3403112
 		return new Scanner(file).useDelimiter("\\Z").next();
 	}

@@ -1,8 +1,9 @@
-package cz.ondrejsmetak.tool;
+package cz.ondrejsmetak.export;
 
 import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.entity.Report;
 import cz.ondrejsmetak.entity.ReportMessage;
+import cz.ondrejsmetak.tool.Helper;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -19,7 +20,7 @@ import java.util.List;
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
-public class HtmlExport {
+public class HtmlExport extends BaseExport {
 
 	/**
 	 * Specifies a empty place in HTML template, that will be replaced with
@@ -34,7 +35,7 @@ public class HtmlExport {
 	 * @throws FileNotFoundException
 	 */
 	private String getTemplate() throws FileNotFoundException {
-		return Helper.getContentoOfFile(ResourceManager.getHtmlTemplate());
+		return Helper.getContentOfFile(ResourceManager.getHtmlTemplate());
 	}
 
 	/**

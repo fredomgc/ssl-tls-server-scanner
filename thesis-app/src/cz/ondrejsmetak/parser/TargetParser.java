@@ -1,5 +1,6 @@
-package cz.ondrejsmetak.tool;
+package cz.ondrejsmetak.parser;
 
+import cz.ondrejsmetak.parser.BaseParser;
 import cz.ondrejsmetak.ProfileRegister;
 import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.entity.CipherSuite;
@@ -10,6 +11,7 @@ import cz.ondrejsmetak.entity.Profile;
 import cz.ondrejsmetak.entity.Protocol;
 import cz.ondrejsmetak.entity.Target;
 import cz.ondrejsmetak.other.XmlParserException;
+import cz.ondrejsmetak.tool.Helper;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;

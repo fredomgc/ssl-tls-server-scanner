@@ -1,11 +1,7 @@
-package cz.ondrejsmetak.tool;
+package cz.ondrejsmetak.parser;
 
-import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.other.XmlParserException;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import org.w3c.dom.Element;

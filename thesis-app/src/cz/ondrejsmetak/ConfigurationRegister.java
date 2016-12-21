@@ -26,8 +26,6 @@ public class ConfigurationRegister {
 	 */
 	public static final String DEBUG = "debug";
 	public static final String O_SAFT_FOLDER_ABSOLUTE_PATH = "oSaftFolderAbsolutePath";
-	public static final String CERTIFICATE_MINIMUM_KEY_SIZE = "certificateMinimumPublicKeySize";
-	public static final String CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE = "certificateMinimumSignatureKeySize";
 	public static final String UNKNOWN_TEST_RESULT_IS_ERROR = "unknownTestResultIsError";
 
 	protected ConfigurationRegister() {
@@ -124,8 +122,8 @@ public class ConfigurationRegister {
 	 * @return collection with the names of all the supported directives
 	 */
 	private List<String> getDirectives() {
-		String[] directives = {DEBUG, O_SAFT_FOLDER_ABSOLUTE_PATH, CERTIFICATE_MINIMUM_KEY_SIZE,
-			CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE, UNKNOWN_TEST_RESULT_IS_ERROR};
+		String[] directives = {DEBUG, O_SAFT_FOLDER_ABSOLUTE_PATH,
+			UNKNOWN_TEST_RESULT_IS_ERROR};
 		return new ArrayList<>(Arrays.asList(directives));
 	}
 
@@ -138,7 +136,7 @@ public class ConfigurationRegister {
 	private boolean isSupportedDirective(String name) {
 		return getDirectives().contains(name);
 	}
-	
+
 	public void setOSaftFolderAbsolutePath(String value) {
 		setDirective(O_SAFT_FOLDER_ABSOLUTE_PATH, value);
 	}
@@ -153,22 +151,6 @@ public class ConfigurationRegister {
 
 	public Boolean isDebug() {
 		return (Boolean) getDirective(DEBUG);
-	}
-
-	public void setCertificateMinimumKeySize(Integer value) {
-		setDirective(CERTIFICATE_MINIMUM_KEY_SIZE, value);
-	}
-
-	public int getCertificateMinimumKeySize() {
-		return (Integer) getDirective(CERTIFICATE_MINIMUM_KEY_SIZE);
-	}
-
-	public void setCertificateMinimumSignatureKeySize(Integer value) {
-		setDirective(CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE, value);
-	}
-
-	public int getCertificateMinimumSignatureKeySize() {
-		return (Integer) getDirective(CERTIFICATE_MINIMUM_SIGNATURE_KEY_SIZE);
 	}
 
 	public void setUnknownTestResultIsError(boolean value) {
