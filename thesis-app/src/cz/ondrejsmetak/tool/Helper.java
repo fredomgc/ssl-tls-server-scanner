@@ -15,32 +15,63 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
+ * Collection of usefull methods and shortcuts
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
 public class Helper {
 
-	
-	public static void addIfNotNull(Collection collection, Object item){
-		if(item != null){
+	/**
+	 * Adds item to collection, if this item is not null
+	 *
+	 * @param collection collection of objects
+	 * @param item item, that may be added
+	 */
+	public static void addIfNotNull(Collection collection, Object item) {
+		if (item != null) {
 			collection.add(item);
 		}
 	}
-	
+
+	/**
+	 * Returns date formatted to human readable format
+	 *
+	 * @param date date, that will be formatted
+	 * @param dash use dash during formatting date or not
+	 * @return formatted date
+	 */
 	public static String getFormattedDateTime(Date date, boolean dash) {
-		DateFormat dateFormat = new SimpleDateFormat( dash ? "yyyy-MM-dd-HH-mm-ss" : "yyyy-MM-dd HH:mm:ss" );
+		DateFormat dateFormat = new SimpleDateFormat(dash ? "yyyy-MM-dd-HH-mm-ss" : "yyyy-MM-dd HH:mm:ss");
 		return dateFormat.format(date);
 	}
 
+	/**
+	 * Converts boolean value to integer
+	 *
+	 * @param value booolean value
+	 * @return integer value
+	 */
 	public static int booleanToInteger(Boolean value) {
 		return value ? 1 : 0;
 	}
 
+	/**
+	 * Returns path to current working directory
+	 *
+	 * @return path to current working directory
+	 */
 	public static String getWorkingDirectory() {
 		return System.getProperty("user.dir");
 	}
-	
-	public static String getContentoOfFile(File file) throws FileNotFoundException{
+
+	/**
+	 * Returns whole content of the given file
+	 *
+	 * @param file file, that will be read
+	 * @return content of file
+	 * @throws FileNotFoundException if case of error
+	 */
+	public static String getContentoOfFile(File file) throws FileNotFoundException {
 		//http://stackoverflow.com/a/3403112
 		return new Scanner(file).useDelimiter("\\Z").next();
 	}
@@ -48,9 +79,9 @@ public class Helper {
 	/**
 	 * Removes from string leading and trailing part, that matches given regex
 	 *
-	 * @param string
-	 * @param regex
-	 * @return
+	 * @param string text value
+	 * @param regex pattern
+	 * @return trimmed text value
 	 */
 	public static String trim(String string, String regex) {
 		String s = string;
@@ -59,6 +90,12 @@ public class Helper {
 		return s;
 	}
 
+	/**
+	 * Checks, if string contains properly formatted integer value 
+	 * @param s
+	 * @param radix
+	 * @return 
+	 */
 	private static boolean isInteger(String s, int radix) {
 		Scanner sc = new Scanner(s.trim());
 		if (!sc.hasNextInt(radix)) {

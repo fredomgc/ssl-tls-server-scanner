@@ -36,8 +36,14 @@ import org.xml.sax.SAXException;
  */
 public class TargetParser extends BaseParser {
 
+	/**
+	 * Name of the file, that will be parsed
+	 */
 	public static final String FILE = "targets.xml";
 
+	/**
+	 * Supported tags
+	 */
 	private static final String TAG_CONFIGURATION = "configuration";
 	private static final String TAG_PROFILES = "profiles";
 	private static final String TAG_PROFILE = "profile";
@@ -51,14 +57,14 @@ public class TargetParser extends BaseParser {
 	private static final String TAG_TARGETS = "targets";
 	private static final String TAG_TARGET = "target";
 
+	/**
+	 * Supported attributes
+	 */
 	private static final String ATTRIBUTE_NAME = "name";
 	private static final String ATTRIBUTE_VALUE = "value";
 	private static final String ATTRIBUTE_MODE = "mode";
 	private static final String ATTRIBUTE_DESTINATION = "destination";
 	private static final String ATTRIBUTE_PROFILE = "profile";
-
-	private static final String MODE_MUST_BE = "mustBe";
-	private static final String MODE_CAN_BE = "mayBe";
 
 	@Override
 	public void createDefault() throws IOException {
@@ -125,6 +131,13 @@ public class TargetParser extends BaseParser {
 		}
 	}
 
+	/**
+	 * Checks, that node contains only expected attributes
+	 *
+	 * @param node node, that will be checked
+	 * @throws XmlParserException if node contains more or less attributes, then
+	 * is expected
+	 */
 	private void checkNode(Node node) throws XmlParserException {
 		if (!getSupportedTags().contains(node.getNodeName())) {
 			throw new XmlParserException("Unknown tag [%s]. You must use only supported tags!", node.getNodeName());
@@ -187,6 +200,12 @@ public class TargetParser extends BaseParser {
 		}
 	}
 
+	/**
+	 * Parses whole file "targets.xml"
+	 *
+	 * @return collection of the parsed targets
+	 * @throws XmlParserException in case of any error
+	 */
 	public List<Target> parse() throws XmlParserException {
 		try {
 			File fXmlFile = new File(FILE);
@@ -219,10 +238,10 @@ public class TargetParser extends BaseParser {
 	}
 
 	/**
-	 * Přečte profily z <targets></targets>
+	 * Parses a targets between <targets></targets>
 	 *
-	 * @param doc
-	 * @return
+	 * @param doc content of the document
+	 * @return collection of the parsed targets
 	 */
 	private List<Target> parseTargets(Document doc) {
 		List<Target> done = new ArrayList<>();
@@ -248,10 +267,10 @@ public class TargetParser extends BaseParser {
 	}
 
 	/**
-	 * Přečte profily z <profiles></profiles>
+	 * Parses a profiles between <profiles></profiles>
 	 *
-	 * @param doc
-	 * @return
+	 * @param doc content of the document
+	 * @return collection of the parsed profiles
 	 */
 	private List<Profile> parseProfiles(Document doc) throws XmlParserException {
 		List<Profile> done = new ArrayList<>();
@@ -277,10 +296,10 @@ public class TargetParser extends BaseParser {
 	}
 
 	/**
-	 * Přečte <target></target>
+	 * Parses a single target, that is stored between <target></target>
 	 *
-	 * @param node
-	 * @return
+	 * @param node parent tag
+	 * @return newly created target
 	 */
 	private Target parseTarget(Node node) {
 		if (node.getNodeType() != Node.ELEMENT_NODE) {
@@ -298,6 +317,13 @@ public class TargetParser extends BaseParser {
 		return Target.fromXml(destination, profile, name);
 	}
 
+	/**
+	 * Parses a single certificate directive
+	 *
+	 * @param certificateDirective a node, that will be parsed
+	 * @return a newly created directive
+	 * @throws XmlParserException in case of any error
+	 */
 	private Directive parseCertificateDirective(Node certificateDirective) throws XmlParserException {
 		if (!(certificateDirective instanceof Element)) {
 			return null;
@@ -320,6 +346,14 @@ public class TargetParser extends BaseParser {
 		return new Directive(name, Integer.valueOf(valueStr), mode);
 	}
 
+	/**
+	 * Parses all certificate directives
+	 *
+	 * @param certificateValidTag parent certificate tag
+	 * @param certificateValidMode mode used in parent certificate tag
+	 * @return collection of parsed directives
+	 * @throws XmlParserException in case of any error
+	 */
 	private List<Directive> parseCertificateDirectives(Element certificateValidTag, Mode certificateValidMode) throws XmlParserException {
 		if (!(certificateValidTag instanceof Element)) {
 			throw new XmlParserException("Tag certificateValid is missing!");
@@ -357,11 +391,10 @@ public class TargetParser extends BaseParser {
 	}
 
 	/**
-	 * Reads <protocols></protocols>
-	 * Will check, if all available protocols are properly defined
+	 * Parses all protocols, that are stored between <protocols></protocols>
 	 *
-	 * @param node tag <protocols></protocols>
-	 * @return protocols, whose support is required on target machine
+	 * @param node parent tag
+	 * @return collection of protocols
 	 */
 	private List<Protocol> parseProtocols(Element node) throws XmlParserException {
 		List<Protocol> willBeTested = new ArrayList<>();
@@ -384,6 +417,13 @@ public class TargetParser extends BaseParser {
 		return willBeTested;
 	}
 
+	/**
+	 * Parses single protocol, that is stored between <protocol></protocol>
+	 *
+	 * @param node protocol node
+	 * @return a newly created protocol
+	 * @throws XmlParserException in case of any error
+	 */
 	private Protocol parseProtocol(Node node) throws XmlParserException {
 		if (!(node instanceof Element)) {
 			return null;
@@ -398,10 +438,10 @@ public class TargetParser extends BaseParser {
 	}
 
 	/**
-	 * Přečte <profile></profile>
+	 * Parses single protocol, that is stored between <profile></profile>
 	 *
-	 * @param node
-	 * @return
+	 * @param node profile node
+	 * @return a newly created profile
 	 */
 	private Profile parseProfile(Node node) throws XmlParserException {
 		if (node.getNodeType() != Node.ELEMENT_NODE) {
@@ -443,6 +483,12 @@ public class TargetParser extends BaseParser {
 		return Profile.fromXml(name, protocols, certificate, certificateDirectives, vulnerabilities, cipherSuites);
 	}
 
+	/**
+	 * Parses all cipher suites, that are stored between <ciphers></ciphers>
+	 *
+	 * @param node cipher suites node
+	 * @return collection of cipher suites
+	 */
 	private List<CipherSuite> parseCipherSuites(Element ciphers) throws XmlParserException {
 		if (!(ciphers instanceof Element)) {
 			throw new XmlParserException("Tag ciphers is missing!");
@@ -462,6 +508,12 @@ public class TargetParser extends BaseParser {
 		return done;
 	}
 
+	/**
+	 * Parses a single cipher suite, that is stored between <cipher></cipher>
+	 *
+	 * @param node cipher suite node
+	 * @return newly created cipher suite
+	 */
 	private CipherSuite parseCipherSuite(Node node) throws XmlParserException {
 		if (node.getNodeType() != Node.ELEMENT_NODE) {
 			return null;
@@ -475,13 +527,13 @@ public class TargetParser extends BaseParser {
 		return new CipherSuite(name, mode);
 	}
 
+	/**
+	 * Returns collection of all supported tags
+	 *
+	 * @return collection of all supported tags
+	 */
 	private List<String> getSupportedTags() {
 		return new ArrayList<>(Arrays.asList(new String[]{TAG_CONFIGURATION, TAG_PROFILES, TAG_PROFILE, TAG_PROTOCOLS, TAG_PROTOCOL,
 			TAG_VULNERABILITIES_FREE, TAG_DIRECTIVE, TAG_CERTIFICATE_VALID, TAG_CIPHERS, TAG_CIPHER, TAG_TARGETS, TAG_TARGET}));
 	}
-
-	private List<String> getSupportedAttributes() {
-		return new ArrayList<>(Arrays.asList(new String[]{ATTRIBUTE_NAME, ATTRIBUTE_MODE, ATTRIBUTE_DESTINATION, ATTRIBUTE_PROFILE}));
-	}
-
 }

@@ -28,7 +28,7 @@ import org.xml.sax.SAXException;
 public class ConfigurationParser extends BaseParser {
 
 	/**
-	 * Name of file, that will be parsed
+	 * Name of the file, that will be parsed
 	 */
 	public static final String FILE = "configuration.xml";
 
