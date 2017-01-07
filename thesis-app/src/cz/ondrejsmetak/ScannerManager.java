@@ -43,11 +43,13 @@ public class ScannerManager {
 		if (!configurationParser.hasFile()) {
 			configurationParser.createDefault();
 			Log.infoln("Creating default " + ConfigurationParser.FILE + " in application folder.");
+			created = true;
 		}
 
 		if (!targetParser.hasFile()) {
 			targetParser.createDefault();
 			Log.infoln("Creating default " + TargetParser.FILE + " in application folder.");
+			created = true;
 		}
 
 		return created;
@@ -106,6 +108,7 @@ public class ScannerManager {
 			return vulns == 0;
 		} catch (XmlParserException | IOException ex) {
 			Log.errorln(ex);
+			Log.debugException(ex);
 		}
 
 		return false;

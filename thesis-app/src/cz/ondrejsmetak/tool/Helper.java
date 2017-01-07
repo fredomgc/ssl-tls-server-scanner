@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.text.DateFormat;
@@ -13,6 +14,8 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Collection of usefull methods and shortcuts
@@ -77,6 +80,28 @@ public class Helper {
 	}
 
 	/**
+	 * Returns whole content of the given file input stream
+	 *
+	 * @param inputStream file input stream, that will be read
+	 * @return content of file
+	 */
+	public static String getContentOfFile(InputStream inputStream) {
+		StringBuilder sb = new StringBuilder();
+		try {
+			BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+			String line;
+			while ((line = br.readLine()) != null) {
+				sb.append(line);
+			}
+		} catch (IOException ex) {
+			Log.debugException(ex);
+			return "";
+		}
+
+		return sb.toString();
+	}
+
+	/**
 	 * Removes from string leading and trailing part, that matches given regex
 	 *
 	 * @param string text value
@@ -91,10 +116,11 @@ public class Helper {
 	}
 
 	/**
-	 * Checks, if string contains properly formatted integer value 
+	 * Checks, if string contains properly formatted integer value
+	 *
 	 * @param s
 	 * @param radix
-	 * @return 
+	 * @return
 	 */
 	private static boolean isInteger(String s, int radix) {
 		Scanner sc = new Scanner(s.trim());
