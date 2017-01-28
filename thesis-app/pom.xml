@@ -20,7 +20,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>cz.ondrejsmetak.Applicaton</mainClass>
+							<mainClass>cz.ondrejsmetak.Application</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

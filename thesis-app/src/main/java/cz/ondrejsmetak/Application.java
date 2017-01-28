@@ -5,7 +5,7 @@ package cz.ondrejsmetak;
  *
  * @author Ondřej Směták <posta@ondrejsmetak.cz>
  */
-public class Applicaton {
+public class Application {
 
 	/**
 	 * Main method
