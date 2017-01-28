@@ -1,6 +1,6 @@
 package cz.ondrejsmetak.export;
 
-import cz.ondrejsmetak.resource.ResourceManager;
+import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.entity.Report;
 import cz.ondrejsmetak.entity.ReportMessage;
 import cz.ondrejsmetak.tool.Helper;

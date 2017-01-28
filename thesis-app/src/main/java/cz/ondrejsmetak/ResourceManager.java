@@ -1,14 +1,6 @@
-package cz.ondrejsmetak.resource;
+package cz.ondrejsmetak;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * ResourceManager manager
@@ -51,7 +43,7 @@ public class ResourceManager {
 	 * @return stream of resource
 	 */
 	public static InputStream getResourceAsStream(String name) {
-		return ResourceManager.class.getResourceAsStream(name);
+		return ResourceManager.class.getResourceAsStream("/" + name);
 	}
 
 }

@@ -2,7 +2,7 @@ package cz.ondrejsmetak.parser;
 
 import cz.ondrejsmetak.ConfigurationRegister;
 import cz.ondrejsmetak.other.XmlParserException;
-import cz.ondrejsmetak.resource.ResourceManager;
+import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.tool.Helper;
 import java.io.File;
 import java.io.IOException;

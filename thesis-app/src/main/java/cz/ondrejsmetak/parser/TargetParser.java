@@ -2,7 +2,7 @@ package cz.ondrejsmetak.parser;
 
 import cz.ondrejsmetak.parser.BaseParser;
 import cz.ondrejsmetak.ProfileRegister;
-import cz.ondrejsmetak.resource.ResourceManager;
+import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.entity.CipherSuite;
 import cz.ondrejsmetak.entity.Directive;
 import cz.ondrejsmetak.entity.Mode;
