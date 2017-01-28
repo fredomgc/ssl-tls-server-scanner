@@ -100,7 +100,7 @@ public class ScannerManager {
 				reports.add(new Report(target, vulnerableMessages, scanner.getSafeMessages()));
 				Log.infoln("Scan finished");
 			}
-
+			
 			HtmlExport export = new HtmlExport();
 			String report = export.export(reports);
 			Log.infoln(String.format("Scan report saved in [%s]", report));

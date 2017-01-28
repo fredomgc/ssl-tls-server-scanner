@@ -63,6 +63,11 @@ public class OSaftParser {
 	public static final String CERTIFICATE_PUBLIC_KEY_ALGORITHM_HEADER = "Certificate Public Key Algorithm";
 
 	/**
+	 * Others
+	 */
+	public static final String CANT_MAKE_CONNECTION = "Can't make a connection to";
+
+	/**
 	 * Cipher suites
 	 */
 	public static final List<String> CIPHER_SUITE_FOOTER = Arrays.asList(new String[]{"weak", "medium", "high"});
@@ -124,6 +129,11 @@ public class OSaftParser {
 	private static final Set<Protocol> supportedProtocols = new HashSet<>();
 
 	/**
+	 * Other
+	 */
+	private boolean succesfulConnection = true; //we assume, that target is up and running
+
+	/**
 	 * Konstruktor
 	 *
 	 * @param data
@@ -136,10 +146,17 @@ public class OSaftParser {
 
 	private void parseData() {
 		for (String line : data) {
+			parseUnsuccessfulConnection(line);
 			parseVulnerabilities(line);
 			parseCertificate(line);
 			parseCipherSuites(line);
 			parseProtocols(line);
+		}
+	}
+
+	private void parseUnsuccessfulConnection(String line) {
+		if (line.contains(CANT_MAKE_CONNECTION)) {
+			succesfulConnection = false;
 		}
 	}
 
@@ -437,4 +454,7 @@ public class OSaftParser {
 		return supportedProtocols;
 	}
 
+	public boolean isSuccesfulConnection() {
+		return succesfulConnection;
+	}
 }

@@ -243,9 +243,18 @@ public class Scanner {
 		safeMessages.add(new ReportMessage("OK (by default, not tested due to profile configuration)", category, requiredMode, ReportMessage.Type.SUCCESS));
 	}
 
+	private void doAddTargetNotRunning() {
+		vulnerableMessages.add(new ReportMessage("Can't make any connection to the target (is " + target.getDestination() + " up and running?)", ReportMessage.Category.PROTOCOL, new Mode(Mode.Type.MUST_BE), ReportMessage.Type.ERROR));
+	}
+
 	private void doReportMessages() {
 		vulnerableMessages = new ArrayList<>();
 		safeMessages = new ArrayList<>();
+
+		if (!oSaft.getParser().isSuccesfulConnection()) {
+			doAddTargetNotRunning();
+			return; //stop here and return just single vulnerable message about unsuccessful connection.
+		}
 
 		if (target.getProfile().isTestCipherSuites()) {
 			doSplitSafeAndVulnerable(getCipherSuites(), ReportMessage.Category.CIPHER, null);
