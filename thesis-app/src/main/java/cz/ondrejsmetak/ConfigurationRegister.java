@@ -26,7 +26,7 @@ public class ConfigurationRegister {
 	 */
 	public static final String DEBUG = "debug";
 	public static final String O_SAFT_FOLDER_ABSOLUTE_PATH = "oSaftFolderAbsolutePath";
-	public static final String UNKNOWN_TEST_RESULT_IS_ERROR = "unknownTestResultIsError";
+	//public static final String UNKNOWN_TEST_RESULT_IS_ERROR = "unknownTestResultIsError";
 
 	protected ConfigurationRegister() {
 		//no direct instantiation
@@ -122,8 +122,7 @@ public class ConfigurationRegister {
 	 * @return collection with the names of all the supported directives
 	 */
 	private List<String> getDirectives() {
-		String[] directives = {DEBUG, O_SAFT_FOLDER_ABSOLUTE_PATH,
-			UNKNOWN_TEST_RESULT_IS_ERROR};
+		String[] directives = {DEBUG, O_SAFT_FOLDER_ABSOLUTE_PATH};
 		return new ArrayList<>(Arrays.asList(directives));
 	}
 
@@ -152,13 +151,4 @@ public class ConfigurationRegister {
 	public Boolean isDebug() {
 		return (Boolean) getDirective(DEBUG);
 	}
-
-	public void setUnknownTestResultIsError(boolean value) {
-		setDirective(UNKNOWN_TEST_RESULT_IS_ERROR, value);
-	}
-
-	public boolean isUnknownTestResultIsError() {
-		return (Boolean) getDirective(UNKNOWN_TEST_RESULT_IS_ERROR);
-	}
-
 }

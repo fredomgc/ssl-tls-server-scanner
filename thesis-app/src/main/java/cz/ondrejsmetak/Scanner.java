@@ -197,7 +197,7 @@ public class Scanner {
 
 		if (result.isVulnerable()) {
 			vulnerable = new ReportMessage(out.toString(), category, this.target.getProfile().getModeVulnerabilities());
-		} else if (result.isUnknown() && ConfigurationRegister.getInstance().isUnknownTestResultIsError()) {
+		} else if (result.isUnknown() && this.target.getProfile().isUnknownTestResultIsError()) {
 			vulnerable = new ReportMessage(out.toString(), category, this.target.getProfile().getModeVulnerabilities());
 		}
 

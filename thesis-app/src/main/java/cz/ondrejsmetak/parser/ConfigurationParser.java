@@ -145,7 +145,6 @@ public class ConfigurationParser extends BaseParser {
 	 */
 	private void setDirective(String name, String value) throws XmlParserException {
 		setDebug(name, value);
-		setDirectiveUnknownTestResultIsError(name, value);
 		setDirectiveOSaftFolderAbsolutePath(name, value);
 	}
 
@@ -163,23 +162,6 @@ public class ConfigurationParser extends BaseParser {
 			}
 
 			ConfigurationRegister.getInstance().setDebug(Helper.parseBooleanStr(value));
-		}
-	}
-
-	/**
-	 * Sets directive, that alters, how unknown results are interpreted.
-	 *
-	 * @param name name of directive
-	 * @param value value of directive
-	 * @throws XmlParserException if given value has unsupported format
-	 */
-	private void setDirectiveUnknownTestResultIsError(String name, String value) throws XmlParserException {
-		if (name.equalsIgnoreCase(ConfigurationRegister.UNKNOWN_TEST_RESULT_IS_ERROR)) {
-			if (!Helper.isBooleanStr(value)) {
-				throw new XmlParserException("Value for directive " + ConfigurationRegister.UNKNOWN_TEST_RESULT_IS_ERROR + " must be [true] or [false]!");
-			}
-
-			ConfigurationRegister.getInstance().setUnknownTestResultIsError(Helper.parseBooleanStr(value));
 		}
 	}
 

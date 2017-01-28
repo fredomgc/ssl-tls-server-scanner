@@ -2,5 +2,4 @@
 <configuration>
 	<directive name="debug" value="true" />
 	<directive name="oSaftFolderAbsolutePath" value="/home/fredomgc/thesis/o-saft" />
-	<directive name="unknownTestResultIsError" value="true" />
 </configuration>

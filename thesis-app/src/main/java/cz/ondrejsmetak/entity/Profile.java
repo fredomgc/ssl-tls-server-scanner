@@ -45,12 +45,22 @@ public class Profile extends BaseEntity {
 	private Mode vulnerabilities;
 
 	/**
+	 * Is unknown test result considered as error?
+	 */
+	private boolean unknownTestResultIsError;
+
+	/**
 	 * Names of certificate directives
 	 */
 	public static final String RSA_MINIMUM_PUBLIC_KEY_SIZE = "rsaMinimumPublicKeySize";
 	public static final String RSA_MINIMUM_SIGNATURE_KEY_SIZE = "rsaMinimumSignatureKeySize";
 	public static final String ECDSA_MINIMUM_PUBLIC_KEY_SIZE = "ecdsaMinimumPublicKeySize";
 	public static final String ECDSA_MINIMUM_SIGNATURE_SIZE = "ecdsaMinimumSignatureKeySize";
+
+	/**
+	 * Names of general directives
+	 */
+	public static final String UNKNOWN_TEST_RESULT_IS_ERROR = "unknownTestResultIsError";
 
 	/**
 	 * Creates new empty profile
@@ -65,6 +75,15 @@ public class Profile extends BaseEntity {
 	 */
 	public static List<String> getAllCertificateDirectives() {
 		return new ArrayList<>(Arrays.asList(new String[]{RSA_MINIMUM_PUBLIC_KEY_SIZE, RSA_MINIMUM_SIGNATURE_KEY_SIZE, ECDSA_MINIMUM_PUBLIC_KEY_SIZE, ECDSA_MINIMUM_SIGNATURE_SIZE}));
+	}
+
+	/**
+	 * Returns all supported general directives
+	 *
+	 * @return collection of all supported general directives
+	 */
+	public static List<String> getAllGeneralDirectives() {
+		return new ArrayList<>(Arrays.asList(new String[]{UNKNOWN_TEST_RESULT_IS_ERROR}));
 	}
 
 	public String getName() {
@@ -139,6 +158,7 @@ public class Profile extends BaseEntity {
 	 * Creates new profile with given attributes. Usefull shortcut
 	 *
 	 * @param name name of profile
+	 * @param generalDirectives general directives
 	 * @param protocols protocols, that will be checked during scan
 	 * @param certificate mode, that affects behaviour during scan of
 	 * certificate
@@ -150,9 +170,10 @@ public class Profile extends BaseEntity {
 	 * during scan
 	 * @return created profile
 	 */
-	public static Profile fromXml(String name, List<Protocol> protocols, Mode certificate, List<Directive> certificateDirectives, Mode vulnerabilities, List<CipherSuite> cipherSuites) {
+	public static Profile fromXml(String name, List<Directive> generalDirectives, List<Protocol> protocols, Mode certificate, List<Directive> certificateDirectives, Mode vulnerabilities, List<CipherSuite> cipherSuites) {
 		Profile profile = new Profile();
 		profile.setName(name);
+		profile.setGeneralDirectives(generalDirectives);
 		profile.addToProtocols(protocols);
 		profile.setTestCertificate(certificate);
 		profile.addToCertificateDirectives(certificateDirectives);
@@ -220,6 +241,27 @@ public class Profile extends BaseEntity {
 		}
 
 		return certificateDirectives.get(key);
+	}
+
+	public void setGeneralDirectives(List<Directive> directives) {
+		List<String> expected = getAllGeneralDirectives();
+		for (Directive d : directives) {
+			if (expected.contains(d.getName())) {
+				expected.remove(d.getName());
+			}
+
+			if (d.getName().equals(UNKNOWN_TEST_RESULT_IS_ERROR)) {
+				unknownTestResultIsError = (Boolean) d.getValue();
+			}
+		}
+
+		if (!expected.isEmpty()) {
+			throw new IllegalArgumentException(String.format("Following general directives are missing, but are mandatory: [%s]", expected));
+		}
+	}
+
+	public boolean isUnknownTestResultIsError() {
+		return unknownTestResultIsError;
 	}
 
 	@Override

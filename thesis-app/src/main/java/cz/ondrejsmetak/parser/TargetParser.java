@@ -1,5 +1,6 @@
 package cz.ondrejsmetak.parser;
 
+import cz.ondrejsmetak.ConfigurationRegister;
 import cz.ondrejsmetak.parser.BaseParser;
 import cz.ondrejsmetak.ProfileRegister;
 import cz.ondrejsmetak.ResourceManager;
@@ -54,6 +55,7 @@ public class TargetParser extends BaseParser {
 	private static final String TAG_PROTOCOL = "protocol";
 	private static final String TAG_VULNERABILITIES_FREE = "vulnerabilitiesFree";
 	private static final String TAG_CERTIFICATE_VALID = "certificateValid";
+	private static final String TAG_DIRECTIVES = "directives";
 	private static final String TAG_DIRECTIVE = "directive";
 	private static final String TAG_CIPHERS = "ciphers";
 	private static final String TAG_CIPHER = "cipher";
@@ -390,7 +392,55 @@ public class TargetParser extends BaseParser {
 		}
 
 		return done;
+	}
 
+	private Directive parseGeneralDirective(Node directive) throws XmlParserException {
+		if (!(directive instanceof Element)) {
+			return null;
+		}
+		checkAttributesOfNode(directive, ATTRIBUTE_NAME, ATTRIBUTE_VALUE);
+
+		Element element = (Element) directive;
+		String name = element.getAttribute(ATTRIBUTE_NAME);
+		String valueStr = element.getAttribute(ATTRIBUTE_VALUE);
+
+		if (!Profile.getAllGeneralDirectives().contains(name)) {
+			throw new XmlParserException("Unknown directive [%s] for directives!", name);
+		}
+
+		//currently, only one general directive is supported
+		if (!Helper.isBooleanStr(valueStr)) {
+			throw new XmlParserException("Value for directive " + Profile.UNKNOWN_TEST_RESULT_IS_ERROR + " must be [true] or [false]!");
+		}
+
+		return new Directive(name, Helper.parseBooleanStr(valueStr), new Mode(Type.MUST_BE));
+	}
+
+	private List<Directive> parseGeneralDirectives(Element directivesTag) throws XmlParserException {
+		if (!(directivesTag instanceof Element)) {
+			throw new XmlParserException("Tag directives is missing!");
+		}
+
+		List<Directive> done = new ArrayList<>();
+
+		NodeList directives = directivesTag.getElementsByTagName(TAG_DIRECTIVE);
+		List<String> expectedDirectives = Profile.getAllGeneralDirectives();
+
+		for (int i = 0; i < directives.getLength(); i++) {
+			Directive directive = parseGeneralDirective(directives.item(i));
+			if (!(directive instanceof Directive)) {
+				continue;
+			}
+			expectedDirectives.remove(directive.getName());
+			done.add(directive);
+
+		}
+
+		if (!expectedDirectives.isEmpty()) {
+			throw new XmlParserException("For tag directives, following directive(s) is/are missing: %s", expectedDirectives.toString());
+		}
+
+		return done;
 	}
 
 	/**
@@ -458,6 +508,12 @@ public class TargetParser extends BaseParser {
 		String name = profile.getAttribute(ATTRIBUTE_NAME);
 
 		/**
+		 * Directives, currently only one
+		 */
+		Element directivesTag = getElementByTagName(profile, TAG_DIRECTIVES);
+		List<Directive> generalDirectives = parseGeneralDirectives(directivesTag);
+
+		/**
 		 * Protocols
 		 */
 		Element protocolsTag = getElementByTagName(profile, TAG_PROTOCOLS);
@@ -483,7 +539,7 @@ public class TargetParser extends BaseParser {
 		Element ciphers = getElementByTagName(profile, TAG_CIPHERS);
 		List<CipherSuite> cipherSuites = parseCipherSuites(ciphers);
 
-		return Profile.fromXml(name, protocols, certificate, certificateDirectives, vulnerabilities, cipherSuites);
+		return Profile.fromXml(name, generalDirectives, protocols, certificate, certificateDirectives, vulnerabilities, cipherSuites);
 	}
 
 	/**
@@ -537,6 +593,6 @@ public class TargetParser extends BaseParser {
 	 */
 	private List<String> getSupportedTags() {
 		return new ArrayList<>(Arrays.asList(new String[]{TAG_CONFIGURATION, TAG_PROFILES, TAG_PROFILE, TAG_PROTOCOLS, TAG_PROTOCOL,
-			TAG_VULNERABILITIES_FREE, TAG_DIRECTIVE, TAG_CERTIFICATE_VALID, TAG_CIPHERS, TAG_CIPHER, TAG_TARGETS, TAG_TARGET}));
+			TAG_VULNERABILITIES_FREE, TAG_DIRECTIVES, TAG_DIRECTIVE, TAG_CERTIFICATE_VALID, TAG_CIPHERS, TAG_CIPHER, TAG_TARGETS, TAG_TARGET}));
 	}
 }
