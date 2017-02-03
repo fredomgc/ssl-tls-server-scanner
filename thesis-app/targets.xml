@@ -9,14 +9,14 @@
 			<protocols>
 				<protocol name="SSLv2"  mode="mustNotBe"  />
 				<protocol name="SSLv3"  mode="mustNotBe"  />
-				<protocol name="TLS 1.0"  mode="mustNotBe"  />
-				<protocol name="TLS 1.1"  mode="mustNotBe"  />
-				<protocol name="TLS 1.2"  mode="mustNotBe" />
+				<protocol name="TLS 1.0"  mode="mustBe"  />
+				<protocol name="TLS 1.1"  mode="mustBe"  />
+				<protocol name="TLS 1.2"  mode="canBe" />
 			</protocols>
 			
 			<vulnerabilitiesFree mode="canBe"/>
 			
-			<certificateValid  mode="canBe">
+			<certificateValid  mode="mustBe">
 				<directive name="rsaMinimumPublicKeySize" value="2048"  mode="canBe" />
 				<directive name="rsaMinimumSignatureKeySize" value="2048"  mode="canBe" />
 				<directive name="ecdsaMinimumPublicKeySize" value="128"  mode="canBe"  />

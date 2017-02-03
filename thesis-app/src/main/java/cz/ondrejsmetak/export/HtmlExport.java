@@ -126,6 +126,7 @@ public class HtmlExport extends BaseExport {
 			if (!first) {
 				sb.append("<tr>");
 			}
+			
 			sb.append(String.format("<td>%s</td>", message.getRequiredModeHuman()));
 			sb.append(String.format("<td class=\"%s\">%s</td>", typeToCssClass(message), message.getMessage()));
 			sb.append("</tr>");
@@ -143,6 +144,10 @@ public class HtmlExport extends BaseExport {
 	 * @return css class
 	 */
 	private String typeToCssClass(ReportMessage message) {
+		if (message.getRequiredMode() == null) {
+			return "";
+		}
+
 		if (message.getRequiredMode().isCanBe()) {
 			return "";
 		}

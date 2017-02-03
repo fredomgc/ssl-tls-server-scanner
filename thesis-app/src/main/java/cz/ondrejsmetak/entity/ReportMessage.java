@@ -89,6 +89,10 @@ public class ReportMessage {
 	 * @return mode in human readable form
 	 */
 	public String getRequiredModeHuman() {
+		if (requiredMode == null) {
+			return "";
+		}
+		
 		if (requiredMode.isCanBe()) {
 			return "can be";
 		}

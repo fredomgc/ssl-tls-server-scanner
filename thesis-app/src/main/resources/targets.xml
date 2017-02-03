@@ -2,6 +2,10 @@
 <configuration>
 	<profiles>
 		<profile name="low">			
+			<directives>
+				<directive name="unknownTestResultIsError" value="true" />
+			</directives>
+			
 			<protocols>
 				<protocol name="SSLv2"  mode="mustNotBe"  />
 				<protocol name="SSLv3"  mode="mustNotBe"  />

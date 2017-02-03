@@ -257,7 +257,7 @@ public class Scanner {
 		}
 
 		if (target.getProfile().isTestCipherSuites()) {
-			doSplitSafeAndVulnerable(getCipherSuites(), ReportMessage.Category.CIPHER, null);
+			doSplitSafeAndVulnerable(getCipherSuites(), ReportMessage.Category.CIPHER, new Mode(Mode.Type.MUST_BE));
 		} else {
 			doAddNotTested(ReportMessage.Category.CIPHER, null);
 		}
