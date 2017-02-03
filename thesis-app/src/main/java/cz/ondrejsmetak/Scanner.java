@@ -275,7 +275,7 @@ public class Scanner {
 		}
 
 		if (target.getProfile().isTestProtocols()) {
-			doSplitSafeAndVulnerable(getProtocols(), ReportMessage.Category.PROTOCOL, null);
+			doSplitSafeAndVulnerable(getProtocols(), ReportMessage.Category.PROTOCOL, new Mode(Mode.Type.MUST_BE));
 		} else {
 			doAddNotTested(ReportMessage.Category.PROTOCOL, null);
 		}
