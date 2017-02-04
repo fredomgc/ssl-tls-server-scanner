@@ -148,6 +148,7 @@ public class Result extends BaseEntity {
 	 */
 	public static Result getUnknown(String note) {
 		Result o = new Result();
+		o.setUnknown();
 		o.setNote(note);
 		return o;
 	}

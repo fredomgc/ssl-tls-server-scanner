@@ -126,7 +126,12 @@ public class OSaftParser {
 	/**
 	 * Supported protocols
 	 */
-	private static final Set<Protocol> supportedProtocols = new HashSet<>();
+	private Result protocolSslv2 = Result.getUnknown();
+	private Result protocolSslv3 = Result.getUnknown();
+	private Result protocolTlsv10 = Result.getUnknown();
+	private Result protocolTlsv11 = Result.getUnknown();
+	private Result protocolTlsv12 = Result.getUnknown();
+	private Result protocolTlsv13 = Result.getUnknown();
 
 	/**
 	 * Other
@@ -161,30 +166,14 @@ public class OSaftParser {
 	}
 
 	private void parseProtocols(String line) {
-		if (parseResult(line, SSLv2_NOT_SUPPORTED_HEADER, YES, new Result()).isVulnerable()) {
-			supportedProtocols.add(new Protocol(Protocol.Type.SSLv2));
-		}
-
-		if (parseResult(line, SSLv3_NOT_SUPPORTED_HEADER, YES, new Result()).isVulnerable()) {
-			supportedProtocols.add(new Protocol(Protocol.Type.SSLv3));
-		}
-
-		if (parseResult(line, TLS_1_HEADER, YES, new Result()).isSafe()) {
-			supportedProtocols.add(new Protocol(Protocol.Type.TLSv10));
-		}
-
-		if (parseResult(line, TLS_1_1_HEADER, YES, new Result()).isSafe()) {
-			supportedProtocols.add(new Protocol(Protocol.Type.TLSv11));
-		}
-
-		if (parseResult(line, TLS_1_2_HEADER, YES, new Result()).isSafe()) {
-			supportedProtocols.add(new Protocol(Protocol.Type.TLSv12));
-		}
+		this.protocolSslv2 = parseResult(line, SSLv2_NOT_SUPPORTED_HEADER, YES, this.protocolSslv2);
+		this.protocolSslv3 = parseResult(line, SSLv3_NOT_SUPPORTED_HEADER, YES, this.protocolSslv3);
+		this.protocolTlsv10 = parseResult(line, TLS_1_HEADER, YES, this.protocolTlsv10);
+		this.protocolTlsv11 = parseResult(line, TLS_1_1_HEADER, YES, this.protocolTlsv11);
+		this.protocolTlsv12 = parseResult(line, TLS_1_2_HEADER, YES, this.protocolTlsv12);
 
 		//TLS 1.3 is draft
-		//if (parseResult(line, TLS_1_3_HEADER, YES, new Result()).isSafe()) {
-		//	supportedProtocols.add(new Protocol(Protocol.Type.TLSv13));
-		//}
+		//this.protocolTlsv13 = parseResult(line, TLS_1_3_HEADER, YES, this.protocolSslv3);
 	}
 
 	private void parseCipherSuites(String line) {
@@ -309,7 +298,12 @@ public class OSaftParser {
 	}
 
 	private boolean isHeader(String line, String header) {
-		return line.startsWith(header);
+		String[] pieces = line.split("\t");
+		if (pieces.length >= 1) {
+			return pieces[0].equals(header);
+		}
+
+		return false;
 	}
 
 	private String parseNote(String line) {
@@ -322,6 +316,11 @@ public class OSaftParser {
 
 	private Result parseBoolean(String value, String safeResult) {
 		boolean hasNote = value.matches(NOTE_REGEX);
+		boolean isUnknown = parseNote(value).contains(NOT_AVAILABLE);
+
+		if (isUnknown) {
+			return hasNote ? Result.getUnknown(parseNote(value)) : Result.getUnknown();
+		}
 
 		if (value.startsWith(YES) && safeResult.equals(YES)) {
 			return hasNote ? Result.getSafe(parseNote(value)) : Result.getSafe();
@@ -450,8 +449,28 @@ public class OSaftParser {
 		return supportedCipherSuites;
 	}
 
-	public Set<Protocol> getSupportedProtocols() {
-		return supportedProtocols;
+	public Result getProtocolSslv2() {
+		return protocolSslv2;
+	}
+
+	public Result getProtocolSslv3() {
+		return protocolSslv3;
+	}
+
+	public Result getProtocolTlsv10() {
+		return protocolTlsv10;
+	}
+
+	public Result getProtocolTlsv11() {
+		return protocolTlsv11;
+	}
+
+	public Result getProtocolTlsv12() {
+		return protocolTlsv12;
+	}
+
+	public Result getProtocolTlsv13() {
+		return protocolTlsv13;
 	}
 
 	public boolean isSuccesfulConnection() {

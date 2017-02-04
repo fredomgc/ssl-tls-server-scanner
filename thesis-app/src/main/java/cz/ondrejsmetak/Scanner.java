@@ -86,21 +86,22 @@ public class Scanner {
 	 */
 	private List<ReportMessage> getVulnerabilities() {
 		List<ReportMessage> vulns = new ArrayList<>();
+		Mode mode = this.target.getProfile().getModeVulnerabilities();
 
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to BEAST!", oSaft.getParser().getBeast(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to CRIME!", oSaft.getParser().getCrime(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to DROWN!", oSaft.getParser().getDrown(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to FREAK!", oSaft.getParser().getFreak(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Heartbleed!", oSaft.getParser().getHeartbleed(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Logjam!", oSaft.getParser().getLogjam(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Lucky 13!", oSaft.getParser().getLucky13(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to POODLE!", oSaft.getParser().getPoodle(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("RC4 ciphers are supported (but they are assumed to be broken)!", oSaft.getParser().getRc4(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Sweet32!", oSaft.getParser().getSweet32(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("SSLv2 supported!", oSaft.getParser().getSslv2NotSupported(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("SSLv3 supported!", oSaft.getParser().getSslv3NotSupported(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("PFS (perfect forward secrecy) not supported!", oSaft.getParser().getPfs(), ReportMessage.Category.VULNERABILITY));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("TLS session ticket doesn't contain random value!", oSaft.getParser().getRandomTlsSessionTicket(), ReportMessage.Category.VULNERABILITY));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to BEAST!", oSaft.getParser().getBeast(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to CRIME!", oSaft.getParser().getCrime(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to DROWN!", oSaft.getParser().getDrown(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to FREAK!", oSaft.getParser().getFreak(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Heartbleed!", oSaft.getParser().getHeartbleed(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Logjam!", oSaft.getParser().getLogjam(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Lucky 13!", oSaft.getParser().getLucky13(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to POODLE!", oSaft.getParser().getPoodle(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("RC4 ciphers are supported (but they are assumed to be broken)!", oSaft.getParser().getRc4(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Vulnerable to Sweet32!", oSaft.getParser().getSweet32(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("SSLv2 supported!", oSaft.getParser().getSslv2NotSupported(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("SSLv3 supported!", oSaft.getParser().getSslv3NotSupported(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("PFS (perfect forward secrecy) not supported!", oSaft.getParser().getPfs(), ReportMessage.Category.VULNERABILITY, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("TLS session ticket doesn't contain random value!", oSaft.getParser().getRandomTlsSessionTicket(), ReportMessage.Category.VULNERABILITY, mode));
 
 		return vulns;
 	}
@@ -113,14 +114,15 @@ public class Scanner {
 	 */
 	private List<ReportMessage> getCertificateChecks() {
 		List<ReportMessage> vulns = new ArrayList<>();
+		Mode mode = this.target.getProfile().getModeCertificate();
 
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Mismatch between hostname and certificate subject.", oSaft.getParser().getCertificateHostnameMatch(), ReportMessage.Category.CERTIFICATE));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Mismatch between given hostname and reverse resolved hostname.", oSaft.getParser().getCertificateReverseHostnameMatch(), ReportMessage.Category.CERTIFICATE));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate expired.", oSaft.getParser().getCertificateNotExpired(), ReportMessage.Category.CERTIFICATE));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate isn't valid.", oSaft.getParser().getCertificateIsValid(), ReportMessage.Category.CERTIFICATE));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate fingerprint is MD5.", oSaft.getParser().getCertificateFingerprintNotMd5(), ReportMessage.Category.CERTIFICATE));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate Private Key Signature isn't SHA2.", oSaft.getParser().getCertificatePrivateKeySha2(), ReportMessage.Category.CERTIFICATE));
-		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate is self-signed.", oSaft.getParser().getCertificateNotSelfSigned(), ReportMessage.Category.CERTIFICATE));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Mismatch between hostname and certificate subject.", oSaft.getParser().getCertificateHostnameMatch(), ReportMessage.Category.CERTIFICATE, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Mismatch between given hostname and reverse resolved hostname.", oSaft.getParser().getCertificateReverseHostnameMatch(), ReportMessage.Category.CERTIFICATE, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate expired.", oSaft.getParser().getCertificateNotExpired(), ReportMessage.Category.CERTIFICATE, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate isn't valid.", oSaft.getParser().getCertificateIsValid(), ReportMessage.Category.CERTIFICATE, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate fingerprint is MD5.", oSaft.getParser().getCertificateFingerprintNotMd5(), ReportMessage.Category.CERTIFICATE, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate Private Key Signature isn't SHA2.", oSaft.getParser().getCertificatePrivateKeySha2(), ReportMessage.Category.CERTIFICATE, mode));
+		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate is self-signed.", oSaft.getParser().getCertificateNotSelfSigned(), ReportMessage.Category.CERTIFICATE, mode));
 
 		vulns.addAll(getCertificateKeysCheck());
 		return vulns;
@@ -154,7 +156,8 @@ public class Scanner {
 
 		if (rsaVulnerable || ecdsaVulnerable) {
 			String note = String.format("actual size [%s] is lesser then expected minimum size [%s]", oSaft.getParser().getCertificatePublicKeySize(), rsaVulnerable ? rsaDirective.getValueInt() : ecdsaDirective.getValueInt());
-			vulns.add(doPrintVulnerability("Wrong size of certificate's public key", Result.getVulnerable(note), ReportMessage.Category.CERTIFICATE));
+			Mode mode = rsaVulnerable ? rsaDirective.getMode() : ecdsaDirective.getMode();
+			vulns.add(doPrintVulnerability("Wrong size of certificate's public key", Result.getVulnerable(note), ReportMessage.Category.CERTIFICATE, mode));
 		}
 
 		/**
@@ -172,7 +175,8 @@ public class Scanner {
 
 		if (rsaVulnerable || ecdsaVulnerable) {
 			String note = String.format("actual size [%s] is lesser then expected minimum size [%s]", oSaft.getParser().getCertificateSignatureKeySize(), rsaVulnerable ? rsaDirective.getValueInt() : ecdsaDirective.getValueInt());
-			vulns.add(doPrintVulnerability("Wrong size of certificate's signature key", Result.getVulnerable(note), ReportMessage.Category.CERTIFICATE));
+			Mode mode = rsaVulnerable ? rsaDirective.getMode() : ecdsaDirective.getMode();
+			vulns.add(doPrintVulnerability("Wrong size of certificate's signature key", Result.getVulnerable(note), ReportMessage.Category.CERTIFICATE, mode));
 		}
 
 		return vulns;
@@ -186,7 +190,7 @@ public class Scanner {
 	 * @param category category of the test
 	 * @return a newly created report message
 	 */
-	private ReportMessage doPrintVulnerability(String vulnerableMessage, Result result, ReportMessage.Category category) {
+	private ReportMessage doPrintVulnerability(String vulnerableMessage, Result result, ReportMessage.Category category, Mode mode) {
 		ReportMessage vulnerable = null;
 
 		StringBuilder out = new StringBuilder();
@@ -195,10 +199,10 @@ public class Scanner {
 			out.append(" [").append(result.getNote()).append("]");
 		}
 
-		if (result.isVulnerable()) {
-			vulnerable = new ReportMessage(out.toString(), category, this.target.getProfile().getModeVulnerabilities());
+		if (result.isVulnerable() && !mode.isCanBe()) {
+			vulnerable = new ReportMessage(out.toString(), category, mode);
 		} else if (result.isUnknown() && this.target.getProfile().isUnknownTestResultIsError()) {
-			vulnerable = new ReportMessage(out.toString(), category, this.target.getProfile().getModeVulnerabilities());
+			vulnerable = new ReportMessage("[Unable to test] " + out.toString(), category, mode);
 		}
 
 		return vulnerable;
@@ -212,12 +216,32 @@ public class Scanner {
 	private List<ReportMessage> getProtocols() {
 		List<ReportMessage> vulns = new ArrayList<>();
 
-		for (Protocol protocol : target.getProfile().getProtocols()) {
-			if (protocol.getMode().isMustBe() && !oSaft.getParser().getSupportedProtocols().contains(protocol)) {
-				vulns.add(new ReportMessage("Protocol " + protocol + " MUST BE supported!", ReportMessage.Category.PROTOCOL, protocol.getMode()));
-			} else if (protocol.getMode().isMustNotBe() && oSaft.getParser().getSupportedProtocols().contains(protocol)) {
-				vulns.add(new ReportMessage("Protocol " + protocol + " MUST NOT BE supported!", ReportMessage.Category.PROTOCOL, protocol.getMode()));
+		List<Protocol> protocols = this.target.getProfile().getProtocols();
+		for (Protocol protocol : protocols) {
+			switch (protocol.getType()) {
+				case SSLv2:
+					Helper.addIfNotNull(vulns, doPrintVulnerability("Support for SSLv2 protocol.", oSaft.getParser().getProtocolSslv2(), ReportMessage.Category.PROTOCOL, protocol.getMode()));
+					break;
+				case SSLv3:
+					Helper.addIfNotNull(vulns, doPrintVulnerability("Support for SSLv3 protocol.", oSaft.getParser().getProtocolSslv3(), ReportMessage.Category.PROTOCOL, protocol.getMode()));
+					break;
+				case TLSv10:
+					Helper.addIfNotNull(vulns, doPrintVulnerability("Support for TLSv1.0 protocol.", oSaft.getParser().getProtocolTlsv10(), ReportMessage.Category.PROTOCOL, protocol.getMode()));
+					break;
+				case TLSv11:
+					Helper.addIfNotNull(vulns, doPrintVulnerability("Support for TLSv1.1 protocol.", oSaft.getParser().getProtocolTlsv11(), ReportMessage.Category.PROTOCOL, protocol.getMode()));
+					break;
+				case TLSv12:
+					Helper.addIfNotNull(vulns, doPrintVulnerability("Support for TLSv1.2 protocol.", oSaft.getParser().getProtocolTlsv12(), ReportMessage.Category.PROTOCOL, protocol.getMode()));
+					break;
+				case TLSv13:
+					//TLS 1.3 is draft
+					//Helper.addIfNotNull(vulns, doPrintVulnerability("Support for TLSv1.3 protocol.", oSaft.getParser().getProtocolTlsv13(), ReportMessage.Category.PROTOCOL, protocol.getMode()));
+					break;
+				default:
+					break;
 			}
+
 		}
 
 		return vulns;

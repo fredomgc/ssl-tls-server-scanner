@@ -126,15 +126,21 @@ public class HtmlExport extends BaseExport {
 			if (!first) {
 				sb.append("<tr>");
 			}
-			
+
 			sb.append(String.format("<td>%s</td>", message.getRequiredModeHuman()));
-			sb.append(String.format("<td class=\"%s\">%s</td>", typeToCssClass(message), message.getMessage()));
+			sb.append(String.format("<td class=\"%s\">%s</td>", typeToCssClass(message), escapeHtml(message.getMessage())));
 			sb.append("</tr>");
 
 			first = false;
 		}
 
 		return sb.toString();
+	}
+
+	private String escapeHtml(String string) {
+		string = string.replaceAll("<", "&lt;");
+		string = string.replaceAll(">", "&gt;");
+		return string;
 	}
 
 	/**
@@ -144,10 +150,17 @@ public class HtmlExport extends BaseExport {
 	 * @return css class
 	 */
 	private String typeToCssClass(ReportMessage message) {
+
+		/**
+		 * In case of some system messages
+		 */
 		if (message.getRequiredMode() == null) {
 			return "";
 		}
 
+		/**
+		 * If something is in mode "canBe", then ignore CSS highlighting
+		 */
 		if (message.getRequiredMode().isCanBe()) {
 			return "";
 		}

@@ -3,7 +3,7 @@
 	<profiles>
 		<profile name="low">			
 			<directives>
-				<directive name="unknownTestResultIsError" value="true" />
+				<directive name="unknownTestResultIsError" value="false" />
 			</directives>
 			
 			<protocols>
@@ -14,7 +14,7 @@
 				<protocol name="TLS 1.2"  mode="canBe" />
 			</protocols>
 			
-			<vulnerabilitiesFree mode="canBe"/>
+			<vulnerabilitiesFree mode="mustBe"/>
 			
 			<certificateValid  mode="mustBe">
 				<directive name="rsaMinimumPublicKeySize" value="2048"  mode="canBe" />
@@ -32,6 +32,7 @@
 	</profiles>
 	
 	<targets>
-		<target destination="https://127.0.0.1/"  profile="low"  name="my localhost #1" />
+		
+		<target destination="https://moje.bleskpenezenka.cz/bpcp/#/login"  profile="low"  name="my localhost #1" />
 	</targets>
 </configuration>
