@@ -1,0 +1,1806 @@
+Running scan of https://contact.v6ak.com
+Running O-Saft with args: [/home/fredomgc/thesis/o-saft/o-saft.pl, --legacy=quick, --no-header, https://contact.v6ak.com, +check]
+Running O-Saft with args: [/home/fredomgc/thesis/o-saft/o-saft.pl, --legacy=quick, --no-header, https://contact.v6ak.com, +info]
+Running O-Saft with args: [/home/fredomgc/thesis/o-saft/o-saft.pl, --legacy=quick, --no-header, https://contact.v6ak.com, +protocols]
+**WARNING: SSL version 'TLSv13': not supported by Net::SSLeay; not checked
+!!Hint: +tr-03116+ : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +tr-03116- : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +bsi-tr-02102- : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +bsi-tr-03116- : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +bsi-tr-02102+ : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +tr-02102 : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +rfc7525 : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +bsi-tr-03116+ : please see  'o-saft.pl --help=CHECKS'  for more information
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': cannot get default cipher; ignored
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+SSLv2	 	  0   0   0   0   0   0                                 
+SSLv3	 	  0   0   0   0   0   0                                 
+TLSv1	 	 10   0   0   1   6  11 ECDHE-RSA-AES128-SHA            ECDHE-RSA-AES128-SHA
+TLSv11		 10   0   0   1   6  11 ECDHE-RSA-AES128-SHA            ECDHE-RSA-AES128-SHA
+TLSv12		 22   0   0   1  14  23 ECDHE-RSA-AES128-GCM-SHA256     ECDHE-RSA-AES128-GCM-SHA256
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Selected cipher by server	ECDHE-RSA-AES128-GCM-SHA256 HIGH
+Connection is safe against Sweet32 attack	no ( TLSv1:DES-CBC3-SHA TLSv11:DES-CBC3-SHA TLSv12:DES-CBC3-SHA)
+Certificate Private Key Signature SHA2	yes
+Connection is safe against CRIME attack	yes
+Target DH Parameter >= 2048 bits	yes
+Target does not accept ADH ciphers	yes
+Target sends STS header with includeSubdomain	no (<<N/A as STS not set>>)
+Offered ciphers count	45
+Target supports EDH ciphers	yes
+Target is ISM compliant (ciphers only)	yes
+STS max-age more than one year	no (<<N/A as STS not set>>)
+Target does not send STS in meta tag	yes
+STS max-age less than one month	no (<<N/A as STS not set>>)
+Target sends STS and no Location header	no (<<N/A as STS not set>>)
+Certificate Chain size	0 bytes
+Target sends Public Key Pins header	no ( )
+Connection is safe against DROWN attack	yes
+Target TLS Session Ticket is random	yes
+Target does not support SSLv3	yes
+Target supports PFS (selected cipher)	yes
+Target supports PSK Identity Hint	no (None)
+Certificate Private Key with Encryption	yes
+Certificate Names compliant to RFC6125	yes
+Target is strict TR-03116-4 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-GCM-SHA384 TLSv12:DHE-RSA-AES256-SHA256 TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-GCM-SHA256 TLSv12:DHE-RSA-AES128-SHA256 TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+Target redirects with status code 301	yes
+Certificate Subject Altname count	7
+Certificate does not contain non-printable characters	yes
+Certificate has no invalid characters in extensions	yes
+Target sends STS header	no (<<N/A as STS not set>>)
+Connection is safe against RC4 attack	yes
+Target is  lazy  TR-03116-4 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-GCM-SHA384 TLSv12:DHE-RSA-AES256-SHA256 TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-GCM-SHA256 TLSv12:DHE-RSA-AES128-SHA256 TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+Connection is not based on SNI	no (typingrevolution.com)
+Certificate OCSP size	35 bytes
+Certificate has CRL Distribution Points	yes
+Certificate has valid OCSP URL	no ( <<invalid Content-Type: text/plain; charset=utf-8>>)
+Target redirect matches given host	no (<<N/A as STS not set>>)
+Certificate Public Key Modulus <16385 bits	yes
+Target sends STS header with proper max-age	no (<<N/A as STS not set>>)
+Target is PCI compliant (ciphers only)	yes
+Certificate has Certification Practice Statement	yes
+Certificate CRL data size	0 bytes
+Target supports Secure Renegotiation	yes
+!!Hint: checks only if renegotiation is implemented serverside according RFC5746
+Certificate is not root CA	yes
+Certificate Serial Number size	18 bytes
+Certificate chain validated	yes
+Certificate CRL size	963 bytes
+Target DH Parameter >= 512 bits (ECDH)	no (ECDH, P-256, 256 bits)
+Target supports SRP	no (None)
+Certificate's wildcard does not match hostname	yes
+Target is  lazy  BSI TR-02102-2 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+Target sends STS header with preload	yes
+Certificate Chain Depth count	0
+Target does not support heartbeat extension	no (heartbeat (id=15), len=1)
+Target supports TLSv1.3	no ( )
+Certificate is not expired	yes
+Connection is safe against BREACH attack	no (<<NOT YET IMPLEMENTED>>)
+Target supports PSK	no (None)
+Target supports Krb5	no ( )
+Target supports Next Protocol Negotiation (NPN)	yes
+Target is  lazy  BSI TR-03116-4 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-GCM-SHA384 TLSv12:DHE-RSA-AES256-SHA256 TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-GCM-SHA256 TLSv12:DHE-RSA-AES128-SHA256 TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-GCM-SHA384 TLSv12:DHE-RSA-AES256-SHA256 TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-GCM-SHA256 TLSv12:DHE-RSA-AES128-SHA256 TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+Certificate Subject Altname size	13 bytes
+Target supports Application Layer Protocol Negotiation (ALPN)	no (<<mismatch:   and 'No ALPN negotiated'>>)
+Target is strict BSI TR-02102-2 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+Certificate Wildcards count	0
+Certificate Issuer size	51 bytes
+Certificate CPS size	271 bytes
+Target DH Parameter >= 256 bits (ECDH)	yes
+Certificate is not self-signed	no (0 (ok))
+Certificate Serial Number size RFC5280	no (42 > 20)
+Certificate Fingerprint is not MD5	yes
+STS max-age < certificate's validity	no (<<N/A as STS not set>>)
+Certificate Private Key Encryption known	yes
+Certificate Domain Validation (DV)	yes
+Certificate has valid CRL URL	no (<<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>> <<invalid Content-Type: text/plain; charset=utf-8>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>> <<invalid Content-Type: application/pkix-cert>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>> <<invalid Content-Type: application/pdf>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<unexpected response: HTTP/1.0 301 Moved Permanently>><<connection to '/' failed>>)
+Target redirects HTTP to HTTPS same host	no (<<N/A as STS not set>>)
+Target supports TLS Session Ticket	yes
+Target redirects HTTP to HTTPS	yes
+Certificate has valid CPS URL	yes
+Connection is safe against BEAST attack (any cipher)	no ( TLSv1 TLSv11)
+Certificate Subject size	12 bytes
+Certificate has OCSP Responder URL	yes
+Certificate lazy Extended Validation (EV)	no ( <<missing EV Certificate: subject:jurisdictionOfIncorporationLocalityName>> <<missing EV Certificate: subject:jurisdictionOfIncorporationCountryName>> <<missing EV Certificate: subject:serialNumber>> <<missing EV Certificate: subject:localityName>> <<missing EV Certificate: subject:organizationName>> <<missing EV Certificate: subject:businessCategory>> <<missing EV Certificate: subject:jurisdictionOfIncorporationStateOrProvinceName>>)
+Target redirects not with 30x status code	yes
+Target supports TLSv1.1	yes
+Connection is safe against Logjam attack	yes
+Target does not accept NULL ciphers	yes
+Target is TR-02102-2 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+Certificate OIDs size	0 bytes
+Certificate PEM (binary) size	1396 bytes
+Target does not send STS header for IP	yes
+IP for given hostname 	no (46.28.110.250)
+Connected hostname matches certificate's subject	no (contact.v6ak.com <> v6ak.com)
+Target is RFC 7525 compliant	no ( TLSv1 TLSv11 <<missmatch: subject CN= and given hostname>> <<invalid Content-Type: text/plain; charset=utf-8>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>> <<invalid Content-Type: text/plain; charset=utf-8>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>> <<invalid Content-Type: application/pkix-cert>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>> <<invalid Content-Type: application/pdf>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<connection to '/' failed>><<unexpected response: HTTP/1.0 301 Moved Permanently>><<connection to '/' failed>>  TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-GCM-SHA384 TLSv12:DHE-RSA-AES256-SHA256 TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-GCM-SHA256 TLSv12:DHE-RSA-AES128-SHA256 TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+STS max-age more than 18 weeks	no (<<N/A as STS not set>>)
+Connection is safe against POODLE attack	yes
+Certificate does not contain wildcards	yes
+Given hostname is same as reverse resolved hostname	no (contact.v6ak.com <> v6ak.com)
+Target redirects HTTP without STS header	yes
+Target does not support SSLv2	yes
+Certificate is valid	yes
+Certificate Signature Key size	2048 bits
+Connection is safe against FREAK attack	yes
+Certificate Basic Constraints is false	yes
+Certificate Public Key Modulus Exponent <65537	no (65537)
+Target is FIPS-140 compliant	no ( TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:CAMELLIA256-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:CAMELLIA128-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-GCM-SHA384 TLSv12:DHE-RSA-AES256-SHA256 TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-GCM-SHA256 TLSv12:ECDHE-RSA-AES128-SHA256 TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-GCM-SHA256 TLSv12:DHE-RSA-AES128-SHA256 TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+Target sends STS and no Refresh header	no (<<N/A as STS not set>>)
+Target supports TLSv1	yes
+Certificate Public Key with Encryption	yes
+Target supports Resumption	yes
+STS max-age not reset	no (<<N/A as STS not set>>)
+Certificate Public Key size	2048 bits
+Certificate is valid according given hostname	no (typingrevolution.com <> contact.v6ak.com)
+Target does not accept EXPORT ciphers	yes
+Total number of checked ciphers	600
+Target supports TLSv1.2	yes
+Certificate Public Key Encryption known	yes
+STS max-age less than one year	no (<<N/A as STS not set>>)
+Certificate does not contain CR, NL, NULL characters	yes
+Target does not accept RC4 ciphers	yes
+Certificate strict Extended Validation (EV)	no ( <<missing EV Certificate: subject:jurisdictionOfIncorporationLocalityName>> <<missing EV Certificate: subject:jurisdictionOfIncorporationCountryName>> <<missing EV Certificate: subject:serialNumber>> <<missing EV Certificate: subject:localityName>> <<missing EV Certificate: subject:organizationName>> <<missing EV Certificate: subject:businessCategory>> <<missing EV Certificate: subject:jurisdictionOfIncorporationStateOrProvinceName>> <<missing EV Certificate: subject:streetAddress>>)
+Connection is safe against Heartbleed attack	yes
+Target TLS Session Ticket Lifetime	yes
+Target supports PFS (all ciphers)	no ( )
+Target DH Parameter >= 512 bits	yes
+Certificate PEM (base64) size	1915 bytes
+Target is strict BSI TR-03116-4 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-GCM-SHA384 TLSv12:DHE-RSA-AES256-SHA256 TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-GCM-SHA256 TLSv12:DHE-RSA-AES128-SHA256 TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:DHE-RSA-AES256-SHA TLSv1:DHE-RSA-CAMELLIA256-SHA TLSv1:AES256-SHA TLSv1:CAMELLIA256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:DHE-RSA-AES128-SHA TLSv1:DHE-RSA-CAMELLIA128-SHA TLSv1:AES128-SHA TLSv1:CAMELLIA128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:DHE-RSA-AES256-SHA TLSv11:DHE-RSA-CAMELLIA256-SHA TLSv11:AES256-SHA TLSv11:CAMELLIA256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:DHE-RSA-AES128-SHA TLSv11:DHE-RSA-CAMELLIA128-SHA TLSv11:AES128-SHA TLSv11:CAMELLIA128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:DHE-RSA-AES256-SHA TLSv12:DHE-RSA-CAMELLIA256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA256 TLSv12:AES256-SHA TLSv12:CAMELLIA256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:DHE-RSA-AES128-SHA TLSv12:DHE-RSA-CAMELLIA128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA256 TLSv12:AES128-SHA TLSv12:CAMELLIA128-SHA TLSv12:DES-CBC3-SHA)
+Connection is safe against Lucky 13 attack	no ( TLSv1:DES-CBC3-SHA TLSv11:DES-CBC3-SHA TLSv12:DES-CBC3-SHA)
+STS max-age less than one day	no (<<N/A as STS not set>>)
+**WARNING: SSL version 'TLSv13': not supported by Net::SSLeay; not checked
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': cannot get default cipher; ignored
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Target's selected protocol (ALPN)	
+CA Chain Verification error in level	
+Certificate Fingerprint  MD5	F1A68D15444037E43E0FCFDAE429CE7E
+Certificate Public Key Value	009f82529de5d78b5af5b3673a4ae7d45390e59cef58bd0c517447c468f8028e4d9e0bc2ad472c18d53135fe7f64020782aaff3ad7c9a8aec9b644783c1797e341ea6b3cea5a0ef5dd3131892f538a5f738908a40353a02462fdd03eb3dba7ed45b3c457ade947a75f290e95232e535fe0dfae567ded7bcc5ff86742477617e1c854f5bcce281fe695c8157c4429f9ed2c11f08d39149aa948f69762149bd27e7a2a31347e3168b0705b1115991d206bc56426344f8a3b93f1740c979df3b61580c00b694bd4fcf00dc694bd77a8aa43adbf3044965e7f0fc3a45482523e54b03273031c0c8a8ba0239713202f8fa3dff4e8813ae29126e590d1e7cb3702aa53a9
+HTTPS Refresh header	
+Target's Master-Key	34733AE2C25AB8356812CD88D0A9BFA83114E92D60626910598E01CD39572722C839F80E55F02A43838B22CBF088D89B
+HTTPS STS in http-equiv	
+HTTPS Public Key Pins	
+HTTPS Alternate-Protocol	
+HTTPS Body	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>[502] Pravděpodobně update na serveru</title>
+</head>
+<body>
+	<p>Pravděpodobně dělám nějaký update, zkuste to tak za minutu znovu.
+	<p>The server is probably being updated. Try it again after waiting about a minute.
+	<script type="text/javascript">
+		(function(){
+			var time=10;
+			var interval;
+			function update(){
+				document.getElementById("countdown").firstChild.nodeValue = time;
+			};
+			window.onload = function(){
+				update();
+				interval = setInterval(function(){
+					time--;
+					update();
+					if(time == 0){
+						location.reload();
+						clearInterval(interval);
+					}
+				}, 1000);
+			};
+		})();
+	</script>
+	<p>Reloading in <span id="countdown">?</span> seconds...
+</body>
+</html>
+
+Validity Certificate Chain	0 (ok)
+Certificate valid until	Mar 16 09:13:00 2017 GMT
+Target default --dummy-- cipher	<<undef>>
+Certificate Subject	/CN=v6ak.com
+Certificate extensions Certificate Policies: User Notice	Explicit Text: This Certificate may only be relied upon by Relying Parties and only in accordance with the Certificate 
+HTTPS STS MaxAge	
+Target default DTLS 1.2 cipher	
+Target default TLS 1.0  cipher	ECDHE-RSA-AES128-SHA
+Target's TLS Session Ticket Lifetime	300 (seconds)
+Certificate Issuer	/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Certificate extensions Certificate Policies: Policy	2.23.140.1.2.1
+HTTP Location header	https://contact.v6ak.com/
+Certificate Public Key Length	2048
+HTTPS Status line	HTTP/1.1 502 Bad Gateway
+Certificate extensions Key Usage	critical Digital Signature, Key Encipherment 
+Certificate extensions Authority key Identifier	keyid:A84A6A63047DDDBAE6D139B7A64565EFF3A8ECA1 
+Certificate Serial Number	03:f2:2c:f5:48:20:d0:3d:18:09:1b:0a:3d:cf:22:b0:0b:eb
+Certificate Subject's Alternate Names	 DNS:contact.v6ak.com DNS:kontakt.v6ak.com DNS:math.v6ak.com DNS:public.v6ak.com DNS:twitter.v6ak.com DNS:v6ak.com DNS:www.v6ak.com
+Certificate extensions Certificate Policies: CPS	http://cps.letsencrypt.org
+TLS extensions	renegotiation info; EC point formats; session ticket; heartbeat; next protocol
+Target default DTLS 1.1 cipher	
+Target supports PSK Identity Hint	None
+Certificate extensions Basic Constraints	critical CA:FALSE 
+Certificate Signature Key Value	8430d89d7a7051792f602ff8a060c462d302e5b99eb1251ecca44ac9179dc743ea50e56568df615b3a2ac65a508c3d81d42e005800598c270fabb87825c46b9f0d664ef59eefe810cb20caf3b3f06be6b09bb2d8f612683e3258ccddd5e641d8498e90a7b8ea2d751718db80af434335e27325db524b7cd6692dad981704b0af6461174b71dbf8640d4917df2cb7da869bb8e0e42faa71b03320824685661d9f1085cd8a701b7a137453727fa27732fc6ca744e4c39214be7a0f58ed2ca55a5094f09104a3264176dfaa19c443c670307f081ba1a767d81ee24cf660de933197cc2bbb01d912487ea86e715b45bc6af52095cedf3de589ede43fe25df2245aca
+HTTP Refresh header	
+Target's TLS Session Ticket	25a6d736399bee1124b1718c0d3aea4da722f2a6db38e69a1fc90eaa67ced5a96bf754e3d78db36a45f502d83e2dccea4b0fe8f33c62037807400c27e32cadec860813617902db9c3dee740d21afefc53216454ac76affde4b5cda193ed7b39222794e75c66c6326307ac0fb6473cd70ca8ad298a3eaa4fcabc3b50675b49b5de0ac3af1472656f2f2a99054bee2ba916b9cfb675cc30e1eb38d872a2096ba9d60f9e2226aa33769ea9667814de0ffb9
+Target's selected SSL Protocol	TLSv1.2
+Certificate Serial Number (hex)	03F22CF54820D03D18091B0A3DCF22B00BEB
+Target supports PSK	None
+Certificate Fingerprint Hash Value	32F3081F6B4E0ACEDE1F45A44D6140C8683CAABD
+HTTPS STS header	
+Certificate Fingerprint SHA1	32F3081F6B4E0ACEDE1F45A44D6140C8683CAABD
+Validity Hostname	Given hostname 'contact.v6ak.com' does not match CN 'v6ak.com' in certificate
+HTTPS Error alerts	
+Target supports Compression	NONE
+Target default --dummy-- cipher	<<undef>>
+Target default SSL 3.0  cipher	
+Certificate Issuer Name Hash	4f06f81d
+Selected SSL Protocol	TLSv12
+Target advertised protocols	h2, http/1.1
+HTTP Alt-Svc header	
+HTTPS STS include sub-domains	
+Target supports Resumption	Reused, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Certificate OCSP Responder URL	http://ocsp.int-x3.letsencrypt.org/
+Certificate trusted	
+Target default TLS 1.1  cipher	ECDHE-RSA-AES128-SHA
+Target supports Renegotiation	renegotiation info" (id=65281), len=1
+Certificate Type (bitmask)	0x131  <<experimental>>
+Target default TLS 1.2  cipher	ECDHE-RSA-AES128-GCM-SHA256
+Target default DTLS 1.3 cipher	
+Certificate extensions CRL Distribution Points	 X509v3 extensions: X509v3 Key Usage: critical Digital Signature, Key Encipherment X509v3 Extended Key Usage: TLS Web Server Authentication, TLS Web Client Authentication X509v3 Basic Constraints: critical CA:FALSE X509v3 Subject Key Identifier: 097DA5F003B3100E27017F8FF17BFAF331A43C91 X509v3 Authority Key Identifier: keyid:A84A6A63047DDDBAE6D139B7A64565EFF3A8ECA1 Authority Information Access: OCSP - http://ocsp.int-x3.letsencrypt.org/ CA Issuers - http://cert.int-x3.letsencrypt.org/ X509v3 Subject Alternative Name: DNS:contact.v6ak.com, DNS:kontakt.v6ak.com, DNS:math.v6ak.com, DNS:public.v6ak.com, DNS:twitter.v6ak.com, DNS:v6ak.com, DNS:www.v6ak.com X509v3 Certificate Policies: Policy: 2.23.140.1.2.1 Policy: 1.3.6.1.4.1.44947.1.1.1 CPS: http://cps.letsencrypt.org User Notice: Explicit Text: This Certificate may only be relied upon by Relying Parties and only in accordance with the Certificate Policy found at https://letsencrypt.org/repository/ X509
+Target's TLS Session Timeout	300 (sec)
+Target default DTLS 1.0 cipher	
+Certificate extensions Authority Information Access	OCSP - URI:http://ocsp.int-x3.letsencrypt.org/ CA Issuers - URI:http://cert.int-x3.letsencrypt.org/ 
+Certificate Trust Information	
+Certificate Subject Name Hash	df6b7ded
+Target supports Heartbeat	heartbeat (id=15), len=1
+Certificate Public Key Algorithm	rsaEncryption
+HTTP Alternate-Protocol	
+CA Chain Verification error	ok
+Certificate extensions Extended Key Usage	TLS Web Server Authentication, TLS Web Client Authentication 
+Certificate extensions Netscape Cert Type	
+Certificate Common Name	v6ak.com
+Target default SSL 2.0  cipher	
+HTTP STS header	
+Target supports Krb5	
+Certificate Version	3 (0x2)
+HTTPS Location header	
+Target's not ngotiated message (ALPN)	No ALPN negotiated
+Target's Session-ID	C94AB84A6EB16DCA2A5271D18D78B5810573DB3B478D406F471E7EF938E39CC8
+Target default TLS 1.3  cipher	
+Certificate Fingerprint	SHA1 Fingerprint=32F3081F6B4E0ACEDE1F45A44D6140C8683CAABD
+Certificate Signature Key Length	2048
+Target supports Expansion	NONE
+Target supports SRP	None
+Certificate OCSP Subject, Public Key Hash	
+Certificate extensions Subject Key Identifier	097DA5F003B3100E27017F8FF17BFAF331A43C91 
+Validity Alternate Names	Given hostname 'contact.v6ak.com' matches alternate name 'DNS:contact.v6ak.com' in certificate
+Target's DH Parameter	ECDH, P-256, 256 bits
+Certificate Validity (date)	Dec 16 09:13:00 2016 GMT .. Mar 16 09:13:00 2017 GMT
+HTTP Status line	HTTP/1.1 301 Moved Permanently
+HTTPS Server banner	nginx/1.11.10
+Certificate extensions Issuer Alternative Name	
+Certificate extensions Certificate Policies	Policy: 2.23.140.1.2.1 Policy: 1.3.6.1.4.1.44947.1.1.1 CPS: http://cps.letsencrypt.org User Notice: Explicit Text: This Certificate may only be relied upon by Relying Parties and only in accordance with the Certificate Policy found at https://letsencrypt.org/repository/ 
+Certificate Public Key Exponent	65537 (0x10001)
+Target default DTLS 0.9 cipher	
+HTTPS Alt-Svc header	
+Certificate Signature Algorithm	sha256WithRSAEncryption
+Certificate Serial Number (int)	343744950197625964832584441305492309937131
+Certificate Email Addresses	
+HTTPS STS preload	
+TLS extensions (debug)	
+TLS server extension "renegotiation info" (id=65281), len=1
+TLS server extension "EC point formats" (id=11), len=4
+TLS server extension "session ticket" (id=35), len=0
+TLS server extension "heartbeat" (id=15), len=1
+TLS server extension "next protocol" (id=13172), len=12
+Certificate Validity (signature)	0 (ok)
+<<internal>> used SSL options bitmask	0x0000000083000bff
+Selected Cipher	ECDHE-RSA-AES128-GCM-SHA256
+Certificate valid since	Dec 16 09:13:00 2016 GMT
+Certificate Fingerprint Algorithm	SHA1
+**WARNING: SSL version 'TLSv13': not supported by Net::SSLeay; not checked
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Use of uninitialized value $host in pattern match (m//) at /home/fredomgc/thesis/o-saft/o-saft.pl line 2866.
+Use of uninitialized value $host in concatenation (.) or string at /home/fredomgc/thesis/o-saft/o-saft.pl line 2869.
+Target's selected protocol (ALPN)	
+Target's selected SSL Protocol	TLSv1.2
+Target advertised protocols	h2, http/1.1
+HTTPS Alternate-Protocol	
+HTTP Alternate-Protocol	
+HTTPS Alt-Svc header	
+HTTP Alt-Svc header	
+Target does not support SSLv2	yes
+Target does not support SSLv3	yes
+Target supports TLSv1	yes
+Target supports TLSv1.1	yes
+Target supports TLSv1.2	yes
+Target supports TLSv1.3	no ( )
+Target supports Application Layer Protocol Negotiation (ALPN)	no (<<mismatch:   and 'No ALPN negotiated'>>)
+Target supports Next Protocol Negotiation (NPN)	yes

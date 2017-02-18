@@ -33,6 +33,19 @@
 	
 	<targets>
 		
-		<target destination="https://moje.bleskpenezenka.cz/bpcp/#/login"  profile="low"  name="my localhost #1" />
+		
+		<target destination="google.com"  profile="low"  name="my localhost #1" />
+		
+		
+		
+		<!--
+		<target destination="https://contact.v6ak.com"  profile="low"  name="my localhost #1" />
+		-->
+		
+		
+		<!--
+		<target destination="https://www.seznam.cz/"  profile="low"  name="my localhost #1" />
+		-->
+		
 	</targets>
 </configuration>

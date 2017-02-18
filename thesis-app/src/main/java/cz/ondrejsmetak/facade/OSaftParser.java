@@ -10,6 +10,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -50,8 +52,8 @@ public class OSaftParser {
 	/**
 	 * Basic certificate checks
 	 */
-	public static final String HOSTNAME_MATCH_HEADER = "Connected hostname matches certificate's subject";
-	public static final String REVERSE_HOSTNAME_MATCH_HEADER = "Given hostname is same as reverse resolved hostname";
+	public static final String CERTIFICATE_VALIDITY_HOSTNAME = "Validity Hostname"; //used to compare hostname and CN in certificate 
+	public static final String CERTIFICATE_VALIDITY_ALTERNATE_NAMES = "Validity Alternate Names"; //used to compare hostname and CN in certificate 
 	public static final String CERTIFICATE_NOT_EXPIRED_HEADER = "Certificate is not expired";
 	public static final String CERTIFICATE_IS_VALID_HEADER = "Certificate is valid";
 	public static final String CERTIFICATE_FINGERPRINT_NOT_MD5_HEADER = "Certificate Fingerprint is not MD5";
@@ -103,12 +105,13 @@ public class OSaftParser {
 	 * Certificate checks
 	 */
 	private Result certificateHostnameMatch = Result.getUnknown();
-	private Result certificateReverseHostnameMatch = Result.getUnknown();
 	private Result certificateNotExpired = Result.getUnknown();
 	private Result certificateIsValid = Result.getUnknown();
 	private Result certificateFingerprintNotMd5 = Result.getUnknown();
 	private Result certificatePrivateKeySha2 = Result.getUnknown();
 	private Result certificateNotSelfSigned = Result.getUnknown();
+	private String tempValidityHostname = "";
+	private String tempValidityAlternateNames = "";
 
 	/**
 	 * Certificate signature checks
@@ -188,8 +191,6 @@ public class OSaftParser {
 	}
 
 	private void parseCertificate(String line) {
-		this.certificateHostnameMatch = parseResult(line, HOSTNAME_MATCH_HEADER, YES, this.certificateHostnameMatch);
-		this.certificateReverseHostnameMatch = parseResult(line, REVERSE_HOSTNAME_MATCH_HEADER, YES, this.certificateReverseHostnameMatch);
 		this.certificateNotExpired = parseResult(line, CERTIFICATE_NOT_EXPIRED_HEADER, YES, this.certificateNotExpired);
 		this.certificateIsValid = parseResult(line, CERTIFICATE_IS_VALID_HEADER, YES, this.certificateIsValid);
 		this.certificateFingerprintNotMd5 = parseResult(line, CERTIFICATE_FINGERPRINT_NOT_MD5_HEADER, YES, this.certificateFingerprintNotMd5);
@@ -200,6 +201,7 @@ public class OSaftParser {
 		 * Následující testy jsou složitější
 		 */
 		parseCertificateKeySize(line);
+		parseCertificateHostnameMatch(line);
 	}
 
 	private void parseCertificateKeySize(String line) {
@@ -214,6 +216,49 @@ public class OSaftParser {
 		 */
 		certificateSignatureKeySize = doParseCertificateKeySize(line, CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER, certificateSignatureKeySize);
 		certificateSignatureAlgorithm = doParseAlgorithm(line, CERTIFICATE_SIGNATURE_ALGORITHM_HEADER, certificateSignatureAlgorithm);
+	}
+
+	private void parseCertificateHostnameMatch(String line) {
+		if (isHeader(line, CERTIFICATE_VALIDITY_HOSTNAME) && tempValidityHostname.isEmpty()) {
+			tempValidityHostname = parseValue(line, CERTIFICATE_VALIDITY_HOSTNAME);
+			return;
+		}
+
+		if (isHeader(line, CERTIFICATE_VALIDITY_ALTERNATE_NAMES) && tempValidityAlternateNames.isEmpty()) {
+			tempValidityAlternateNames = parseValue(line, CERTIFICATE_VALIDITY_ALTERNATE_NAMES);
+			return;
+		}
+
+		Pattern pattern;
+		Matcher matcher;
+
+		//1) Check, if hostname matches CN in certificate
+		pattern = Pattern.compile("Given hostname '(.+)' matches CN '(.+)' in certificate");
+		matcher = pattern.matcher(tempValidityHostname);
+		if (matcher.matches()) {
+			certificateHostnameMatch = Result.getSafe();
+			return;
+		}
+
+		//2) Check, if some hostname matches some alternate name in certificate
+		//2) It also covers check for wildcard certificate
+		pattern = Pattern.compile("Given hostname '(.+)' matches alternate name '(.+)' in certificate");
+		matcher = pattern.matcher(tempValidityAlternateNames);
+		if (matcher.matches()) {
+			certificateHostnameMatch = Result.getSafe();
+			return;
+		}
+
+		//3) If we get here, it means vulnerable result
+		pattern = Pattern.compile("Given hostname '(.+)' does not match CN '(.+)' in certificate");
+		matcher = pattern.matcher(tempValidityHostname);
+		if (matcher.matches()) {
+			String givenHostname = matcher.group(1);
+			String commonName = matcher.group(2);
+			String vulnerableMessage = givenHostname + " <> " + commonName;
+			certificateHostnameMatch = Result.getVulnerable(vulnerableMessage);
+
+		}
 	}
 
 	private Algorithm doParseAlgorithm(String line, String header, Algorithm previousAlgorithm) {
@@ -403,10 +448,6 @@ public class OSaftParser {
 
 	public Result getCertificateHostnameMatch() {
 		return certificateHostnameMatch;
-	}
-
-	public Result getCertificateReverseHostnameMatch() {
-		return certificateReverseHostnameMatch;
 	}
 
 	public Result getCertificateNotExpired() {

@@ -69,6 +69,9 @@ public class OSaftFacade extends BaseFacade {
 				data.addAll(doCmd(target.getDestination(), "+protocols"));
 			}
 		}
+		
+		//data.forEach(System.out::println);
+		
 		return data;
 	}
 
