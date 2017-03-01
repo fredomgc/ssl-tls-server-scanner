@@ -58,7 +58,7 @@ public class OSaftParser {
 	public static final String CERTIFICATE_IS_VALID_HEADER = "Certificate is valid";
 	public static final String CERTIFICATE_FINGERPRINT_NOT_MD5_HEADER = "Certificate Fingerprint is not MD5";
 	public static final String CERTIFICATE_PRIVATE_KEY_SHA2_HEADER = "Certificate Private Key Signature SHA2";
-	public static final String CERTIFICATE_NOT_SELF_SIGNED_HEADER = "Certificate is not self-signed";
+	public static final String CERTIFICATE_CHAIN = "Certificate Chain"; //used to test self-signed certificate
 	public static final String CERTIFICATE_PUBLIC_KEY_SIZE_HEADER = "Certificate Public Key Length";
 	public static final String CERTIFICATE_SIGNATURE_KEY_SIZE_HEADER = "Certificate Signature Key Length";
 	public static final String CERTIFICATE_SIGNATURE_ALGORITHM_HEADER = "Certificate Signature Algorithm";
@@ -140,6 +140,8 @@ public class OSaftParser {
 	 * Other
 	 */
 	private boolean succesfulConnection = true; //we assume, that target is up and running
+	private boolean isReadingCertificateChain = false; //are we currently parsing certificate chain
+	private Integer certificateChainDepth = 0;
 
 	/**
 	 * Konstruktor
@@ -195,13 +197,37 @@ public class OSaftParser {
 		this.certificateIsValid = parseResult(line, CERTIFICATE_IS_VALID_HEADER, YES, this.certificateIsValid);
 		this.certificateFingerprintNotMd5 = parseResult(line, CERTIFICATE_FINGERPRINT_NOT_MD5_HEADER, YES, this.certificateFingerprintNotMd5);
 		this.certificatePrivateKeySha2 = parseResult(line, CERTIFICATE_PRIVATE_KEY_SHA2_HEADER, YES, this.certificatePrivateKeySha2);
-		this.certificateNotSelfSigned = parseResult(line, CERTIFICATE_NOT_SELF_SIGNED_HEADER, YES, this.certificateNotSelfSigned);
 
 		/**
-		 * Následující testy jsou složitější
+		 * Following tests are not straightforward
 		 */
 		parseCertificateKeySize(line);
 		parseCertificateHostnameMatch(line);
+		parseCertificateSelfSigned(line);
+	}
+
+	private void parseCertificateSelfSigned(String line) {
+		/**
+		 * There is (in my opinion) bug
+		 * https://github.com/OWASP/O-Saft/issues/65 so we can't use result of
+		 * self-signed test directly from O-Saft. Instead, we will check
+		 * certificate chain.
+		 */
+		boolean isCertificateChainLine = line.contains("s:/") || line.contains("i:/");
+
+		if (isHeader(line, CERTIFICATE_CHAIN)) {
+			isReadingCertificateChain = true; //we just started parsing certificate chain
+			certificateChainDepth = 0; //so current depth is zero
+			return; //nothing to do now, we must read following lines (in future iterations)
+		}
+
+		if (isReadingCertificateChain && isCertificateChainLine) {
+			String chain = line.trim();
+			if (!chain.isEmpty() && Character.isDigit(chain.charAt(0))) {
+				certificateChainDepth = Math.max(certificateChainDepth, Character.getNumericValue(chain.charAt(0)));
+				this.certificateNotSelfSigned = certificateChainDepth > 0 ? Result.getSafe() : Result.getVulnerable();
+			}
+		}
 	}
 
 	private void parseCertificateKeySize(String line) {

@@ -63,6 +63,7 @@ public class OSaftFacade extends BaseFacade {
 
 			if (target.getProfile().isTestCertificate()) {
 				data.addAll(doCmd(target.getDestination(), "+info"));
+				data.addAll(doCmd(target.getDestination(), "+chain"));
 			}
 
 			if (target.getProfile().isTestProtocols()) {

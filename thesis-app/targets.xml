@@ -34,7 +34,7 @@
 	<targets>
 		
 		
-		<target destination="google.com"  profile="low"  name="my localhost #1" />
+		<target destination="https://www.google.com"  profile="low"  name="my localhost #1" />
 		
 		
 		
