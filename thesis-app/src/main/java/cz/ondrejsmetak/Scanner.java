@@ -1,6 +1,7 @@
 package cz.ondrejsmetak;
 
 import cz.ondrejsmetak.entity.CipherSuite;
+import cz.ondrejsmetak.entity.ClientCertificate;
 import cz.ondrejsmetak.entity.Directive;
 import cz.ondrejsmetak.entity.Mode;
 import cz.ondrejsmetak.entity.Profile;
@@ -26,6 +27,11 @@ public class Scanner {
 	private final OSaftFacade oSaft;
 
 	/**
+	 * Test regarding custom certificate authority
+	 */
+	private final CustomCertificateAuthorityTest customCa;
+
+	/**
 	 * Target, that will be scanned
 	 */
 	private final Target target;
@@ -48,6 +54,7 @@ public class Scanner {
 	public Scanner(Target target) {
 		this.target = target;
 		oSaft = new OSaftFacade(target);
+		customCa = new CustomCertificateAuthorityTest(target);
 	}
 
 	/**
@@ -55,6 +62,9 @@ public class Scanner {
 	 */
 	public void runScan() {
 		oSaft.runScan();
+		if (!target.getProfile().getCustomCertificateAuthority().getMode().isCanBe()) {
+			customCa.runScan();
+		}
 		doReportMessages();
 	}
 
@@ -122,6 +132,22 @@ public class Scanner {
 		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate fingerprint is MD5.", oSaft.getParser().getCertificateFingerprintNotMd5(), ReportMessage.Category.CERTIFICATE, mode));
 		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate Private Key Signature isn't SHA2.", oSaft.getParser().getCertificatePrivateKeySha2(), ReportMessage.Category.CERTIFICATE, mode));
 		Helper.addIfNotNull(vulns, doPrintVulnerability("Certificate is self-signed.", oSaft.getParser().getCertificateNotSelfSigned(), ReportMessage.Category.CERTIFICATE, mode));
+
+		/**
+		 * How about custom certificate authority?
+		 */
+		ClientCertificate ca = this.target.getProfile().getCustomCertificateAuthority();
+		Mode caMode = ca.getMode();
+
+		if (caMode.isMustBe() && !customCa.isConnectionSuccessful()) {
+			String message = String.format("Target isn't accepting connection when using custom certificate authority [%s].", ca.getName());
+			vulns.add(doPrintVulnerability(message, Result.getVulnerable(), ReportMessage.Category.CERTIFICATE, caMode));
+		}
+
+		if (caMode.isMustNotBe() && customCa.isConnectionSuccessful()) {
+			String message = String.format("Target is accepting connection when using custom certificate authority [%s].", ca.getName());
+			vulns.add(doPrintVulnerability(message, Result.getVulnerable(), ReportMessage.Category.CERTIFICATE, caMode));
+		}
 
 		vulns.addAll(getCertificateKeysCheck());
 		return vulns;

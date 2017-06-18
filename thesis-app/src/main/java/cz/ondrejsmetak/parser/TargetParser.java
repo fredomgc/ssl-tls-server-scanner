@@ -5,6 +5,7 @@ import cz.ondrejsmetak.parser.BaseParser;
 import cz.ondrejsmetak.ProfileRegister;
 import cz.ondrejsmetak.ResourceManager;
 import cz.ondrejsmetak.entity.CipherSuite;
+import cz.ondrejsmetak.entity.ClientCertificate;
 import cz.ondrejsmetak.entity.Directive;
 import cz.ondrejsmetak.entity.Mode;
 import cz.ondrejsmetak.entity.Mode.Type;
@@ -61,6 +62,7 @@ public class TargetParser extends BaseParser {
 	private static final String TAG_CIPHER = "cipher";
 	private static final String TAG_TARGETS = "targets";
 	private static final String TAG_TARGET = "target";
+	private static final String TAG_CUSTOM_CERTIFICATE_AUTHORITY = "customCertificateAuthority";
 
 	/**
 	 * Supported attributes
@@ -70,6 +72,8 @@ public class TargetParser extends BaseParser {
 	private static final String ATTRIBUTE_MODE = "mode";
 	private static final String ATTRIBUTE_DESTINATION = "destination";
 	private static final String ATTRIBUTE_PROFILE = "profile";
+	private static final String ATTRIBUTE_PASSWORD = "password";
+	private static final String ATTRIBUTE_PATH = "path";
 
 	@Override
 	public void createDefault() throws IOException {
@@ -202,6 +206,14 @@ public class TargetParser extends BaseParser {
 		 */
 		if (node.getNodeName().equals(TAG_TARGET)) {
 			checkAttributesOfNode(node, ATTRIBUTE_DESTINATION, ATTRIBUTE_PROFILE, ATTRIBUTE_NAME);
+		}
+
+		/**
+		 * Tag "customCertificateAuthority" must have attribute "name", "mode",
+		 * "path" and "password"
+		 */
+		if (node.getNodeName().equals(TAG_CUSTOM_CERTIFICATE_AUTHORITY)) {
+			checkAttributesOfNode(node, ATTRIBUTE_NAME, ATTRIBUTE_MODE, ATTRIBUTE_PATH, ATTRIBUTE_PASSWORD);
 		}
 	}
 
@@ -349,6 +361,39 @@ public class TargetParser extends BaseParser {
 		}
 
 		return new Directive(name, Integer.valueOf(valueStr), mode);
+	}
+
+	/**
+	 * Parses custom certificate authority directive
+	 *
+	 * @param certificateValidTag parent certificate tag
+	 * @param certificateValidMode mode used in parent certificate tag
+	 * @return collection of parsed directives
+	 * @throws XmlParserException in case of any error
+	 */
+	private ClientCertificate parseCertificateCustomAuthority(Element certificateValidTag, Mode certificateValidMode) throws XmlParserException {
+		if (!(certificateValidTag instanceof Element)) {
+			throw new XmlParserException("Tag certificateValid is missing!");
+		}
+
+		checkAttributesOfNode(certificateValidTag, ATTRIBUTE_MODE);
+		NodeList directives = certificateValidTag.getElementsByTagName(TAG_CUSTOM_CERTIFICATE_AUTHORITY);
+
+		if (directives.getLength() != 1) {
+			throw new XmlParserException("There must be exactly one %s tag for each profile", TAG_CUSTOM_CERTIFICATE_AUTHORITY);
+		}
+
+		Element element = (Element) directives.item(0);
+		String name = element.getAttribute(ATTRIBUTE_NAME);
+		Mode mode = parseMode(element.getAttribute(ATTRIBUTE_MODE), TAG_CUSTOM_CERTIFICATE_AUTHORITY);
+		String path = element.getAttribute(ATTRIBUTE_PATH);
+		String password = element.getAttribute(ATTRIBUTE_PASSWORD);
+
+		if (certificateValidMode.isCanBe() && !mode.isCanBe()) {
+			throw new XmlParserException("Mode \"CAN BE\" is used for parent tag certificateValid. It this case, directive %s must use \"CAN BE\" also", TAG_CUSTOM_CERTIFICATE_AUTHORITY);
+		}
+
+		return new ClientCertificate(name, mode, path, password);
 	}
 
 	/**
@@ -527,11 +572,12 @@ public class TargetParser extends BaseParser {
 		Mode vulnerabilities = parseMode(vulnerabilitiesTag.getAttribute(ATTRIBUTE_MODE), TAG_VULNERABILITIES_FREE, Type.MUST_NOT_BE);
 
 		/**
-		 * Certificate
+		 * Certificate directives + custom certificate authority
 		 */
 		Element certificateTag = getElementByTagName(profile, TAG_CERTIFICATE_VALID);
 		Mode certificate = parseMode(certificateTag.getAttribute(ATTRIBUTE_MODE), TAG_CERTIFICATE_VALID, Type.MUST_NOT_BE);
 		List<Directive> certificateDirectives = parseCertificateDirectives(certificateTag, certificate);
+		ClientCertificate certificateAuthority = parseCertificateCustomAuthority(certificateTag, certificate);
 
 		/**
 		 * Safe cipher suites
@@ -539,7 +585,7 @@ public class TargetParser extends BaseParser {
 		Element ciphers = getElementByTagName(profile, TAG_CIPHERS);
 		List<CipherSuite> cipherSuites = parseCipherSuites(ciphers);
 
-		return Profile.fromXml(name, generalDirectives, protocols, certificate, certificateDirectives, vulnerabilities, cipherSuites);
+		return Profile.fromXml(name, generalDirectives, protocols, certificate, certificateDirectives, certificateAuthority, vulnerabilities, cipherSuites);
 	}
 
 	/**
@@ -593,6 +639,6 @@ public class TargetParser extends BaseParser {
 	 */
 	private List<String> getSupportedTags() {
 		return new ArrayList<>(Arrays.asList(new String[]{TAG_CONFIGURATION, TAG_PROFILES, TAG_PROFILE, TAG_PROTOCOLS, TAG_PROTOCOL,
-			TAG_VULNERABILITIES_FREE, TAG_DIRECTIVES, TAG_DIRECTIVE, TAG_CERTIFICATE_VALID, TAG_CIPHERS, TAG_CIPHER, TAG_TARGETS, TAG_TARGET}));
+			TAG_VULNERABILITIES_FREE, TAG_DIRECTIVES, TAG_DIRECTIVE, TAG_CERTIFICATE_VALID, TAG_CIPHERS, TAG_CIPHER, TAG_TARGETS, TAG_TARGET, TAG_CUSTOM_CERTIFICATE_AUTHORITY}));
 	}
 }

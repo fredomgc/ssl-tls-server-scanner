@@ -35,6 +35,11 @@ public class Profile extends BaseEntity {
 	private final Map<String, Directive> certificateDirectives = new HashMap<>();
 
 	/**
+	 * Custom certificate authority trusted by the user
+	 */
+	private ClientCertificate customCertificateAuthority;
+
+	/**
 	 * Mode that affects behavirour of checking certificate during scanning
 	 */
 	private Mode certificate;
@@ -170,13 +175,14 @@ public class Profile extends BaseEntity {
 	 * during scan
 	 * @return created profile
 	 */
-	public static Profile fromXml(String name, List<Directive> generalDirectives, List<Protocol> protocols, Mode certificate, List<Directive> certificateDirectives, Mode vulnerabilities, List<CipherSuite> cipherSuites) {
+	public static Profile fromXml(String name, List<Directive> generalDirectives, List<Protocol> protocols, Mode certificate, List<Directive> certificateDirectives, ClientCertificate customCertificateAuthority, Mode vulnerabilities, List<CipherSuite> cipherSuites) {
 		Profile profile = new Profile();
 		profile.setName(name);
 		profile.setGeneralDirectives(generalDirectives);
 		profile.addToProtocols(protocols);
 		profile.setTestCertificate(certificate);
 		profile.addToCertificateDirectives(certificateDirectives);
+		profile.setCustomCertificateAuthority(customCertificateAuthority);
 		profile.setTestVulnerabilities(vulnerabilities);
 		profile.addToCipherSuites(cipherSuites);
 
@@ -233,6 +239,14 @@ public class Profile extends BaseEntity {
 		for (Directive directive : certificateDirectives) {
 			addToCertificateDirectives(directive);
 		}
+	}
+
+	public void setCustomCertificateAuthority(ClientCertificate certificate) {
+		this.customCertificateAuthority = certificate;
+	}
+
+	public ClientCertificate getCustomCertificateAuthority() {
+		return customCertificateAuthority;
 	}
 
 	public Directive getCertificateDirective(String key) {

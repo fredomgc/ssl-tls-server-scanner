@@ -21,6 +21,7 @@
 				<directive name="rsaMinimumSignatureKeySize" value="2048"  mode="canBe" />
 				<directive name="ecdsaMinimumPublicKeySize" value="128"  mode="canBe"  />
 				<directive name="ecdsaMinimumSignatureKeySize" value="128"  mode="canBe"  />
+				<customCertificateAuthority name="moje CA" mode="mustBe" path="/home/fredomgc/Plocha/ssos.certifikaty/keystore.jks" password="changeit" />
 			</certificateValid>
 			
 			<ciphers>
@@ -33,8 +34,9 @@
 	
 	<targets>
 		
-		
-		<target destination="https://www.google.com"  profile="low"  name="my localhost #1" />
+		<!-- https://www.google.com -->
+		<!-- https://is.ssos.cz/ -->
+		<target destination="https://is.ssos.cz/"  profile="low"  name="my localhost #1" />
 		
 		
 		
