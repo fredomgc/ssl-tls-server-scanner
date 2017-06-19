@@ -1,0 +1,1242 @@
+**WARNING: SSL version 'TLSv13': not supported by Net::SSLeay; not checked
+!!Hint: +bsi-tr-02102- : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +bsi-tr-02102+ : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +bsi-tr-03116+ : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +tr-02102 : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +rfc7525 : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +tr-03116- : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +bsi-tr-03116- : please see  'o-saft.pl --help=CHECKS'  for more information
+!!Hint: +tr-03116+ : please see  'o-saft.pl --help=CHECKS'  for more information
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': cannot get default cipher; ignored
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+    ECDHE-RSA-AES256-GCM-SHA384 	(256)	HIGH
+    ECDHE-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDHE-RSA-AES256-SHA384     	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA384   	(256)	HIGH
+    ECDHE-RSA-AES256-SHA        	(256)	HIGH
+    ECDHE-ECDSA-AES256-SHA      	(256)	HIGH
+    SRP-DSS-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-RSA-AES-256-CBC-SHA     	(256)	HIGH
+    SRP-AES-256-CBC-SHA         	(256)	HIGH
+    DH-DSS-AES256-GCM-SHA384    	(256)	high
+    DHE-DSS-AES256-GCM-SHA384   	(256)	HIGH
+    DH-RSA-AES256-GCM-SHA384    	(256)	high
+    DHE-RSA-AES256-GCM-SHA384   	(256)	HIGH
+    DHE-RSA-AES256-SHA256       	(256)	HIGH
+    DHE-DSS-AES256-SHA256       	(256)	HIGH
+    DH-RSA-AES256-SHA256        	(256)	high
+    DH-DSS-AES256-SHA256        	(256)	high
+    DHE-RSA-AES256-SHA          	(256)	HIGH
+    DHE-DSS-AES256-SHA          	(256)	HIGH
+    DH-RSA-AES256-SHA           	(256)	medium
+    DH-DSS-AES256-SHA           	(256)	medium
+    DHE-RSA-CAMELLIA256-SHA     	(256)	HIGH
+    DHE-DSS-CAMELLIA256-SHA     	(256)	HIGH
+    DH-RSA-CAMELLIA256-SHA      	(256)	HIGH
+    DH-DSS-CAMELLIA256-SHA      	(256)	HIGH
+    AECDH-AES256-SHA            	(256)	weak
+    ADH-AES256-GCM-SHA384       	(256)	weak
+    ADH-AES256-SHA256           	(256)	weak
+    ADH-AES256-SHA              	(256)	weak
+    ADH-CAMELLIA256-SHA         	(256)	weak
+    ECDH-RSA-AES256-GCM-SHA384  	(256)	HIGH
+    ECDH-ECDSA-AES256-GCM-SHA384	(256)	HIGH
+    ECDH-RSA-AES256-SHA384      	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA384    	(256)	HIGH
+    ECDH-RSA-AES256-SHA         	(256)	HIGH
+    ECDH-ECDSA-AES256-SHA       	(256)	HIGH
+    AES256-GCM-SHA384           	(256)	HIGH
+    AES256-SHA256               	(256)	HIGH
+    AES256-SHA                  	(256)	HIGH
+    CAMELLIA256-SHA             	(256)	HIGH
+    PSK-AES256-CBC-SHA          	(256)	HIGH
+    ECDHE-RSA-AES128-GCM-SHA256 	(128)	HIGH
+    ECDHE-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDHE-RSA-AES128-SHA256     	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA256   	(128)	HIGH
+    ECDHE-RSA-AES128-SHA        	(128)	HIGH
+    ECDHE-ECDSA-AES128-SHA      	(128)	HIGH
+    SRP-DSS-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-RSA-AES-128-CBC-SHA     	(128)	HIGH
+    SRP-AES-128-CBC-SHA         	(128)	HIGH
+    DH-DSS-AES128-GCM-SHA256    	(128)	high
+    DHE-DSS-AES128-GCM-SHA256   	(128)	HIGH
+    DH-RSA-AES128-GCM-SHA256    	(128)	high
+    DHE-RSA-AES128-GCM-SHA256   	(128)	HIGH
+    DHE-RSA-AES128-SHA256       	(128)	HIGH
+    DHE-DSS-AES128-SHA256       	(128)	HIGH
+    DH-RSA-AES128-SHA256        	(128)	high
+    DH-DSS-AES128-SHA256        	(128)	high
+    DHE-RSA-AES128-SHA          	(128)	HIGH
+    DHE-DSS-AES128-SHA          	(128)	HIGH
+    DH-RSA-AES128-SHA           	(128)	medium
+    DH-DSS-AES128-SHA           	(128)	medium
+    DHE-RSA-SEED-SHA            	(128)	MEDIUM
+    DHE-DSS-SEED-SHA            	(128)	MEDIUM
+    DH-RSA-SEED-SHA             	(128)	medium
+    DH-DSS-SEED-SHA             	(128)	medium
+    DHE-RSA-CAMELLIA128-SHA     	(128)	HIGH
+    DHE-DSS-CAMELLIA128-SHA     	(128)	HIGH
+    DH-RSA-CAMELLIA128-SHA      	(128)	HIGH
+    DH-DSS-CAMELLIA128-SHA      	(128)	HIGH
+    AECDH-AES128-SHA            	(128)	weak
+    ADH-AES128-GCM-SHA256       	(128)	weak
+    ADH-AES128-SHA256           	(128)	weak
+    ADH-AES128-SHA              	(128)	weak
+    ADH-SEED-SHA                	(128)	weak
+    ADH-CAMELLIA128-SHA         	(128)	weak
+    ECDH-RSA-AES128-GCM-SHA256  	(128)	HIGH
+    ECDH-ECDSA-AES128-GCM-SHA256	(128)	HIGH
+    ECDH-RSA-AES128-SHA256      	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA256    	(128)	HIGH
+    ECDH-RSA-AES128-SHA         	(128)	HIGH
+    ECDH-ECDSA-AES128-SHA       	(128)	HIGH
+    AES128-GCM-SHA256           	(128)	HIGH
+    AES128-SHA256               	(128)	HIGH
+    AES128-SHA                  	(128)	HIGH
+    SEED-SHA                    	(128)	MEDIUM
+    CAMELLIA128-SHA             	(128)	HIGH
+    PSK-AES128-CBC-SHA          	(128)	HIGH
+    ECDHE-RSA-RC4-SHA           	(128)	weak
+    ECDHE-ECDSA-RC4-SHA         	(128)	weak
+    AECDH-RC4-SHA               	(128)	weak
+    ADH-RC4-MD5                 	(128)	weak
+    ECDH-RSA-RC4-SHA            	(128)	weak
+    ECDH-ECDSA-RC4-SHA          	(128)	weak
+    RC4-SHA                     	(128)	weak
+    RC4-MD5                     	(128)	weak
+    PSK-RC4-SHA                 	(128)	MEDIUM
+    ECDHE-RSA-DES-CBC3-SHA      	(168)	weak
+    ECDHE-ECDSA-DES-CBC3-SHA    	(168)	weak
+    SRP-DSS-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-RSA-3DES-EDE-CBC-SHA    	(168)	weak
+    SRP-3DES-EDE-CBC-SHA        	(168)	weak
+    EDH-RSA-DES-CBC3-SHA        	(168)	weak
+    EDH-DSS-DES-CBC3-SHA        	(168)	weak
+    DH-RSA-DES-CBC3-SHA         	(168)	weak
+    DH-DSS-DES-CBC3-SHA         	(168)	weak
+    AECDH-DES-CBC3-SHA          	(168)	weak
+    ADH-DES-CBC3-SHA            	(168)	weak
+    ECDH-RSA-DES-CBC3-SHA       	(168)	weak
+    ECDH-ECDSA-DES-CBC3-SHA     	(168)	weak
+    DES-CBC3-SHA                	(168)	weak
+    PSK-3DES-EDE-CBC-SHA        	(168)	weak
+    ECDHE-RSA-NULL-SHA          	()	weak
+    ECDHE-ECDSA-NULL-SHA        	()	weak
+    AECDH-NULL-SHA              	()	weak
+    ECDH-RSA-NULL-SHA           	()	weak
+    ECDH-ECDSA-NULL-SHA         	()	weak
+    NULL-SHA256                 	()	weak
+    NULL-SHA                    	()	weak
+    NULL-MD5                    	()	weak
+SSLv2	 	  0   0   0   0   0   0                                 
+SSLv3	 	  0   0   0   0   0   0                                 
+TLSv1	 	  6   0   0   1   4   7 ECDHE-ECDSA-AES128-SHA          ECDHE-ECDSA-AES128-SHA
+TLSv11		  6   0   0   1   4   7 ECDHE-ECDSA-AES128-SHA          ECDHE-ECDSA-AES128-SHA
+TLSv12		 12   0   0   1   8  13 ECDHE-ECDSA-AES128-GCM-SHA256   ECDHE-ECDSA-AES128-GCM-SHA256
+Selected cipher by server	ECDHE-ECDSA-AES128-GCM-SHA256 HIGH
+Target DH Parameter >= 512 bits (ECDH)	no (ECDH, P-256, 256 bits)
+Certificate Signature Key size	2048 bits
+Target does not accept RC4 ciphers	yes
+Certificate Chain size	0 bytes
+Target DH Parameter >= 512 bits	yes
+Target does not accept EXPORT ciphers	yes
+STS max-age less than one year	no (<<N/A as STS not set>>)
+Certificate OCSP size	31 bytes
+Certificate Subject size	64 bytes
+Certificate has valid OCSP URL	no (<<unexpected response: HTTP/1.0 404 Not Found>>)
+Target supports PSK Identity Hint	no (None)
+Certificate Serial Number size RFC5280	yes
+Target supports PFS (selected cipher)	yes
+Certificate has OCSP Responder URL	yes
+Connection is safe against FREAK attack	yes
+Target supports Next Protocol Negotiation (NPN)	yes
+Certificate chain validated	yes
+Target does not support heartbeat extension	yes
+Certificate is not root CA	yes
+Certificate has Certification Practice Statement	yes
+Connection is safe against RC4 attack	yes
+Target supports TLSv1.3	no ( )
+Target supports Resumption	yes
+Certificate PEM (binary) size	1862 bytes
+Certificate CRL data size	0 bytes
+Certificate Serial Number size	8 bytes
+Certificate Private Key Encryption known	yes
+Target redirect matches given host	no (<<N/A as STS not set>>)
+STS max-age more than one year	no (<<N/A as STS not set>>)
+Target supports TLSv1	yes
+Target is FIPS-140 compliant	no ( TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-ECDSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-GCM-SHA256 TLSv12:ECDHE-ECDSA-AES128-GCM-SHA256 TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA)
+Target supports PFS (all ciphers)	no ( )
+Certificate has valid CPS URL	yes
+Certificate lazy Extended Validation (EV)	no ( <<invalid charcters in cn>> <<invalid charcters in subject>> <<invalid charcters in altname>> <<invalid charcters in extensions>> <<missing EV Certificate: subject:jurisdictionOfIncorporationLocalityName>> <<missing EV Certificate: subject:jurisdictionOfIncorporationCountryName>> <<missing EV Certificate: subject:serialNumber>> <<missing EV Certificate: subject:businessCategory>>)
+Target redirects not with 30x status code	no (HTTP/1.0 302 Found)
+Target is  lazy  BSI TR-02102-2 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA)
+Connection is safe against Sweet32 attack	no ( TLSv1:DES-CBC3-SHA TLSv11:DES-CBC3-SHA TLSv12:DES-CBC3-SHA)
+Certificate has CRL Distribution Points	yes
+Certificate is valid according given hostname	no (*.google.com <> google.com)
+Target is strict BSI TR-02102-2 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA <<uses wildcards:<<CN:>>*.google.com *.google.com *.android.com *.appengine.google.com *.cloud.google.com *.gcp.gvt2.com *.google-analytics.com *.google.ca *.google.cl *.google.co.in *.google.co.jp *.google.co.uk *.google.com.ar *.google.com.au *.google.com.br *.google.com.co *.google.com.mx *.google.com.tr *.google.com.vn *.google.de *.google.es *.google.fr *.google.hu *.google.it *.google.nl *.google.pl *.google.pt *.googleadapis.com *.googleapis.cn *.googlecommerce.com *.googlevideo.com *.gstatic.cn *.gstatic.com *.gvt1.com *.gvt2.com *.metric.gstatic.com *.urchin.com *.url.google.com *.youtube-nocookie.com *.youtube.com *.youtubeeducation.com *.ytimg.com>>)
+Target supports TLSv1.2	yes
+Connection is safe against BEAST attack (any cipher)	no ( TLSv1 TLSv11)
+Target is PCI compliant (ciphers only)	yes
+Target is strict BSI TR-03116-4 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-ECDSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA <<uses wildcards:<<CN:>>*.google.com *.google.com *.android.com *.appengine.google.com *.cloud.google.com *.gcp.gvt2.com *.google-analytics.com *.google.ca *.google.cl *.google.co.in *.google.co.jp *.google.co.uk *.google.com.ar *.google.com.au *.google.com.br *.google.com.co *.google.com.mx *.google.com.tr *.google.com.vn *.google.de *.google.es *.google.fr *.google.hu *.google.it *.google.nl *.google.pl *.google.pt *.googleadapis.com *.googleapis.cn *.googlecommerce.com *.googlevideo.com *.gstatic.cn *.gstatic.com *.gvt1.com *.gvt2.com *.metric.gstatic.com *.urchin.com *.url.google.com *.youtube-nocookie.com *.youtube.com *.youtubeeducation.com *.ytimg.com>> <<uses wildcards:Subject:/C=US/ST=California/L=Mountain View/O=Google Inc/CN=*.google.com>>)
+Target is TR-02102-2 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA)
+Target redirects HTTP to HTTPS same host	no (<<N/A as STS not set>>)
+STS max-age more than 18 weeks	no (<<N/A as STS not set>>)
+Target TLS Session Ticket Lifetime	yes
+Target redirects with status code 301	no (HTTP/1.0 302 Found)
+Target sends STS header	no (<<N/A as STS not set>>)
+Connection is not based on SNI	no (*.google.com)
+Certificate CRL size	33 bytes
+Target does not support SSLv2	yes
+Certificate Basic Constraints is false	yes
+Certificate Chain Depth count	0
+Certificate does not contain non-printable characters	yes
+Target supports Application Layer Protocol Negotiation (ALPN)	no (<<mismatch:   and 'No ALPN negotiated'>>)
+Certificate is not expired	yes
+Certificate Names compliant to RFC6125	yes
+Given hostname is same as reverse resolved hostname	no (google.com <> prg03s01-in-f78.1e100.net)
+Target supports TLSv1.1	yes
+Target does not support SSLv3	yes
+Certificate does not contain wildcards	no (<<CN:>>*.google.com *.google.com *.android.com *.appengine.google.com *.cloud.google.com *.gcp.gvt2.com *.google-analytics.com *.google.ca *.google.cl *.google.co.in *.google.co.jp *.google.co.uk *.google.com.ar *.google.com.au *.google.com.br *.google.com.co *.google.com.mx *.google.com.tr *.google.com.vn *.google.de *.google.es *.google.fr *.google.hu *.google.it *.google.nl *.google.pl *.google.pt *.googleadapis.com *.googleapis.cn *.googlecommerce.com *.googlevideo.com *.gstatic.cn *.gstatic.com *.gvt1.com *.gvt2.com *.metric.gstatic.com *.urchin.com *.url.google.com *.youtube-nocookie.com *.youtube.com *.youtubeeducation.com *.ytimg.com)
+Certificate OIDs size	0 bytes
+STS max-age less than one day	no (<<N/A as STS not set>>)
+Connection is safe against POODLE attack	yes
+Connection is safe against Lucky 13 attack	no ( TLSv1:DES-CBC3-SHA TLSv11:DES-CBC3-SHA TLSv12:DES-CBC3-SHA)
+IP for given hostname 	no (216.58.201.78)
+Certificate Public Key size	80 bits
+Certificate strict Extended Validation (EV)	no ( <<invalid charcters in cn>> <<invalid charcters in subject>> <<invalid charcters in altname>> <<invalid charcters in extensions>> <<missing EV Certificate: subject:jurisdictionOfIncorporationLocalityName>> <<missing EV Certificate: subject:jurisdictionOfIncorporationCountryName>> <<missing EV Certificate: subject:serialNumber>> <<missing EV Certificate: subject:businessCategory>> <<missing EV Certificate: subject:jurisdictionOfIncorporationStateOrProvinceName>> <<missing EV Certificate: subject:streetAddress>>)
+Target supports Secure Renegotiation	yes
+!!Hint: checks only if renegotiation is implemented serverside according RFC5746
+Connection is safe against CRIME attack	yes
+Target sends STS and no Refresh header	no (<<N/A as STS not set>>)
+Target supports SRP	no (None)
+STS max-age < certificate's validity	no (<<N/A as STS not set>>)
+Target sends STS header with includeSubdomain	no (<<N/A as STS not set>>)
+Certificate Fingerprint is not MD5	yes
+Target sends Public Key Pins header	no ( )
+Certificate Subject Altname count	54
+Certificate CPS size	55 bytes
+Certificate Private Key with Encryption	yes
+Certificate Wildcards count	41
+Certificate Public Key Modulus Exponent <65537	no (<<N/A prime256v1 NIST CURVE: P-256>>)
+Certificate has valid CRL URL	yes
+Certificate PEM (base64) size	2537 bytes
+Certificate Public Key with Encryption	yes
+Certificate Public Key Encryption known	yes
+STS max-age less than one month	no (<<N/A as STS not set>>)
+Target TLS Session Ticket is random	yes
+Target is RFC 7525 compliant	no ( TLSv1 TLSv11 <<missmatch: subject CN= and given hostname>><<unexpected response: HTTP/1.0 404 Not Found>>  TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-ECDSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA)
+Certificate does not contain CR, NL, NULL characters	yes
+Target supports Krb5	no ( )
+Target supports PSK	no (None)
+Certificate Domain Validation (DV)	no ( <<invalid charcters in cn>> <<invalid charcters in subject>> <<invalid charcters in altname>> <<invalid charcters in extensions>>)
+Connection is safe against BREACH attack	no (<<NOT YET IMPLEMENTED>>)
+Target is ISM compliant (ciphers only)	yes
+Target is  lazy  TR-03116-4 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA)
+Target is  lazy  BSI TR-03116-4 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-ECDSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA <<uses wildcards:<<CN:>>*.google.com *.google.com *.android.com *.appengine.google.com *.cloud.google.com *.gcp.gvt2.com *.google-analytics.com *.google.ca *.google.cl *.google.co.in *.google.co.jp *.google.co.uk *.google.com.ar *.google.com.au *.google.com.br *.google.com.co *.google.com.mx *.google.com.tr *.google.com.vn *.google.de *.google.es *.google.fr *.google.hu *.google.it *.google.nl *.google.pl *.google.pt *.googleadapis.com *.googleapis.cn *.googlecommerce.com *.googlevideo.com *.gstatic.cn *.gstatic.com *.gvt1.com *.gvt2.com *.metric.gstatic.com *.urchin.com *.url.google.com *.youtube-nocookie.com *.youtube.com *.youtubeeducation.com *.ytimg.com>> <<uses wildcards:Subject:/C=US/ST=California/L=Mountain View/O=Google Inc/CN=*.google.com>>)
+Target redirects HTTP to HTTPS	yes
+Target sends STS header with preload	yes
+Target DH Parameter >= 2048 bits	yes
+Connected hostname matches certificate's subject	no (google.com <> *.google.com)
+Certificate is not self-signed	no (0 (ok))
+Target sends STS header with proper max-age	no (<<N/A as STS not set>>)
+Target is strict TR-03116-4 compliant	no ( TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-GCM-SHA384 TLSv12:ECDHE-ECDSA-AES256-GCM-SHA384 TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA TLSv1:ECDHE-RSA-AES256-SHA TLSv1:ECDHE-ECDSA-AES256-SHA TLSv1:AES256-SHA TLSv1:ECDHE-RSA-AES128-SHA TLSv1:ECDHE-ECDSA-AES128-SHA TLSv1:AES128-SHA TLSv1:DES-CBC3-SHA TLSv11:ECDHE-RSA-AES256-SHA TLSv11:ECDHE-ECDSA-AES256-SHA TLSv11:AES256-SHA TLSv11:ECDHE-RSA-AES128-SHA TLSv11:ECDHE-ECDSA-AES128-SHA TLSv11:AES128-SHA TLSv11:DES-CBC3-SHA TLSv12:ECDHE-RSA-AES256-SHA TLSv12:ECDHE-ECDSA-AES256-SHA TLSv12:AES256-GCM-SHA384 TLSv12:AES256-SHA TLSv12:ECDHE-RSA-AES128-SHA TLSv12:ECDHE-ECDSA-AES128-SHA TLSv12:AES128-GCM-SHA256 TLSv12:AES128-SHA TLSv12:DES-CBC3-SHA)
+Target sends STS and no Location header	no (<<N/A as STS not set>>)
+Certificate's wildcard does not match hostname	yes
+Target does not send STS in meta tag	yes
+Connection is safe against Logjam attack	yes
+Target supports EDH ciphers	yes
+Certificate Public Key Modulus <16385 bits	no (<<N/A prime256v1 NIST CURVE: P-256>>)
+Offered ciphers count	27
+STS max-age not reset	no (<<N/A as STS not set>>)
+Certificate Issuer size	50 bytes
+Certificate is valid	yes
+Certificate has no invalid characters in extensions	no ( <<invalid charcters in cn>> <<invalid charcters in subject>> <<invalid charcters in altname>> <<invalid charcters in extensions>>)
+Target redirects HTTP without STS header	yes
+Target DH Parameter >= 256 bits (ECDH)	yes
+Target supports TLS Session Ticket	yes
+Target does not accept ADH ciphers	yes
+Connection is safe against DROWN attack	yes
+Target does not send STS header for IP	yes
+Total number of checked ciphers	600
+Target does not accept NULL ciphers	yes
+Certificate Private Key Signature SHA2	yes
+Connection is safe against Heartbleed attack	yes
+Certificate Subject Altname size	21 bytes
+**WARNING: SSL version 'TLSv13': not supported by Net::SSLeay; not checked
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': cannot get default cipher; ignored
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+Certificate Signature Key Length	2048
+Certificate extensions Issuer Alternative Name	
+Target default DTLS 1.1 cipher	
+Target default SSL 3.0  cipher	
+Certificate Serial Number (hex)	350A3D1041344EAB
+Target supports Expansion	NONE
+Certificate Validity (date)	Feb  1 13:50:27 2017 GMT .. Apr 26 13:21:00 2017 GMT
+Certificate Trust Information	
+HTTPS Refresh header	
+Validity Alternate Names	Given hostname 'google.com' matches alternate name 'DNS:google.com' in certificate
+HTTP Refresh header	
+Certificate Signature Key Value	213b4249d589c8c8a99435ed112bed8cbf6b5ef76e035efeaa790c7457d1f6099754e4cc9930da292af1c847938770d36bc1be4555b3780a00c43174be55bc0e0169598ac6e6838ce54b1ff78605e1e90ea1631b236afa0f335049e79c683a3f78a81a2142b3fa0c0b60552aff896af8052fc5b1d14a923227d4a0a55d14ff08e2576885c32e040116b925b432e8a9cb5a6a70b2dc69b2616b9adab50f0a7a919bf46843df08177faabd01ee01817c5317066ac64e34a33b8c0a3a15279bef42e9e5393e9a8a0a9113230441e24073c1a2f37d359f3f32d8a751dd882db857a8c951001eef56f4f83baa4c330f3bed8fc8e9265a4d9854c29ca9cfbfdfc826f6
+Certificate extensions Authority Information Access	CA Issuers - URI:http://pki.google.com/GIAG2.crt OCSP - URI:http://clients1.google.com/ocsp 
+HTTPS Server banner	
+Certificate Version	3 (0x2)
+Selected SSL Protocol	TLSv12
+Target's Session-ID	D85B677E22803C72414FFEC875ADA112282E9C95CA30BB0D1D9356396FD427AA
+Certificate Fingerprint  MD5	62AF770AB4B7D8CE462C368BC484F61E
+Certificate extensions Certificate Policies: CPS	Policy: 1.3.6.1.4.1.11129.2.5.1 Policy: 2.23.140.1.2.2 
+Certificate Public Key Value	043d0f5df1693c81c6a1b3dc4507b9ef09d692809a9c3f13ae1a4b390e7472c115855b855c02bf2ecb6b4c02731c21fb8dd8c3b386c4ed1bf7aca4289d8f9d4b51
+Target default TLS 1.3  cipher	
+Target advertised protocols	h2, http/1.1
+Target's not ngotiated message (ALPN)	No ALPN negotiated
+Target supports Compression	NONE
+Target supports PSK Identity Hint	None
+Certificate Fingerprint Hash Value	FAA02397ABE7F7655314A3B6D41F675C4DB7BD83
+Target default --dummy-- cipher	<<undef>>
+HTTPS Alt-Svc header	quic=":443"; ma=2592000; v="35,34"
+HTTPS Alternate-Protocol	
+Target's DH Parameter	ECDH, P-256, 256 bits
+Target's selected SSL Protocol	TLSv1.2
+HTTPS STS MaxAge	
+HTTPS STS preload	
+Certificate Common Name	*.google.com
+HTTPS Location header	https://www.google.cz/?gfe_rd=cr&ei=cv-nWI3KNfPf8gfMmZWYBg
+Certificate Fingerprint Algorithm	SHA1
+TLS extensions	renegotiation info; session ticket; next protocol; EC point formats
+HTTPS STS header	
+<<internal>> used SSL options bitmask	0x0000000083000bff
+Target supports PSK	None
+Target's TLS Session Timeout	300 (sec)
+Certificate Email Addresses	
+Certificate trusted	
+HTTP STS header	
+Selected Cipher	ECDHE-ECDSA-AES128-GCM-SHA256
+HTTPS Error alerts	
+Target default TLS 1.1  cipher	ECDHE-ECDSA-AES128-SHA
+Validity Hostname	Given hostname 'google.com' does not match CN '*.google.com' in certificate
+Target supports SRP	None
+Certificate extensions Key Usage	TLS Web Server Authentication, TLS Web Client Authentication 
+Target's Master-Key	2E12FC41C65A81278F15505D09C54BB2EECA0B8CE0BD2BF33795E4CF103F4477BE3B3165EF133C319D33FDA287F3389F
+Target default DTLS 1.0 cipher	
+Certificate extensions Netscape Cert Type	
+HTTP Status line	HTTP/1.0 302 Found
+Certificate extensions Certificate Policies: User Notice	Policy: 1.3.6.1.4.1.11129.2.5.1 Policy: 2.23.140.1.2.2 
+HTTPS Public Key Pins	
+HTTPS STS include sub-domains	
+Certificate Type (bitmask)	0x158  <<experimental>>
+Certificate Validity (signature)	0 (ok)
+HTTPS Status line	HTTP/1.1 302 Found
+Certificate extensions Subject Key Identifier	BF10C07A126018FFF629961D9D476A1E6D0EB762 
+HTTP Location header	http://www.google.cz/?gfe_rd=cr&ei=cv-nWOK0N-Hf8gf_-4ygBg
+Certificate Public Key Exponent	prime256v1
+                NIST CURVE: P-256
+Certificate valid since	Feb  1 13:50:27 2017 GMT
+Target default DTLS 1.3 cipher	
+Certificate Subject	/C=US/ST=California/L=Mountain View/O=Google Inc/CN=*.google.com
+CA Chain Verification error	ok
+Certificate Issuer	/C=US/O=Google Inc/CN=Google Internet Authority G2
+Target default --dummy-- cipher	<<undef>>
+Certificate Serial Number (int)	3821934373800005291
+Certificate Subject Name Hash	a18bd28a
+Certificate extensions Certificate Policies	Policy: 1.3.6.1.4.1.11129.2.5.1 Policy: 2.23.140.1.2.2 
+Certificate extensions Authority key Identifier	keyid:4ADD06161BBCF668B576F581B6BB621ABA5A812F 
+Validity Certificate Chain	0 (ok)
+Target's TLS Session Ticket	7f9a13467dc075db9cd50a0d08df7fbbd104ac7faf61581da301ec958b6a90c732f91af63e371343b1fac192f83e887accbfb76ba7220443ece6edb3d60aa6e3ffe8b3817c6e2090a619124ee5da91affb68233e175c40f8dfc146aa2cf74bbf595a891a470700cdfd8e7bbd8417e5d6125bd8dc46c4e9872a112f6c126bff228a2917a89d08181be1c5141215c0df2d1a8ae1cd4ee83f16cf23c84c2739582678fa8671
+HTTP Alternate-Protocol	
+Target default TLS 1.2  cipher	ECDHE-ECDSA-AES128-GCM-SHA256
+Target default TLS 1.0  cipher	ECDHE-ECDSA-AES128-SHA
+Certificate Issuer Name Hash	c4c7a654
+Target supports Renegotiation	renegotiation info" (id=65281), len=1
+Certificate Signature Algorithm	sha256WithRSAEncryption
+Target default DTLS 0.9 cipher	
+Target supports Heartbeat	
+Certificate extensions Extended Key Usage	TLS Web Server Authentication, TLS Web Client Authentication 
+Certificate extensions Certificate Policies: Policy	1.3.6.1.4.1.11129.2.5.1
+CA Chain Verification error in level	
+Target supports Krb5	
+Certificate valid until	Apr 26 13:21:00 2017 GMT
+Certificate OCSP Subject, Public Key Hash	
+Certificate Fingerprint	SHA1 Fingerprint=FAA02397ABE7F7655314A3B6D41F675C4DB7BD83
+Certificate OCSP Responder URL	http://clients1.google.com/ocsp
+HTTP Alt-Svc header	
+Certificate extensions Basic Constraints	critical CA:FALSE 
+Certificate Public Key Algorithm	id-ecPublicKey
+Certificate Subject's Alternate Names	 DNS:*.google.com DNS:*.android.com DNS:*.appengine.google.com DNS:*.cloud.google.com DNS:*.gcp.gvt2.com DNS:*.google-analytics.com DNS:*.google.ca DNS:*.google.cl DNS:*.google.co.in DNS:*.google.co.jp DNS:*.google.co.uk DNS:*.google.com.ar DNS:*.google.com.au DNS:*.google.com.br DNS:*.google.com.co DNS:*.google.com.mx DNS:*.google.com.tr DNS:*.google.com.vn DNS:*.google.de DNS:*.google.es DNS:*.google.fr DNS:*.google.hu DNS:*.google.it DNS:*.google.nl DNS:*.google.pl DNS:*.google.pt DNS:*.googleadapis.com DNS:*.googleapis.cn DNS:*.googlecommerce.com DNS:*.googlevideo.com DNS:*.gstatic.cn DNS:*.gstatic.com DNS:*.gvt1.com DNS:*.gvt2.com DNS:*.metric.gstatic.com DNS:*.urchin.com DNS:*.url.google.com DNS:*.youtube-nocookie.com DNS:*.youtube.com DNS:*.youtubeeducation.com DNS:*.ytimg.com DNS:android.clients.google.com DNS:android.com DNS:developer.android.google.cn DNS:g.co DNS:goo.gl DNS:google-analytics.com DNS:google.com DNS:googlecommerce.com DNS:urchin.com DNS:www.goo.gl DNS:youtu.be DNS:youtube.com DNS:youtubeeducation.com
+Certificate Public Key Length	80
+Certificate Serial Number	3821934373800005291 (0x350a3d1041344eab)
+Target's TLS Session Ticket Lifetime	100800 (seconds)
+Target's selected protocol (ALPN)	
+Target default DTLS 1.2 cipher	
+TLS extensions (debug)	
+TLS server extension "renegotiation info" (id=65281), len=1
+TLS server extension "session ticket" (id=35), len=0
+TLS server extension "next protocol" (id=13172), len=12
+TLS server extension "EC point formats" (id=11), len=2
+Target default SSL 2.0  cipher	
+HTTPS STS in http-equiv	
+Certificate extensions CRL Distribution Points	 http://pki.google.com/GIAG2.crl 
+Certificate Fingerprint SHA1	FAA02397ABE7F7655314A3B6D41F675C4DB7BD83
+Target supports Resumption	Reused, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+HTTPS Body	<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="https://www.google.cz/?gfe_rd=cr&amp;ei=cv-nWI3KNfPf8gfMmZWYBg">here</A>.
+</BODY></HTML>
+
+**WARNING: SSL version 'TLSv13': not supported by Net::SSLeay; not checked
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+**WARNING: SSL version 'SSLv2': not supported by Net::SSLeay
+Target's selected protocol (ALPN)	
+Target's selected SSL Protocol	TLSv1.2
+Target advertised protocols	h2, http/1.1
+HTTPS Alternate-Protocol	
+HTTP Alternate-Protocol	
+HTTPS Alt-Svc header	quic=":443"; ma=2592000; v="35,34"
+HTTP Alt-Svc header	
+Target does not support SSLv2	yes
+Target does not support SSLv3	yes
+Target supports TLSv1	yes
+Target supports TLSv1.1	yes
+Target supports TLSv1.2	yes
+Target supports TLSv1.3	no ( )
+Target supports Application Layer Protocol Negotiation (ALPN)	no (<<mismatch:   and 'No ALPN negotiated'>>)
+Target supports Next Protocol Negotiation (NPN)	yes

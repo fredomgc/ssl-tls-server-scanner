@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<profiles>
+		<profile name="low">			
+			<directives>
+				<directive name="unknownTestResultIsError" value="true" />
+			</directives>
+			
+			<protocols>
+				<protocol name="SSLv2"  mode="mustNotBe"  />
+				<protocol name="SSLv3"  mode="mustNotBe"  />
+				<protocol name="TLS 1.0"  mode="mustBe"  />
+				<protocol name="TLS 1.1"  mode="mustBe"  />
+				<protocol name="TLS 1.2"  mode="canBe" />
+			</protocols>
+			
+			<vulnerabilitiesFree mode="canBe"/>
+			
+			<certificateValid  mode="mustBe">
+				<directive name="rsaMinimumPublicKeySize" value="2048"  mode="canBe" />
+				<directive name="rsaMinimumSignatureKeySize" value="2048"  mode="canBe" />
+				<directive name="ecdsaMinimumPublicKeySize" value="128"  mode="canBe"  />
+				<directive name="ecdsaMinimumSignatureKeySize" value="128"  mode="canBe"  />
+				<customCertificateAuthority name="Name" mode="mustBe" path="/path/to/keystore.jks" password="password" />
+			</certificateValid>
+			
+			<ciphers>
+				<cipher name="ECDHE-ECDSA-DES-CBC3-SHA"  mode="mustNotBe"  />
+				<cipher name="DHE-RSA-CAMELLIA128-SHA"  mode="mustBe"  />
+				<cipher name="ECDHE-ECDSA-RC4-SHA"  mode="canBe"  />
+			</ciphers>
+		</profile>
+	</profiles>
+	
+	<targets>
+		<target destination="https://127.0.0.1/"  profile="low"  name="my localhost #1" />
+	</targets>
+</configuration>
