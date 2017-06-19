@@ -21,7 +21,7 @@
 				<directive name="rsaMinimumSignatureKeySize" value="2048"  mode="canBe" />
 				<directive name="ecdsaMinimumPublicKeySize" value="128"  mode="canBe"  />
 				<directive name="ecdsaMinimumSignatureKeySize" value="128"  mode="canBe"  />
-				<customCertificateAuthority name="moje CA" mode="mustBe" path="/home/fredomgc/Plocha/ssos.certifikaty/keystore.jks" password="changeit" />
+				<customCertificateAuthority name="moje CA" mode="mustNotBe" path="/home/fredomgc/Plocha/ssos.certifikaty/keystore.jks" password="changeit" />
 			</certificateValid>
 			
 			<ciphers>

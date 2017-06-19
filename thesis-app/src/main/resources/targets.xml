@@ -21,6 +21,7 @@
 				<directive name="rsaMinimumSignatureKeySize" value="2048"  mode="canBe" />
 				<directive name="ecdsaMinimumPublicKeySize" value="128"  mode="canBe"  />
 				<directive name="ecdsaMinimumSignatureKeySize" value="128"  mode="canBe"  />
+				<customCertificateAuthority name="Name" mode="mustBe" path="/path/to/keystore.jks" password="password" />
 			</certificateValid>
 			
 			<ciphers>
