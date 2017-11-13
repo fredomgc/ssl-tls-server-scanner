@@ -8,3 +8,4 @@ Utility to scan remote server for SSL/TLS security issues.
 
 # More info
   - You can read [this chapter](http://vps.ondrejsmetak.cz/github/server-scanner/info.pdf) of my thesis, which is focused on automated testing of SSL/TLS communication.
+  - You may be also interested in [SSL/TLS Client scanner](https://github.com/fredomgc/ssl-tls-client-scanner).
