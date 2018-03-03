@@ -70,11 +70,6 @@ public class OSaftParser {
 	public static final String CANT_MAKE_CONNECTION = "Can't make a connection to";
 
 	/**
-	 * Cipher suites
-	 */
-	public static final List<String> CIPHER_SUITE_FOOTER = Arrays.asList(new String[]{"weak", "medium", "high"});
-
-	/**
 	 * Protocols
 	 */
 	public static final String TLS_1_HEADER = "Target supports TLSv1";
@@ -182,12 +177,12 @@ public class OSaftParser {
 	}
 
 	private void parseCipherSuites(String line) {
-		String[] pieces = line.split("\t");
+		String[] pieces = line.split(", ");
 		/**
-		 * Cipher has exactly three items in array and last item is strength
+		 * Cipher has exactly eight items in array and fifth item is hex code defined in RFC
 		 */
-		if (pieces.length == 3 && CIPHER_SUITE_FOOTER.contains(pieces[2].toLowerCase())) {
-			String name = pieces[0].trim();
+		if (pieces.length == 8 && pieces[5].trim().startsWith("0x")) {
+			String name = pieces[6].trim();
 			supportedCipherSuites.add(new CipherSuite(name));
 		}
 	}

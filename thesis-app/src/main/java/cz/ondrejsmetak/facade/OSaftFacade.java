@@ -57,10 +57,14 @@ public class OSaftFacade extends BaseFacade {
 	 */
 	private List<String> getData() {
 		if (data.isEmpty()) {
-			if (target.getProfile().isTestCipherSuites() || target.getProfile().isTestVulnerabilities()) {
+			if (target.getProfile().isTestVulnerabilities()) {
 				data.addAll(doCmd(target.getDestination(), "+check"));
 			}
 
+			if (target.getProfile().isTestCipherSuites()){
+				data.addAll(doCmd(target.getDestination(), "+cipherall"));
+			}
+			
 			if (target.getProfile().isTestCertificate()) {
 				data.addAll(doCmd(target.getDestination(), "+info"));
 				data.addAll(doCmd(target.getDestination(), "+chain"));

@@ -29,9 +29,15 @@
 			</certificateValid>
 			
 			<ciphers>
+				<cipher name="RSA-AES128-GCM-SHA256"  mode="mustBe"  />
+				<cipher name="AES128-GCM-SHA256"  mode="mustNotBe"  />
+				<cipher name="ECDHE-ECDSA-RC4-SHA"  mode="mustBe"  />
+				
+				<!--
 				<cipher name="ECDHE-ECDSA-DES-CBC3-SHA"  mode="mustNotBe"  />
 				<cipher name="DHE-RSA-CAMELLIA128-SHA"  mode="mustBe"  />
 				<cipher name="ECDHE-ECDSA-RC4-SHA"  mode="canBe"  />
+				-->
 			</ciphers>
 		</profile>
 	</profiles>
@@ -40,8 +46,8 @@
 		
 		<!-- https://www.google.com -->
 		<!-- https://is.ssos.cz/ -->
-		<target destination="https://untrusted-with-ca.tls.v6ak.com/"  profile="low"  name="my localhost #1" />
-		
+		<!-- <target destination="https://untrusted-with-ca.tls.v6ak.com/"  profile="low"  name="my localhost #1" /> -->
+		<target destination="localhost"  profile="low"  name="my localhost #1" />
 		
 		
 		<!--
