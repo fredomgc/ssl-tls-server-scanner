@@ -75,13 +75,15 @@ public class Scanner {
 	 */
 	private List<ReportMessage> getCipherSuites() {
 		List<ReportMessage> vulns = new ArrayList<>();
-
+		boolean unableToTestError = oSaft.getParser().getSupportedCipherSuites().isEmpty();
+		String prefix = unableToTestError ? "[Unable to test] " : "";
+		
 		if (target.getProfile().isTestCipherSuites()) {
 			for (CipherSuite cipherSuite : target.getProfile().getCipherSuites()) {
 				if (cipherSuite.getMode().isMustBe() && !oSaft.getParser().getSupportedCipherSuites().contains(cipherSuite)) {
-					vulns.add(new ReportMessage("Cipher suite " + cipherSuite + " MUST BE supported!", ReportMessage.Category.CIPHER, cipherSuite.getMode()));
+					vulns.add(new ReportMessage(prefix + "Cipher suite " + cipherSuite + " MUST BE supported!", ReportMessage.Category.CIPHER, cipherSuite.getMode()));
 				} else if (cipherSuite.getMode().isMustNotBe() && oSaft.getParser().getSupportedCipherSuites().contains(cipherSuite)) {
-					vulns.add(new ReportMessage("Cipher suite " + cipherSuite + " MUST NOT BE supported!", ReportMessage.Category.CIPHER, cipherSuite.getMode()));
+					vulns.add(new ReportMessage(prefix + "Cipher suite " + cipherSuite + " MUST NOT BE supported!", ReportMessage.Category.CIPHER, cipherSuite.getMode()));
 				}
 			}
 		}
